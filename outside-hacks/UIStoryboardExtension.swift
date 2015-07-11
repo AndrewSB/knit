@@ -13,13 +13,13 @@ extension UIStoryboard {
     class func initialFor(storyboardNamed: String) -> UIViewController {
         
         let storyboard = UIStoryboard(name: storyboardNamed, bundle: NSBundle.mainBundle())
-        return storyboard.instantiateInitialViewController() as! UIViewController
+        return storyboard.instantiateInitialViewController()!
     }
     
     class func idIn(viewControllerId: String, inStoryboard storyboardNamed: String) -> UIViewController {
         
         let storyboard = UIStoryboard(name: storyboardNamed, bundle: NSBundle.mainBundle())
-        let viewController = storyboard.instantiateViewControllerWithIdentifier(viewControllerId) as! UIViewController
+        let viewController = storyboard.instantiateViewControllerWithIdentifier(viewControllerId) as UIViewController
         return viewController
     }
     
