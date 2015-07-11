@@ -14,8 +14,8 @@ class Location: CLLocationManager, CLLocationManagerDelegate {
     
     var mostRecentLocation: CLLocation? {
         didSet {
-//            UserDefaults.lastLocation = mostRecentLocation
-//            LocalMessage.post(.NewLocationRegistered)
+            UserDefaults.lastLocation = mostRecentLocation
+            LocalMessage.post(.NewLocationRegistered)
         }
     }
     
@@ -24,7 +24,7 @@ class Location: CLLocationManager, CLLocationManagerDelegate {
         self.delegate = self
         self.desiredAccuracy = kCLLocationAccuracyThreeKilometers
         
-//        mostRecentLocation = UserDefaults.lastLocation
+        mostRecentLocation = UserDefaults.lastLocation
         
         switch CLLocationManager.authorizationStatus() {
         case .AuthorizedWhenInUse, .AuthorizedAlways:

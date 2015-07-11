@@ -17,12 +17,12 @@
 		467F4DE31B51CD660010BE02 /* NSNotificationCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE01B51CD660010BE02 /* NSNotificationCenterHelper.swift */; };
 		467F4DE41B51CD660010BE02 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */; };
 		467F4DE71B51CDA60010BE02 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE61B51CDA60010BE02 /* API.swift */; };
+		46B0130B1B51DFED0088C577 /* PullableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B0130A1B51DFED0088C577 /* PullableView.m */; };
 		46E9AE411B51D496007D0820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE401B51D496007D0820 /* User.swift */; };
 		46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */; };
 		46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE451B51DA31007D0820 /* StringExtension.swift */; };
 		46FEE92C1B51CF4F00DA441E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FEE92B1B51CF4F00DA441E /* MapKit.framework */; };
 		46FEE92E1B51CF5300DA441E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FEE92D1B51CF5300DA441E /* CoreLocation.framework */; };
-		46FEE9341B51D0FC00DA441E /* MBPullDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FEE9331B51D0FC00DA441E /* MBPullDownController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,13 +38,13 @@
 		467F4DE01B51CD660010BE02 /* NSNotificationCenterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationCenterHelper.swift; sourceTree = "<group>"; };
 		467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		467F4DE61B51CDA60010BE02 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		46B013091B51DFEC0088C577 /* PullableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PullableView.h; path = Carthage/Checkouts/PullableView/PullableView/PullableView.h; sourceTree = "<group>"; };
+		46B0130A1B51DFED0088C577 /* PullableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PullableView.m; path = Carthage/Checkouts/PullableView/PullableView/PullableView.m; sourceTree = "<group>"; };
 		46E9AE401B51D496007D0820 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 		46E9AE451B51DA31007D0820 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		46FEE92B1B51CF4F00DA441E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		46FEE92D1B51CF5300DA441E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		46FEE9321B51D0FC00DA441E /* MBPullDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPullDownController.h; sourceTree = "<group>"; };
-		46FEE9331B51D0FC00DA441E /* MBPullDownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPullDownController.m; sourceTree = "<group>"; };
 		46FEE9381B51D11A00DA441E /* outside-hacks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "outside-hacks-Bridging-Header.h"; path = "outside-hacks/outside-hacks-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +131,15 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		46B0130C1B51DFF00088C577 /* PullableView */ = {
+			isa = PBXGroup;
+			children = (
+				46B013091B51DFEC0088C577 /* PullableView.h */,
+				46B0130A1B51DFED0088C577 /* PullableView.m */,
+			);
+			name = PullableView;
+			sourceTree = "<group>";
+		};
 		46E9AE421B51D7E4007D0820 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				46FEE9381B51D11A00DA441E /* outside-hacks-Bridging-Header.h */,
-				46FEE9311B51D0FC00DA441E /* MBPullDownController */,
+				46B0130C1B51DFF00088C577 /* PullableView */,
 				46FEE9301B51CF5E00DA441E /* Frameworks */,
 			);
 			name = Libraries;
@@ -156,16 +165,6 @@
 				46FEE92B1B51CF4F00DA441E /* MapKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		46FEE9311B51D0FC00DA441E /* MBPullDownController */ = {
-			isa = PBXGroup;
-			children = (
-				46FEE9321B51D0FC00DA441E /* MBPullDownController.h */,
-				46FEE9331B51D0FC00DA441E /* MBPullDownController.m */,
-			);
-			name = MBPullDownController;
-			path = Carthage/Checkouts/MBPullDownController/MBPullDownController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +198,7 @@
 				TargetAttributes = {
 					467F4DC01B51CCAD0010BE02 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 2X8HM5UJ6Y;
 					};
 				};
 			};
@@ -239,12 +239,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				467F4DE31B51CD660010BE02 /* NSNotificationCenterHelper.swift in Sources */,
-				46FEE9341B51D0FC00DA441E /* MBPullDownController.m in Sources */,
 				467F4DC51B51CCAD0010BE02 /* AppDelegate.swift in Sources */,
 				467F4DE21B51CD660010BE02 /* NSUserDefaultHelper.swift in Sources */,
 				467F4DDD1B51CD210010BE02 /* Location.swift in Sources */,
 				46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */,
 				46E9AE411B51D496007D0820 /* User.swift in Sources */,
+				46B0130B1B51DFED0088C577 /* PullableView.m in Sources */,
 				467F4DE41B51CD660010BE02 /* UIStoryboardExtension.swift in Sources */,
 				467F4DD71B51CCD40010BE02 /* MapViewController.swift in Sources */,
 				46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */,
@@ -359,9 +359,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "outside-hacks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tfw.outside-hacks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.hi-lite.outside-hacks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/$(TARGET_NAME)-Bridging-Header.h";
 			};
@@ -371,9 +372,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "outside-hacks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tfw.outside-hacks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.hi-lite.outside-hacks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/$(TARGET_NAME)-Bridging-Header.h";
 			};

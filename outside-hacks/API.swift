@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 class API {
     static let sharedInstance = API()
@@ -15,7 +16,12 @@ class API {
     
     enum Endpoint {
         case Base()
-        case WithArg(Int)
+        enum GET {
+            case User(String)
+        }
+        enum POST {
+            case Location(String, CLLocation)
+        }
     }
     
     private init() {
