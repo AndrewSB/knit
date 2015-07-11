@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4623EE931B51BFD90015E220 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4623EE921B51BFD90015E220 /* MapViewController.swift */; };
 		467F4DA71B51BD6D0010BE02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DA61B51BD6D0010BE02 /* AppDelegate.swift */; };
-		467F4DA91B51BD6D0010BE02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DA81B51BD6D0010BE02 /* ViewController.swift */; };
 		467F4DAC1B51BD6D0010BE02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DAA1B51BD6D0010BE02 /* Main.storyboard */; };
 		467F4DAE1B51BD6D0010BE02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DAD1B51BD6D0010BE02 /* Assets.xcassets */; };
 		467F4DB11B51BD6D0010BE02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DAF1B51BD6D0010BE02 /* LaunchScreen.storyboard */; };
+		46D19F9C1B51C0CF00C6170E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D19F981B51C0CF00C6170E /* Location.swift */; };
+		46D19F9D1B51C0CF00C6170E /* NSUserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D19F991B51C0CF00C6170E /* NSUserDefaultHelper.swift */; };
+		46D19F9E1B51C0CF00C6170E /* NSNotificationCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D19F9A1B51C0CF00C6170E /* NSNotificationCenterHelper.swift */; };
+		46D19F9F1B51C0CF00C6170E /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D19F9B1B51C0CF00C6170E /* UIStoryboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4623EE921B51BFD90015E220 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		467F4DA31B51BD6D0010BE02 /* outside-hacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "outside-hacks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		467F4DA61B51BD6D0010BE02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		467F4DA81B51BD6D0010BE02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		467F4DAB1B51BD6D0010BE02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		467F4DAD1B51BD6D0010BE02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		467F4DB01B51BD6D0010BE02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467F4DB21B51BD6D0010BE02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D19F981B51C0CF00C6170E /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		46D19F991B51C0CF00C6170E /* NSUserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultHelper.swift; sourceTree = "<group>"; };
+		46D19F9A1B51C0CF00C6170E /* NSNotificationCenterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationCenterHelper.swift; sourceTree = "<group>"; };
+		46D19F9B1B51C0CF00C6170E /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,49 @@
 			isa = PBXGroup;
 			children = (
 				467F4DA61B51BD6D0010BE02 /* AppDelegate.swift */,
-				467F4DA81B51BD6D0010BE02 /* ViewController.swift */,
-				467F4DAA1B51BD6D0010BE02 /* Main.storyboard */,
-				467F4DAD1B51BD6D0010BE02 /* Assets.xcassets */,
-				467F4DAF1B51BD6D0010BE02 /* LaunchScreen.storyboard */,
-				467F4DB21B51BD6D0010BE02 /* Info.plist */,
+				46D19FA31B51C10F00C6170E /* Views */,
+				46D19FA11B51C0DF00C6170E /* Resources */,
+				46D19FA01B51C0D300C6170E /* Supporting Files */,
 			);
 			path = "outside-hacks";
+			sourceTree = "<group>";
+		};
+		46D19FA01B51C0D300C6170E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				467F4DB21B51BD6D0010BE02 /* Info.plist */,
+				46D19FA21B51C0ED00C6170E /* Extensions */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46D19FA11B51C0DF00C6170E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				467F4DAD1B51BD6D0010BE02 /* Assets.xcassets */,
+				467F4DAF1B51BD6D0010BE02 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		46D19FA21B51C0ED00C6170E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46D19F981B51C0CF00C6170E /* Location.swift */,
+				46D19F991B51C0CF00C6170E /* NSUserDefaultHelper.swift */,
+				46D19F9A1B51C0CF00C6170E /* NSNotificationCenterHelper.swift */,
+				46D19F9B1B51C0CF00C6170E /* UIStoryboardExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		46D19FA31B51C10F00C6170E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4623EE921B51BFD90015E220 /* MapViewController.swift */,
+				467F4DAA1B51BD6D0010BE02 /* Main.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				467F4DA91B51BD6D0010BE02 /* ViewController.swift in Sources */,
+				46D19F9E1B51C0CF00C6170E /* NSNotificationCenterHelper.swift in Sources */,
 				467F4DA71B51BD6D0010BE02 /* AppDelegate.swift in Sources */,
+				46D19F9D1B51C0CF00C6170E /* NSUserDefaultHelper.swift in Sources */,
+				46D19F9C1B51C0CF00C6170E /* Location.swift in Sources */,
+				46D19F9F1B51C0CF00C6170E /* UIStoryboardExtension.swift in Sources */,
+				4623EE931B51BFD90015E220 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +331,7 @@
 				467F4DB71B51BD6D0010BE02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
