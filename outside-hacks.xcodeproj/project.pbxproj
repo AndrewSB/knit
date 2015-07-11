@@ -15,6 +15,9 @@
 		461581AF1B51BA6B0005E05C /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461581AE1B51BA6B0005E05C /* UIStoryboardExtension.swift */; };
 		461581B11B51BA9B0005E05C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461581B01B51BA9B0005E05C /* CoreLocation.framework */; };
 		461581B51B51BADF0005E05C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461581B41B51BADF0005E05C /* MapKit.framework */; };
+		461581B71B51BBBD0005E05C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461581B61B51BBBD0005E05C /* Location.swift */; };
+		461581BA1B51BBEE0005E05C /* NSUserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461581B81B51BBEE0005E05C /* NSUserDefaultHelper.swift */; };
+		461581BB1B51BBEE0005E05C /* NSNotificationCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461581B91B51BBEE0005E05C /* NSNotificationCenterHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		461581AE1B51BA6B0005E05C /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		461581B01B51BA9B0005E05C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		461581B41B51BADF0005E05C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		461581B61B51BBBD0005E05C /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		461581B81B51BBEE0005E05C /* NSUserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultHelper.swift; sourceTree = "<group>"; };
+		461581B91B51BBEE0005E05C /* NSNotificationCenterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationCenterHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,9 @@
 		461581881B51B7CB0005E05C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				461581B61B51BBBD0005E05C /* Location.swift */,
+				461581B81B51BBEE0005E05C /* NSUserDefaultHelper.swift */,
+				461581B91B51BBEE0005E05C /* NSNotificationCenterHelper.swift */,
 				461581AE1B51BA6B0005E05C /* UIStoryboardExtension.swift */,
 				461581891B51B7CB0005E05C /* Info.plist */,
 			);
@@ -185,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461581BB1B51BBEE0005E05C /* NSNotificationCenterHelper.swift in Sources */,
 				4615818D1B51B7CB0005E05C /* ViewController.swift in Sources */,
 				461581AF1B51BA6B0005E05C /* UIStoryboardExtension.swift in Sources */,
+				461581BA1B51BBEE0005E05C /* NSUserDefaultHelper.swift in Sources */,
+				461581B71B51BBBD0005E05C /* Location.swift in Sources */,
 				4615818B1B51B7CB0005E05C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
