@@ -8,19 +8,16 @@
 
 import Foundation
 
-
 class API {
-    let sharedInstance = API()
+    static let sharedInstance = API()
     
     private let baseUrl = "http://54.69.227.168:8080"
     
-    enum Endpoint: () {
-    case Base = {
-        return NSDictionary()
-    }
+    enum Endpoint {
+        case Base()
+        case WithArg(Int)
     }
     
     private init() {
-        
     }
 }

@@ -15,14 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
-//        let loggedIn = true
-        
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window!.rootViewController = UIStoryboard.initialFor("Main")
-        window!.makeKeyAndVisible()
-        
-        
+        // Override point for customization after application launch.
         return true
     }
 
