@@ -10,6 +10,8 @@ import Foundation
 import CoreLocation
 
 class Location: CLLocationManager, CLLocationManagerDelegate {
+    static let singleton = Location()
+    
     var mostRecentLocation: CLLocation? {
         didSet {
             UserDefaults.lastLocation = mostRecentLocation
@@ -17,7 +19,7 @@ class Location: CLLocationManager, CLLocationManagerDelegate {
         }
     }
     
-    override init() {
+    private override init() {
         super.init()
         self.delegate = self
         self.desiredAccuracy = kCLLocationAccuracyThreeKilometers
