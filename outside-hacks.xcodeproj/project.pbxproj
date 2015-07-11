@@ -17,6 +17,9 @@
 		467F4DE31B51CD660010BE02 /* NSNotificationCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE01B51CD660010BE02 /* NSNotificationCenterHelper.swift */; };
 		467F4DE41B51CD660010BE02 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */; };
 		467F4DE71B51CDA60010BE02 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE61B51CDA60010BE02 /* API.swift */; };
+		46E9AE411B51D496007D0820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE401B51D496007D0820 /* User.swift */; };
+		46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */; };
+		46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE451B51DA31007D0820 /* StringExtension.swift */; };
 		46FEE92C1B51CF4F00DA441E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FEE92B1B51CF4F00DA441E /* MapKit.framework */; };
 		46FEE92E1B51CF5300DA441E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FEE92D1B51CF5300DA441E /* CoreLocation.framework */; };
 		46FEE9341B51D0FC00DA441E /* MBPullDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FEE9331B51D0FC00DA441E /* MBPullDownController.m */; };
@@ -35,6 +38,9 @@
 		467F4DE01B51CD660010BE02 /* NSNotificationCenterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationCenterHelper.swift; sourceTree = "<group>"; };
 		467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		467F4DE61B51CDA60010BE02 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		46E9AE401B51D496007D0820 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
+		46E9AE451B51DA31007D0820 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		46FEE92B1B51CF4F00DA441E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		46FEE92D1B51CF5300DA441E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		46FEE9321B51D0FC00DA441E /* MBPullDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPullDownController.h; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				467F4DC41B51CCAD0010BE02 /* AppDelegate.swift */,
+				46E9AE421B51D7E4007D0820 /* Model */,
 				467F4DD81B51CCF30010BE02 /* View */,
 				467F4DD91B51CCF80010BE02 /* Resource */,
 				467F4DDA1B51CCFC0010BE02 /* Supporting Files */,
@@ -118,8 +125,18 @@
 				467F4DDF1B51CD660010BE02 /* NSUserDefaultHelper.swift */,
 				467F4DE01B51CD660010BE02 /* NSNotificationCenterHelper.swift */,
 				467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */,
+				46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */,
+				46E9AE451B51DA31007D0820 /* StringExtension.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		46E9AE421B51D7E4007D0820 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46E9AE401B51D496007D0820 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		46FEE92F1B51CF5800DA441E /* Libraries */ = {
@@ -226,8 +243,11 @@
 				467F4DC51B51CCAD0010BE02 /* AppDelegate.swift in Sources */,
 				467F4DE21B51CD660010BE02 /* NSUserDefaultHelper.swift in Sources */,
 				467F4DDD1B51CD210010BE02 /* Location.swift in Sources */,
+				46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */,
+				46E9AE411B51D496007D0820 /* User.swift in Sources */,
 				467F4DE41B51CD660010BE02 /* UIStoryboardExtension.swift in Sources */,
 				467F4DD71B51CCD40010BE02 /* MapViewController.swift in Sources */,
+				46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */,
 				467F4DE71B51CDA60010BE02 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
