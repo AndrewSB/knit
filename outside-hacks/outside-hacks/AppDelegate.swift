@@ -3,7 +3,7 @@
 //  outside-hacks
 //
 //  Created by Andrew Breckenridge on 7/11/15.
-//  Copyright (c) 2015 Andrew Breckenridge. All rights reserved.
+//  Copyright © 2015 Andrew Breckenridge. All rights reserved.
 //
 
 import UIKit
@@ -15,13 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
-        let loggedIn = true
-        
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window!.rootViewController = UIStoryboard.initialFor("Main")
-        window!.makeKeyAndVisible()
-        
+        // Override point for customization after application launch.
         return true
     }
 

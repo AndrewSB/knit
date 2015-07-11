@@ -3,11 +3,10 @@
 //  outside-hacks
 //
 //  Created by Andrew Breckenridge on 7/11/15.
-//  Copyright (c) 2015 Andrew Breckenridge. All rights reserved.
+//  Copyright © 2015 Andrew Breckenridge. All rights reserved.
 //
 
 import UIKit
-import CoreLocation
 
 class ViewController: UIViewController {
 
