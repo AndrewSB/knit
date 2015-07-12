@@ -10,7 +10,7 @@ import UIKit
 
 class FriendListViewController: UITableViewController {
     
-    var data = [(Header, [Friend])]()
+    var data = [(Header, [User])]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +30,9 @@ class FriendListViewController: UITableViewController {
             for userBlock in userJSON {
                 if let uB = userBlock[header["stage"] as! String] {
                     let header = Header(json: header as! [String: String])!
-                    let friend = (uB as! [[String: String]]).map({ return Friend(json: $0)! })
+                    let user = (uB as! [[String: String]]).map({ return User(json: $0)! })
                     
-                    self.data.append((header, friend))
+                    self.data.append((header, user))
                 }
             }
         }
@@ -55,7 +55,7 @@ extension FriendListViewController {
         case data.count:
             return 50
         default:
-            
+            return 100
         }
     }
     
