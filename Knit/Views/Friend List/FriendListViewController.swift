@@ -128,7 +128,10 @@ extension FriendListViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        performSegueWithIdentifier(Segue.To.Message.rawValue, sender: data[indexPath.section].1[indexPath.row] as? AnyObject)
+        JSQSystemSoundPlayer.sharedPlayer().playSoundWithFilename("tap-warm", fileExtension: "aif", completion: nil)
+
+        
+        performSegueWithIdentifier(Segue.To.Message.rawValue, sender: data[indexPath.section].1[indexPath.row] as AnyObject)
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

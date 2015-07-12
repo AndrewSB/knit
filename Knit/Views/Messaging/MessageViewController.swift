@@ -36,7 +36,7 @@ extension MessageViewController {
         messages.append(message)
         
         if message.senderId() == self.senderId {
-            JSQSystemSoundPlayer.jsq_playMessageSentSound()
+            JSQSystemSoundPlayer.sharedPlayer().playSoundWithFilename("warm-tap", fileExtension: "aif", completion: nil)
             self.finishSendingMessage()
         } else {
             JSQSystemSoundPlayer.jsq_playMessageReceivedSound()

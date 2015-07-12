@@ -33,10 +33,9 @@ class MessageWrapperViewController: UIViewController {
         
         assert(user.count == 1, "weird user array in the wrapper")
         let cur = user.first! as User
-        
-        print(cur.stage)
-        print(Color.Stage.color(forStageName: cur.stage!))
+        let firstName = String(split(cur.name.characters){ $0 == " " }.first!).lowercaseString
 
+        avatarImageView.image = UIImage(named: firstName)
         
         avatarImageView.layer.cornerRadius = avatarImageView.frame.width / 2
         avatarImageView.layer.borderWidth = 4
@@ -78,6 +77,7 @@ class MessageWrapperViewController: UIViewController {
     
     
     func didSwipe() {
+        JSQSystemSoundPlayer.sharedPlayer().playSoundWithFilename("SWISH", fileExtension: "mp3", completion: nil)
         performSegueWithIdentifier(Segue.UnwindTo.FriendList.rawValue, sender: nil)
     }
     

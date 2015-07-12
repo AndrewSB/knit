@@ -42,6 +42,12 @@ class MasterViewController: MBPullDownController {
         LocalMessage.resign(me: self)
     }
     
+    override func setOpen(open: Bool, animated: Bool) {
+        super.setOpen(open, animated: animated)
+        
+        JSQSystemSoundPlayer.sharedPlayer().playSoundWithFilename("SWISH", fileExtension: "mp3", completion: nil)
+    }
+    
 }
 
 extension MasterViewController {
