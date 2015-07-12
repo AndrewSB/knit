@@ -112,7 +112,7 @@
 /* Begin PBXFileReference section */
 		467790C11B52837B00CF3BE0 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		467790C31B52857100CF3BE0 /* SegueDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueDefines.swift; sourceTree = "<group>"; };
-		467F4DC11B51CCAD0010BE02 /* outside-hacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "outside-hacks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		467F4DC11B51CCAD0010BE02 /* Knit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467F4DC41B51CCAD0010BE02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		467F4DC91B51CCAD0010BE02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		467F4DCB1B51CCAD0010BE02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 		46E9AE451B51DA31007D0820 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		46FEE92B1B51CF4F00DA441E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		46FEE92D1B51CF5300DA441E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		46FEE9381B51D11A00DA441E /* outside-hacks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "outside-hacks-Bridging-Header.h"; path = "outside-hacks/outside-hacks-Bridging-Header.h"; sourceTree = "<group>"; };
+		46FEE9381B51D11A00DA441E /* Knit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Knit-Bridging-Header.h"; path = "outside-hacks/Knit-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,7 +271,7 @@
 		467F4DC21B51CCAD0010BE02 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				467F4DC11B51CCAD0010BE02 /* outside-hacks.app */,
+				467F4DC11B51CCAD0010BE02 /* Knit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -550,7 +550,7 @@
 		46FEE92F1B51CF5800DA441E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				46FEE9381B51D11A00DA441E /* outside-hacks-Bridging-Header.h */,
+				46FEE9381B51D11A00DA441E /* Knit-Bridging-Header.h */,
 				46B689B51B526B1400C22C4F /* JSQSystemSoundPlayer */,
 				46B688E81B526AD100C22C4F /* JSQMessagesViewController */,
 				46D96DD31B5209E100701D69 /* Toucan.framework */,
@@ -573,9 +573,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		467F4DC01B51CCAD0010BE02 /* outside-hacks */ = {
+		467F4DC01B51CCAD0010BE02 /* Knit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 467F4DD31B51CCAD0010BE02 /* Build configuration list for PBXNativeTarget "outside-hacks" */;
+			buildConfigurationList = 467F4DD31B51CCAD0010BE02 /* Build configuration list for PBXNativeTarget "Knit" */;
 			buildPhases = (
 				467F4DBD1B51CCAD0010BE02 /* Sources */,
 				467F4DBE1B51CCAD0010BE02 /* Frameworks */,
@@ -586,9 +586,9 @@
 			);
 			dependencies = (
 			);
-			name = "outside-hacks";
+			name = Knit;
 			productName = "outside-hacks";
-			productReference = 467F4DC11B51CCAD0010BE02 /* outside-hacks.app */;
+			productReference = 467F4DC11B51CCAD0010BE02 /* Knit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -606,7 +606,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 467F4DBC1B51CCAD0010BE02 /* Build configuration list for PBXProject "outside-hacks" */;
+			buildConfigurationList = 467F4DBC1B51CCAD0010BE02 /* Build configuration list for PBXProject "Knit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -619,7 +619,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				467F4DC01B51CCAD0010BE02 /* outside-hacks */,
+				467F4DC01B51CCAD0010BE02 /* Knit */,
 			);
 		};
 /* End PBXProject section */
@@ -837,7 +837,7 @@
 				INFOPLIST_FILE = "outside-hacks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "asb.outside-hacks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Knit;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/$(TARGET_NAME)-Bridging-Header.h";
 			};
 			name = Debug;
@@ -851,7 +851,7 @@
 				INFOPLIST_FILE = "outside-hacks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "asb.outside-hacks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Knit;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/$(TARGET_NAME)-Bridging-Header.h";
 			};
 			name = Release;
@@ -859,7 +859,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		467F4DBC1B51CCAD0010BE02 /* Build configuration list for PBXProject "outside-hacks" */ = {
+		467F4DBC1B51CCAD0010BE02 /* Build configuration list for PBXProject "Knit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				467F4DD11B51CCAD0010BE02 /* Debug */,
@@ -868,7 +868,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		467F4DD31B51CCAD0010BE02 /* Build configuration list for PBXNativeTarget "outside-hacks" */ = {
+		467F4DD31B51CCAD0010BE02 /* Build configuration list for PBXNativeTarget "Knit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				467F4DD41B51CCAD0010BE02 /* Debug */,
