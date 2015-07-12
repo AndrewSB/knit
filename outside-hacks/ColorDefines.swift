@@ -12,13 +12,13 @@ class Color {
     enum Global {
         enum Green: String {
             case Light = "81C784"
-            case Dark = "4CAF50"
+            case Dark = "54AD58"
         }
     }
     
     enum Stage {
         enum LandsEnd: String {
-            case Light = "E84C80"
+            case Light = "D9638D"
             case Dark = "5D1E33"
             
             static func colors() -> (String, String) {
@@ -26,7 +26,7 @@ class Color {
             }
         }
         enum Sutro: String {
-            case Light = "CC7CDA"
+            case Light = "CC80DA"
             case Dark = "523258"
             
             static func colors() -> (String, String) {
@@ -34,7 +34,7 @@ class Color {
             }
         }
         enum TwinPeaks: String {
-            case Light = "62B2F1"
+            case Light = "6CB5EF"
             case Dark = "274761"
             
             static func colors() -> (String, String) {
@@ -42,7 +42,7 @@ class Color {
             }
         }
         enum Panhandle: String {
-            case Light = "FFB04D"
+            case Light = "FBB35D"
             case Dark = "67471F"
             
             static func colors() -> (String, String) {

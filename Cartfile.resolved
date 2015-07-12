@@ -1,3 +1,5 @@
 github "AndrewSB/FontBlaster" "1.0.8"
+github "jessesquires/JSQMessagesViewController" "7.1.0"
+github "jessesquires/JSQSystemSoundPlayer" "4.0.0"
 github "matej/MBPullDownController" "1.1.1"
 github "gavinbunney/Toucan" "0.2.1"

@@ -1,3 +1,5 @@
 github "gavinbunney/Toucan"
 github "matej/MBPullDownController"
 github "AndrewSB/FontBlaster"
+github "jessesquires/JSQMessagesViewController"
+github "jessesquires/JSQSystemSoundPlayer"

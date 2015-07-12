@@ -65,16 +65,13 @@ private extension FontBlaster
         :param: The absolute path to the bundle.
     */
     class func loadFontsForBundleWithPath(path: String) {
-        let contents: [AnyObject]?
-        do {
-            contents = try NSFileManager.defaultManager().contentsOfDirectoryAtPath(path)
-        } catch let error as NSError {
-            contents = nil
-            printStatus("There was an error: \(error.userInfo) accessing bundle with path: \(path).")
-        }
-        if let contents = contents as? [String] {
-            let typedContents = contents
-            let fonts = fontsFromPath(path: path, contents: typedContents)
+        var contentsError: NSError?
+        let contents = NSFileManager.defaultManager().contentsOfDirectoryAtPath(path, error: &contentsError)
+        if let contentsError = contentsError {
+            printStatus("There was an error accessing bundle with path: \(path).")
+        } else {
+            let typedContents = contents as! [String]
+            var fonts = fontsFromPath(path: path, contents: typedContents)
             if !fonts.isEmpty {
                 for font in fonts {
                     loadFont(font)
@@ -91,30 +88,29 @@ private extension FontBlaster
         :param: The absolute path to the bundle.
     */
     class func loadFontsFromBundlesFoundInBundle(path: String) {
-        let contents: [AnyObject]?
-        do {
-            contents = try NSFileManager.defaultManager().contentsOfDirectoryAtPath(path)
-        } catch _ as NSError {
-            contents = nil
-        }
-        if let contents = contents as? [NSString] {
-            let typedContents = contents
+        var contentsError: NSError?
+        let contents = NSFileManager.defaultManager().contentsOfDirectoryAtPath(path, error: &contentsError)
+        if let contentsError = contentsError {
+            printStatus("There was an error accessing bundle with path: \(path).")
+        } else {
+            let typedContents = contents as! [NSString]
             for item in typedContents {
                 var fullPath: String?
                 if item.respondsToSelector(Selector("containsString:")) { // iOS 8+
                     if item.containsString(".bundle") {
-                        fullPath = path.stringByAppendingPathComponent(item as String)
+                        fullPath = path.stringByAppendingPathComponent(item as! String)
                     }
                 } else { // iOS 7
                     if item.rangeOfString(".bundle").location != NSNotFound {
-                        fullPath = path.stringByAppendingPathComponent(item as String)
+                        fullPath = path.stringByAppendingPathComponent(item as! String)
                     }
                 }
                 if let fullPath = fullPath {
                     loadFontsForBundleWithPath(fullPath)
                 }
             }
-        }    }
+        }
+    }
     
     /**
         Loads a specific font.
@@ -125,7 +121,7 @@ private extension FontBlaster
         let fontPath: FontPath = font.0
         let fontName: FontPath = font.1
         let fontExtension: FontPath = font.2
-        
+
         if let fontFileURL = NSBundle(path: fontPath)?.URLForResource(fontName, withExtension: fontExtension) {
             var fontError: Unmanaged<CFError>?
             if CTFontManagerRegisterFontsForURL(fontFileURL, CTFontManagerScope.Process, &fontError) {
@@ -144,22 +140,22 @@ private extension FontBlaster
 private extension FontBlaster
 {
     /**
-    Parses a font into its name and extension components.
-    
-    - parameter The: absolute path to the font file.
-    - returns: A tuple with the font's name and extension.
+        Parses a font into its name and extension components.
+        
+        :param: The absolute path to the font file.
+        :returns: A tuple with the font's name and extension.
     */
-    class func fontsFromPath(path path: String, contents: [NSString]) -> [Font] {
+    class func fontsFromPath(#path: String, contents: [NSString]) -> [Font] {
         var fonts = [Font]()
         for fontName in contents {
             var parsedFont: (FontName, FontExtension)?
             if fontName.respondsToSelector(Selector("containsString:")) { // iOS 8+
                 if fontName.containsString(SupportedFontExtensions.TrueTypeFont.rawValue) || fontName.containsString(SupportedFontExtensions.OpenTypeFont.rawValue) {
-                    parsedFont = fontFromName(fontName as String)
+                    parsedFont = fontFromName(fontName as! String)
                 }
             } else { // iOS 7
                 if (fontName.rangeOfString(SupportedFontExtensions.TrueTypeFont.rawValue).location != NSNotFound) || (fontName.rangeOfString(SupportedFontExtensions.OpenTypeFont.rawValue).location != NSNotFound) {
-                    parsedFont = fontFromName(fontName as String)
+                    parsedFont = fontFromName(fontName as! String)
                 }
             }
             if let parsedFont = parsedFont {
@@ -172,24 +168,24 @@ private extension FontBlaster
     }
     
     /**
-    Parses a font into its name and extension components.
+        Parses a font into its name and extension components.
     
-    - parameter The: name of the font.
-    - returns: A tuple with the font's name and extension.
+        :param: The name of the font.
+        :returns: A tuple with the font's name and extension.
     */
     class func fontFromName(name: String) -> (FontName, FontExtension) {
-        let components = split(name.characters){$0 == "."}.map { String($0) }
+        let components = split(name){$0 == "."}
         return (components[0], components[1])
     }
     
     /**
-    Prints debug messages to the console if debugEnabled is set to true.
+        Prints debug messages to the console if debugEnabled is set to true.
     
-    - parameter The: status to print to the console.
+        :param: The status to print to the console.
     */
     class func printStatus(status: String) {
         if debugEnabled == true {
-            print("[FontBlaster]: \(status)")
+            println("[FontBlaster]: \(status)")
         }
     }
 }

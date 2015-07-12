@@ -19,6 +19,9 @@ class FriendListViewController: UITableViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        self.tableView.backgroundView = nil
+        self.tableView.backgroundColor = UIColor.redColor()
     }
     
     private func reloadData() {
@@ -66,6 +69,14 @@ extension FriendListViewController {
         }
     }
     
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
+    }
+    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView(frame: .zeroRect)
+    }
+        
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let colors = Color.Stage.color(forStageName: data[section].0.stage) {
             let headerView = FriendListSectionHeaderView.instanceFromNib()
