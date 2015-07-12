@@ -18,7 +18,6 @@
 		467F4DE41B51CD660010BE02 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */; };
 		467F4DE71B51CDA60010BE02 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE61B51CDA60010BE02 /* API.swift */; };
 		46C1261F1B51E6840020CB6A /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C1261E1B51E6840020CB6A /* FriendListViewController.swift */; };
-		46D96DB41B51E74000701D69 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DB31B51E74000701D69 /* Friend.swift */; };
 		46D96DBC1B51F20400701D69 /* MBPullDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DBB1B51F20400701D69 /* MBPullDownController.m */; };
 		46D96DBE1B51F21B00701D69 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DBD1B51F21B00701D69 /* MasterViewController.swift */; };
 		46D96DC11B51FF3C00701D69 /* AvatarAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DC01B51FF3C00701D69 /* AvatarAnnotationView.swift */; };
@@ -75,7 +74,6 @@
 		467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		467F4DE61B51CDA60010BE02 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		46C1261E1B51E6840020CB6A /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
-		46D96DB31B51E74000701D69 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		46D96DBA1B51F20400701D69 /* MBPullDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPullDownController.h; sourceTree = "<group>"; };
 		46D96DBB1B51F20400701D69 /* MBPullDownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPullDownController.m; sourceTree = "<group>"; };
 		46D96DBD1B51F21B00701D69 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -237,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				46E9AE401B51D496007D0820 /* User.swift */,
-				46D96DB31B51E74000701D69 /* Friend.swift */,
 				46D96DE91B52195900701D69 /* Header.swift */,
 			);
 			name = Model;
@@ -360,7 +357,6 @@
 				467F4DD71B51CCD40010BE02 /* MapViewController.swift in Sources */,
 				46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */,
 				46D96DE81B52139E00701D69 /* FontBlaster.swift in Sources */,
-				46D96DB41B51E74000701D69 /* Friend.swift in Sources */,
 				46D96DF61B523BBD00701D69 /* FriendListSectionHeaderView.swift in Sources */,
 				46D96DD91B520DED00701D69 /* ColorDefines.swift in Sources */,
 				46D96DC51B52055800701D69 /* AvatarAnnotation.swift in Sources */,

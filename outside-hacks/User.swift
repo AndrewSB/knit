@@ -25,14 +25,19 @@ struct User {
     let seat: String
     
     init?(json: [String: String]) {
-        guard let id = json["id"], name = json["name"], pictureUrl = json["pictureUrl"], loc = json["loc"]
+        guard let id = json["id"], name = json["name"], pictureUrl = json["pictureUrl"], loc = json["loc"], battery = json["battery"], seat = json["seat"]
             else { return nil }
         
         self.id = id
+        
         self.name = name
         self.pictureUrl = pictureUrl
         
         let locs = split(loc.characters){ $0 == "," }.map({ String($0).toDouble()! })
         self.currentLocation = CLLocation(loc: (locs[0], locs[1]))
+        
+        self.name = name
+        self.battery = battery.toDouble()!
+        self.seat = seat
     }
 }
