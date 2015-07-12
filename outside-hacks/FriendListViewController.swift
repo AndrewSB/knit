@@ -9,6 +9,11 @@
 import UIKit
 
 class FriendListViewController: UITableViewController {
+    
+    let data = [
+        [
+        ]
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,10 @@ extension FriendListViewController {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath)
         cell.textLabel?.text = "lol"
         return cell
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 5
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -9,6 +9,21 @@
 import Foundation
 import CoreLocation
 
+
 /* 
     For local bluetooth things
 */
+struct Friend {
+    let name: String
+    let battery: Double
+    let seat: String
+    
+    init?(json: [String: String]) {
+        guard let name = json["name"], battery = json["battery"], seat = json["seat"]
+            else { return nil }
+        
+        self.name = name
+        self.battery = battery.toDouble()!
+        self.seat = seat
+    }
+}

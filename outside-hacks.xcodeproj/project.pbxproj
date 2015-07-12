@@ -32,6 +32,7 @@
 		46D96DE11B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DDD1B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf */; };
 		46D96DE61B520F5000701D69 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DE51B520F5000701D69 /* UIColorExtension.swift */; };
 		46D96DE81B52139E00701D69 /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DE71B52139E00701D69 /* FontBlaster.swift */; };
+		46D96DEA1B52195900701D69 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DE91B52195900701D69 /* TableHeader.swift */; };
 		46E9AE411B51D496007D0820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE401B51D496007D0820 /* User.swift */; };
 		46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */; };
 		46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE451B51DA31007D0820 /* StringExtension.swift */; };
@@ -82,6 +83,7 @@
 		46D96DDD1B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HUBERT JOCHAM Susa-Bold.otf"; sourceTree = "<group>"; };
 		46D96DE51B520F5000701D69 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		46D96DE71B52139E00701D69 /* FontBlaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontBlaster.swift; path = Carthage/Checkouts/FontBlaster/FontBlaster/FontBlaster.swift; sourceTree = "<group>"; };
+		46D96DE91B52195900701D69 /* TableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
 		46E9AE401B51D496007D0820 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 		46E9AE451B51DA31007D0820 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			children = (
 				46E9AE401B51D496007D0820 /* User.swift */,
 				46D96DB31B51E74000701D69 /* Friend.swift */,
+				46D96DE91B52195900701D69 /* TableHeader.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				467F4DE31B51CD660010BE02 /* NSNotificationCenterHelper.swift in Sources */,
 				467F4DC51B51CCAD0010BE02 /* AppDelegate.swift in Sources */,
+				46D96DEA1B52195900701D69 /* TableHeader.swift in Sources */,
 				467F4DE21B51CD660010BE02 /* NSUserDefaultHelper.swift in Sources */,
 				467F4DDD1B51CD210010BE02 /* Location.swift in Sources */,
 				46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */,
