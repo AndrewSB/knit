@@ -29,7 +29,7 @@ extension NSData {
     
     func simpleJSON() -> [String: String]? {
         do {
-            return try NSJSONSerialization.JSONObjectWithData(self, options: []) as? [[String: String]]
+            return try NSJSONSerialization.JSONObjectWithData(self, options: []) as? [String: String]
         } catch {
             return nil
         }

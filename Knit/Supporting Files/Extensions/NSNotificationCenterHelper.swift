@@ -15,6 +15,8 @@ enum LocalMessageNotification: String {
     
     case NewMessageReceived = "receiveMessage"
     case NewMessageProcessed = "NewMessageProcessed"
+    
+    case showGroupMessage = "showGroupMessage"
 }
 
 class LocalMessage {

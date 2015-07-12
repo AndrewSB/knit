@@ -39,5 +39,7 @@ class FriendListSectionHeaderView: UIView {
     }
 
     @IBAction func messageButtonWasHit() {
+        print("lol")
+        LocalMessage.post(.showGroupMessage)
     }
 }

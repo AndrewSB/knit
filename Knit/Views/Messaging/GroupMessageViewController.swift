@@ -12,11 +12,15 @@ class GroupMessageViewController: JSQMessagesViewController {
     
     var messages: [Message] = [
         Message(text: "Hey man, where you at?", sender: (id: "BH", dispayName: "BH")),
-        Message(text: "yo yo, I'm at Land's end! Come find me!", sender: (id: "AB", dispayName: "AB"))
+        Message(text: "yo yo, I'm at Land's end! Come find me!", sender: (id: "AB", dispayName: "AB")),
+        Message(text: "I'm almost there guys - wait for me!", sender: (id: "andrew", dispayName: "andrew")),
+        Message(text: "yo", sender: (id: "AB", dispayName: "AB"))
     ]
     
     let outgoingBubbleImageView = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.whiteColor())
     let incomingBubbleImageView = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor(hex: "#62B2F1"))
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,7 +110,18 @@ extension GroupMessageViewController {
     }
     
     override func collectionView(collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageAvatarImageDataSource! {
-        return nil
+        switch indexPath.row {
+        case 0:
+            return JSQMessagesAvatarImageFactory.avatarImageWithImage(UIImage(named: "ben"), diameter: 44)
+        case 1:
+            return JSQMessagesAvatarImageFactory.avatarImageWithImage(UIImage(named: "vikram"), diameter: 44)
+        case 2:
+            return JSQMessagesAvatarImageFactory.avatarImageWithImage(UIImage(named: "ben"), diameter: 44)
+        case 3:
+            return JSQMessagesAvatarImageFactory.avatarImageWithImage(UIImage(named: "rohith"), diameter: 44)
+        default:
+            return JSQMessagesAvatarImageFactory.avatarImageWithImage(UIImage(named: "alex"), diameter: 44)
+        }
     }
     
     override func collectionView(collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageBubbleImageDataSource! {

@@ -408,11 +408,12 @@
                     <connections>
                         <outlet property="tableHeaderView" destination="vBl-Ki-akz" id="zOY-8d-KLd"/>
                         <segue destination="2p4-du-OCC" kind="presentation" identifier="segueToMessages" id="oJk-gM-Egh"/>
+                        <segue destination="wQj-Rx-dzm" kind="presentation" identifier="segueToGroup" id="Qmc-D5-fJs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LsU-Ux-FIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="253" y="1035"/>
+            <point key="canvasLocation" x="641" y="1199"/>
         </scene>
         <!--Message View Controller-->
         <scene sceneID="Rzu-tX-etC">
@@ -563,7 +564,7 @@
         <!--Group Message View Controller-->
         <scene sceneID="bgh-nc-pc7">
             <objects>
-                <viewController storyboardIdentifier="Messages" id="I1X-SC-Ivs" customClass="GroupMessageViewController" customModule="Knit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupMessages" id="I1X-SC-Ivs" customClass="GroupMessageViewController" customModule="Knit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EBk-Hq-zXb"/>
                         <viewControllerLayoutGuide type="bottom" id="Co7-l5-3f3"/>

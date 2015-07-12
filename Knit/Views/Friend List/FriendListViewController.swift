@@ -58,10 +58,18 @@ class FriendListViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         tableHeaderView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("didTap")))
+        LocalMessage.observe(.showGroupMessage, classFunction: "segueToGroup", inClass: self)
     }
     
     func didTap() {
         LocalMessage.post(.KnitHeaderWasTapped)
+    }
+    func segueToGroup() {
+        self.performSegueWithIdentifier("segueToGroup", sender: nil)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        LocalMessage.resign(me: self)
     }
     
 
