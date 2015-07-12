@@ -50,6 +50,9 @@
 		4676D8C21B53029800012955 /* ScanHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4676D8C01B53029800012955 /* ScanHelper.m */; };
 		4676D8C41B53030800012955 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676D8C31B53030800012955 /* Scanner.swift */; };
 		4676D8C61B5304A800012955 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4676D8C51B5304A800012955 /* MultipeerConnectivity.framework */; };
+		4676D8C81B53107B00012955 /* MessageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676D8C71B53107B00012955 /* MessageCoordinator.swift */; };
+		4676D8CA1B5311FE00012955 /* GroupMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676D8C91B5311FE00012955 /* GroupMessageViewController.swift */; };
+		4676D8CC1B53157E00012955 /* GroupMessageWrapperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676D8CB1B53157E00012955 /* GroupMessageWrapperViewController.swift */; };
 		46869CEA1B52A76D00FF99BF /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46869CE91B52A76D00FF99BF /* FontBlaster.swift */; };
 		46869CF21B52AB7500FF99BF /* HUBERT JOCHAM Susa-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7BFF1B52A24700F3CB5E /* HUBERT JOCHAM Susa-Bold.otf */; };
 		46869CF31B52AB7500FF99BF /* Mark Simonson - Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C001B52A24700F3CB5E /* Mark Simonson - Proxima Nova Bold.otf */; };
@@ -174,6 +177,9 @@
 		4676D8C01B53029800012955 /* ScanHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanHelper.m; sourceTree = "<group>"; };
 		4676D8C31B53030800012955 /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		4676D8C51B5304A800012955 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		4676D8C71B53107B00012955 /* MessageCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCoordinator.swift; sourceTree = "<group>"; };
+		4676D8C91B5311FE00012955 /* GroupMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMessageViewController.swift; sourceTree = "<group>"; };
+		4676D8CB1B53157E00012955 /* GroupMessageWrapperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMessageWrapperViewController.swift; sourceTree = "<group>"; };
 		467F4DC11B51CCAD0010BE02 /* Knit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46869CE91B52A76D00FF99BF /* FontBlaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontBlaster.swift; path = Carthage/Checkouts/FontBlaster/FontBlaster/FontBlaster.swift; sourceTree = "<group>"; };
 		46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Knit-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -376,6 +382,7 @@
 				464A7C0A1B52A26400F3CB5E /* API.swift */,
 				464A7C0C1B52A26900F3CB5E /* Location.swift */,
 				4676D8C31B53030800012955 /* Scanner.swift */,
+				4676D8C71B53107B00012955 /* MessageCoordinator.swift */,
 				464A7C0E1B52A27500F3CB5E /* ColorDefines.swift */,
 				464A7C0F1B52A27500F3CB5E /* ImageDefines.swift */,
 				464A7C101B52A27500F3CB5E /* SegueDefines.swift */,
@@ -425,6 +432,8 @@
 			children = (
 				4676D8B41B52F20A00012955 /* MessageWrapperViewController.swift */,
 				464A7BE91B52A20200F3CB5E /* MessageViewController.swift */,
+				4676D8CB1B53157E00012955 /* GroupMessageWrapperViewController.swift */,
+				4676D8C91B5311FE00012955 /* GroupMessageViewController.swift */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";
@@ -778,7 +787,9 @@
 				464A7BE81B52A1F300F3CB5E /* MasterViewController.swift in Sources */,
 				46B689621B526AD200C22C4F /* JSQMessagesCollectionViewCell.m in Sources */,
 				46B689571B526AD200C22C4F /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
+				4676D8C81B53107B00012955 /* MessageCoordinator.swift in Sources */,
 				46B689531B526AD200C22C4F /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
+				4676D8CA1B5311FE00012955 /* GroupMessageViewController.swift in Sources */,
 				46B689601B526AD200C22C4F /* JSQMessagesCellTextView.m in Sources */,
 				46B6894B1B526AD200C22C4F /* UIDevice+JSQMessages.m in Sources */,
 				46B689691B526AD200C22C4F /* JSQMessagesLabel.m in Sources */,
@@ -818,6 +829,7 @@
 				46B689581B526AD200C22C4F /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				4676D8C41B53030800012955 /* Scanner.swift in Sources */,
 				46B689671B526AD200C22C4F /* JSQMessagesComposerTextView.m in Sources */,
+				4676D8CC1B53157E00012955 /* GroupMessageWrapperViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

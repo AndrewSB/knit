@@ -29,6 +29,14 @@ class Message: NSObject, JSQMessageData {
         
     }
     
+    convenience init?(json: [String: String]) {
+        guard let text = json["text"], userID = json["id"] else {
+            return nil
+        }
+        
+        self.init(text: text, sender: (id: userID, dispayName: userID))
+    }
+    
     func senderId() -> String! { return _senderId }
     func senderDisplayName() -> String! { return _senderDisplayName }
     func date() -> NSDate! { return _date }

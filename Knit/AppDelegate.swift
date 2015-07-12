@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         FontBlaster.blast()
         Scanner.sharedInstance
+        MessageCoordinator.sharedInstance
         
         return true
     }

@@ -26,4 +26,12 @@ extension NSData {
             return nil
         }
     }
+    
+    func simpleJSON() -> [String: String]? {
+        do {
+            return try NSJSONSerialization.JSONObjectWithData(self, options: []) as? [[String: String]]
+        } catch {
+            return nil
+        }
+    }
 }
