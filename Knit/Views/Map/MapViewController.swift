@@ -53,20 +53,7 @@ extension MapViewController: MKMapViewDelegate {
     }
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-        if let annotationView = view as? AvatarAnnotationView {
-            let popoverContent = PopupContentView.instanceFromNib()
-            print(annotationView.user)
-            popoverContent.configure(annotationView.user)
-            
-            let popoverView = WYPopoverController(contentViewController: self)
-            popoverView.delegate = self
-            popoverView.presentPopoverFromRect(annotationView.bounds, inView: self.mapView, permittedArrowDirections: .Up, animated: true)
-//
-//            popoverView.addSubview(popoverContent)
-            
-            
-//            mapView.addSubview(popoverView)
-        }
+        
     }
     
     func updateLocation() {
@@ -75,6 +62,16 @@ extension MapViewController: MKMapViewDelegate {
     
 }
 
-extension MapViewController: WYPopoverControllerDelegate {
+extension MapViewController: UIPopoverPresentationControllerDelegate {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "popoverPopup" {
+            let popoverViewController = segue.destinationViewController as! UIViewController
+            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.Popover
+            popoverViewController.popoverPresentationController!.delegate = self
+        }
+    }
     
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
+    }
 }

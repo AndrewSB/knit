@@ -10,8 +10,6 @@
 		460861161B52CA7B00CD1174 /* PopupContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460861151B52CA7A00CD1174 /* PopupContentView.swift */; };
 		460861181B52CA8700CD1174 /* PopupContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460861171B52CA8700CD1174 /* PopupContentView.xib */; };
 		4608611A1B52CEF600CD1174 /* allusers.json in Resources */ = {isa = PBXBuildFile; fileRef = 460861191B52CEF600CD1174 /* allusers.json */; };
-		460861201B52DA9C00CD1174 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4608611D1B52DA9C00CD1174 /* WYPopoverController.m */; };
-		460861211B52DA9C00CD1174 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4608611F1B52DA9C00CD1174 /* WYStoryboardPopoverSegue.m */; };
 		464A7BDD1B52A15F00F3CB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */; };
 		464A7BDF1B52A16900F3CB5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BDE1B52A16900F3CB5E /* User.swift */; };
 		464A7BE11B52A16E00F3CB5E /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BE01B52A16E00F3CB5E /* Header.swift */; };
@@ -755,14 +753,12 @@
 				46B6895D1B526AD200C22C4F /* JSQMessagesBubbleImage.m in Sources */,
 				464A7BEA1B52A20200F3CB5E /* MessageViewController.swift in Sources */,
 				464A7BF41B52A21A00F3CB5E /* AvatarAnnotationView.swift in Sources */,
-				460861201B52DA9C00CD1174 /* WYPopoverController.m in Sources */,
 				46B6896D1B526AD200C22C4F /* JSQMessagesToolbarContentView.m in Sources */,
 				464A7C231B52A2A300F3CB5E /* CLLocationExtension.swift in Sources */,
 				46B689611B526AD200C22C4F /* JSQMessagesCollectionView.m in Sources */,
 				46B6896F1B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
 				464A7C1B1B52A28900F3CB5E /* UIColorExtension.swift in Sources */,
 				464A7C211B52A29F00F3CB5E /* JSONExtension.swift in Sources */,
-				460861211B52DA9C00CD1174 /* WYStoryboardPopoverSegue.m in Sources */,
 				460861161B52CA7B00CD1174 /* PopupContentView.swift in Sources */,
 				464A7C111B52A27500F3CB5E /* ColorDefines.swift in Sources */,
 				46869CEF1B52A92000FF99BF /* FriendMasterViewController.swift in Sources */,

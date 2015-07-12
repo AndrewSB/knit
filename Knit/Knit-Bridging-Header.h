@@ -10,6 +10,3 @@
 
 #import "JSQMessages.h"
 #import "JSQSystemSoundPlayer.h"
-
-#import "WYPopoverController.h"
-#import "WYStoryboardPopoverSegue.h"
