@@ -10,17 +10,27 @@ import UIKit
 
 class FriendListViewController: UITableViewController {
     
-    let data = [
-        [
-        ]
-    ]
-
+    var data: [(Header, [Friend])]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        reloadData()
     }
+    
+    private func reloadData() {
+        var headerArray = [[String: String]]()
+        
+        guard let d = NSBundle.json("headers")!.json() else { return }
+        for i in d {
+            headerArray.append(i)
+        }
+ 
+    }
+    
 }
 
 extension FriendListViewController {

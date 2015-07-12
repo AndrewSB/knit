@@ -32,7 +32,10 @@
 		46D96DE11B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DDD1B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf */; };
 		46D96DE61B520F5000701D69 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DE51B520F5000701D69 /* UIColorExtension.swift */; };
 		46D96DE81B52139E00701D69 /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DE71B52139E00701D69 /* FontBlaster.swift */; };
-		46D96DEA1B52195900701D69 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DE91B52195900701D69 /* TableHeader.swift */; };
+		46D96DEA1B52195900701D69 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DE91B52195900701D69 /* Header.swift */; };
+		46D96DEE1B521E3100701D69 /* headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DED1B521E3100701D69 /* headers.json */; };
+		46D96DF01B521E5B00701D69 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DEF1B521E5B00701D69 /* users.json */; };
+		46D96DF21B521FE900701D69 /* JSONExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DF11B521FE900701D69 /* JSONExtension.swift */; };
 		46E9AE411B51D496007D0820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE401B51D496007D0820 /* User.swift */; };
 		46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */; };
 		46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE451B51DA31007D0820 /* StringExtension.swift */; };
@@ -83,7 +86,10 @@
 		46D96DDD1B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HUBERT JOCHAM Susa-Bold.otf"; sourceTree = "<group>"; };
 		46D96DE51B520F5000701D69 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		46D96DE71B52139E00701D69 /* FontBlaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontBlaster.swift; path = Carthage/Checkouts/FontBlaster/FontBlaster/FontBlaster.swift; sourceTree = "<group>"; };
-		46D96DE91B52195900701D69 /* TableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
+		46D96DE91B52195900701D69 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		46D96DED1B521E3100701D69 /* headers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = headers.json; sourceTree = "<group>"; };
+		46D96DEF1B521E5B00701D69 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		46D96DF11B521FE900701D69 /* JSONExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONExtension.swift; sourceTree = "<group>"; };
 		46E9AE401B51D496007D0820 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 		46E9AE451B51DA31007D0820 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -128,7 +134,7 @@
 				467F4DC41B51CCAD0010BE02 /* AppDelegate.swift */,
 				46E9AE421B51D7E4007D0820 /* Model */,
 				467F4DD81B51CCF30010BE02 /* View */,
-				467F4DD91B51CCF80010BE02 /* Resource */,
+				467F4DD91B51CCF80010BE02 /* Resources */,
 				467F4DDA1B51CCFC0010BE02 /* Supporting Files */,
 			);
 			path = "outside-hacks";
@@ -143,14 +149,16 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		467F4DD91B51CCF80010BE02 /* Resource */ = {
+		467F4DD91B51CCF80010BE02 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				46D96DED1B521E3100701D69 /* headers.json */,
+				46D96DEF1B521E5B00701D69 /* users.json */,
 				46D96DE21B520ED800701D69 /* Fonts */,
 				467F4DCB1B51CCAD0010BE02 /* Assets.xcassets */,
 				467F4DCD1B51CCAD0010BE02 /* LaunchScreen.storyboard */,
 			);
-			name = Resource;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		467F4DDA1B51CCFC0010BE02 /* Supporting Files */ = {
@@ -175,6 +183,7 @@
 				467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */,
 				46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */,
 				46E9AE451B51DA31007D0820 /* StringExtension.swift */,
+				46D96DF11B521FE900701D69 /* JSONExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -217,7 +226,7 @@
 			children = (
 				46E9AE401B51D496007D0820 /* User.swift */,
 				46D96DB31B51E74000701D69 /* Friend.swift */,
-				46D96DE91B52195900701D69 /* TableHeader.swift */,
+				46D96DE91B52195900701D69 /* Header.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -302,8 +311,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D96DEE1B521E3100701D69 /* headers.json in Resources */,
 				467F4DCF1B51CCAD0010BE02 /* LaunchScreen.storyboard in Resources */,
 				46D96DE01B520ED500701D69 /* ProximaNova-Semibold.otf in Resources */,
+				46D96DF01B521E5B00701D69 /* users.json in Resources */,
 				46D96DDE1B520ED500701D69 /* ProximaNova-Regular.otf in Resources */,
 				46D96DDF1B520ED500701D69 /* Mark Simonson - Proxima Nova Bold.otf in Resources */,
 				46D96DE11B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf in Resources */,
@@ -319,9 +330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D96DF21B521FE900701D69 /* JSONExtension.swift in Sources */,
 				467F4DE31B51CD660010BE02 /* NSNotificationCenterHelper.swift in Sources */,
 				467F4DC51B51CCAD0010BE02 /* AppDelegate.swift in Sources */,
-				46D96DEA1B52195900701D69 /* TableHeader.swift in Sources */,
+				46D96DEA1B52195900701D69 /* Header.swift in Sources */,
 				467F4DE21B51CD660010BE02 /* NSUserDefaultHelper.swift in Sources */,
 				467F4DDD1B51CD210010BE02 /* Location.swift in Sources */,
 				46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */,

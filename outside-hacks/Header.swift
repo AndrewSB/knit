@@ -1,5 +1,5 @@
 //
-//  TableHeader.swift
+//  Header.swift
 //  outside-hacks
 //
 //  Created by Andrew Breckenridge on 7/11/15.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TableHeader {
+struct Header {
     let stage: String
     let song: String
     
