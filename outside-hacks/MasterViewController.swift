@@ -29,10 +29,28 @@ class MasterViewController: MBPullDownController {
         (backgroundView as! MBPullDownControllerBackgroundView).dropShadowVisible = false
     }
 
-    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        LocalMessage.observe(.KnitHeaderWasTapped, classFunction: "openIfNotOpen", inClass: self)
+
         self.backgroundView.backgroundColor = UIColor(hex: Color.Global.Green.Light.rawValue)
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        LocalMessage.resign(me: self)
+    }
+    
+}
+
+extension MasterViewController {
+    
+    func openIfNotOpen() {
+        dispatch_async(dispatch_get_main_queue(), {
+            self.setOpen(false, animated: true)
+        })
+    }
+    
 }

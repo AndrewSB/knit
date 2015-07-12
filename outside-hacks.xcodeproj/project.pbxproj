@@ -328,8 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				467F4DDF1B51CD660010BE02 /* NSUserDefaultHelper.swift */,
-				46D96DE51B520F5000701D69 /* UIColorExtension.swift */,
 				467F4DE01B51CD660010BE02 /* NSNotificationCenterHelper.swift */,
+				46D96DE51B520F5000701D69 /* UIColorExtension.swift */,
 				467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */,
 				46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */,
 				46E9AE451B51DA31007D0820 /* StringExtension.swift */,

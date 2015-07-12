@@ -36,15 +36,9 @@ class MessageViewController: JSQMessagesViewController {
         
         self.collectionView!.addGestureRecognizer(swipeDownDismissRecognizer)
     }
-    
-    func didSwipe(sender: UISwipeGestureRecognizer) {
-        print("fuck you")
-    }
 
     
     func didSwipe() {
-        print("didpan")
-        
         performSegueWithIdentifier(Segue.UnwindTo.FriendList.rawValue, sender: nil)
     }
 

@@ -9,6 +9,7 @@
 import UIKit
 
 class FriendListViewController: UITableViewController {
+    @IBOutlet weak var tableHeaderView: UIView!
     
     lazy var data: [(Header, [User])] = {
         var data = [(Header, [User])]()
@@ -51,6 +52,16 @@ class FriendListViewController: UITableViewController {
         
         self.tableView.tableFooterView = UIView(frame: .zeroRect)
         self.tableView.contentInset.bottom = -20
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tableHeaderView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("didTap")))
+    }
+    
+    func didTap() {
+        LocalMessage.post(.KnitHeaderWasTapped)
     }
     
 

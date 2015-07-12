@@ -11,6 +11,7 @@ import UIKit
 
 enum LocalMessageNotification: String {
     case NewLocationRegistered = "NewLocationRegistered"
+    case KnitHeaderWasTapped = "KnitHeaderWasTapped"
 }
 
 class LocalMessage {
