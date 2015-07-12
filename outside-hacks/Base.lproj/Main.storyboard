@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yct-N3-wVS">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="gKj-Ok-WNZ">
+            <objects>
+                <viewController id="Yct-N3-wVS" customClass="MasterViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2gG-rG-Z8h"/>
+                        <viewControllerLayoutGuide type="bottom" id="n7p-Mt-y1x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rh3-rW-CwR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jy5-Ca-gKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-421" y="382"/>
+        </scene>
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Map" id="BYZ-38-t0r" customClass="MapViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,28 +38,17 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YUV-BH-uAM">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </mapView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rN-ZB-CIL" customClass="PullableView">
-                                <rect key="frame" x="4" y="512" width="592" height="88"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" placeholder="YES" id="hF7-MG-owS"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="YUV-BH-uAM" secondAttribute="trailing" id="6mb-6v-ygA"/>
                             <constraint firstItem="YUV-BH-uAM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NP2-74-CYf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YUV-BH-uAM" secondAttribute="bottom" id="NZu-dg-23R"/>
-                            <constraint firstItem="5rN-ZB-CIL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" placeholder="YES" id="djD-9W-f28"/>
                             <constraint firstItem="YUV-BH-uAM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gFo-LP-hKQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5rN-ZB-CIL" secondAttribute="trailing" constant="-16" placeholder="YES" id="wRP-Xa-EDD"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5rN-ZB-CIL" secondAttribute="bottom" placeholder="YES" id="zwL-2h-hMM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="YUV-BH-uAM" id="N20-LA-4eK"/>
-                        <outlet property="pullableView" destination="5rN-ZB-CIL" id="9EY-Dj-1Dx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -50,48 +56,32 @@
             <point key="canvasLocation" x="255" y="349"/>
         </scene>
         <!--Friend List View Controller-->
-        <scene sceneID="u6v-Li-sWS">
+        <scene sceneID="r9z-nC-UvB">
             <objects>
-                <viewController storyboardIdentifier="pullList" id="XwN-Mh-VZN" customClass="FriendListViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CGW-mx-4pS"/>
-                        <viewControllerLayoutGuide type="bottom" id="WCc-Yq-s7g"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vK1-9n-sDd">
+                <tableViewController storyboardIdentifier="Friends" id="Chd-wb-idL" customClass="FriendListViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JMi-nT-e8S">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-FA-Q6R">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellID" id="bbg-Ss-nxY">
-                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bbg-Ss-nxY" id="tak-TA-eXd">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="0Gi-FA-Q6R" firstAttribute="top" secondItem="CGW-mx-4pS" secondAttribute="bottom" id="KtE-wK-C5t"/>
-                            <constraint firstItem="0Gi-FA-Q6R" firstAttribute="leading" secondItem="vK1-9n-sDd" secondAttribute="leading" id="LxF-78-res"/>
-                            <constraint firstItem="WCc-Yq-s7g" firstAttribute="top" secondItem="0Gi-FA-Q6R" secondAttribute="bottom" id="UKu-yN-Ifv"/>
-                            <constraint firstAttribute="trailing" secondItem="0Gi-FA-Q6R" secondAttribute="trailing" id="sXQ-4Z-Keb"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <connections>
-                        <outlet property="tableView" destination="0Gi-FA-Q6R" id="Q0u-Yr-gjG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cy9-7u-ws1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="SO8-y6-zFU">
+                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SO8-y6-zFU" id="ImJ-QK-PIY">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Chd-wb-idL" id="ruA-9e-46w"/>
+                            <outlet property="delegate" destination="Chd-wb-idL" id="Tbv-u8-aSj"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LsU-Ux-FIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="1018"/>
+            <point key="canvasLocation" x="253" y="1035"/>
         </scene>
     </scenes>
 </document>

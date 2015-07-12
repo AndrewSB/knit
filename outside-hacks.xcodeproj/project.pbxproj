@@ -19,6 +19,8 @@
 		467F4DE71B51CDA60010BE02 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE61B51CDA60010BE02 /* API.swift */; };
 		46C1261F1B51E6840020CB6A /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C1261E1B51E6840020CB6A /* FriendListViewController.swift */; };
 		46D96DB41B51E74000701D69 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DB31B51E74000701D69 /* Friend.swift */; };
+		46D96DBC1B51F20400701D69 /* MBPullDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DBB1B51F20400701D69 /* MBPullDownController.m */; };
+		46D96DBE1B51F21B00701D69 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DBD1B51F21B00701D69 /* MasterViewController.swift */; };
 		46E9AE411B51D496007D0820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE401B51D496007D0820 /* User.swift */; };
 		46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */; };
 		46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE451B51DA31007D0820 /* StringExtension.swift */; };
@@ -41,6 +43,9 @@
 		467F4DE61B51CDA60010BE02 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		46C1261E1B51E6840020CB6A /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
 		46D96DB31B51E74000701D69 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		46D96DBA1B51F20400701D69 /* MBPullDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPullDownController.h; sourceTree = "<group>"; };
+		46D96DBB1B51F20400701D69 /* MBPullDownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPullDownController.m; sourceTree = "<group>"; };
+		46D96DBD1B51F21B00701D69 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		46E9AE401B51D496007D0820 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 		46E9AE451B51DA31007D0820 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -94,9 +99,8 @@
 		467F4DD81B51CCF30010BE02 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				467F4DD61B51CCD40010BE02 /* MapViewController.swift */,
-				46C1261E1B51E6840020CB6A /* FriendListViewController.swift */,
 				467F4DC81B51CCAD0010BE02 /* Main.storyboard */,
+				46D96DBF1B51F22500701D69 /* Map */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -133,6 +137,26 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		46D96DB91B51F20400701D69 /* MBPullDownController */ = {
+			isa = PBXGroup;
+			children = (
+				46D96DBA1B51F20400701D69 /* MBPullDownController.h */,
+				46D96DBB1B51F20400701D69 /* MBPullDownController.m */,
+			);
+			name = MBPullDownController;
+			path = Carthage/Checkouts/MBPullDownController/MBPullDownController;
+			sourceTree = "<group>";
+		};
+		46D96DBF1B51F22500701D69 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				46D96DBD1B51F21B00701D69 /* MasterViewController.swift */,
+				467F4DD61B51CCD40010BE02 /* MapViewController.swift */,
+				46C1261E1B51E6840020CB6A /* FriendListViewController.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
 		46E9AE421B51D7E4007D0820 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				46FEE9381B51D11A00DA441E /* outside-hacks-Bridging-Header.h */,
+				46D96DB91B51F20400701D69 /* MBPullDownController */,
 				46FEE9301B51CF5E00DA441E /* Frameworks */,
 			);
 			name = Libraries;
@@ -242,6 +267,8 @@
 				467F4DD71B51CCD40010BE02 /* MapViewController.swift in Sources */,
 				46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */,
 				46D96DB41B51E74000701D69 /* Friend.swift in Sources */,
+				46D96DBC1B51F20400701D69 /* MBPullDownController.m in Sources */,
+				46D96DBE1B51F21B00701D69 /* MasterViewController.swift in Sources */,
 				467F4DE71B51CDA60010BE02 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +383,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "outside-hacks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "co.hi-lite.outside-hacks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asb.outside-hacks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/$(TARGET_NAME)-Bridging-Header.h";
 			};
@@ -369,7 +396,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "outside-hacks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "co.hi-lite.outside-hacks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asb.outside-hacks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/$(TARGET_NAME)-Bridging-Header.h";
 			};
