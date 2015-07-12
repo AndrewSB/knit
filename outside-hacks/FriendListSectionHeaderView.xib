@@ -16,20 +16,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FriendListSectionHeaderView" customModule="outside_hacks" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="293" height="68"/>
+            <rect key="frame" x="0.0" y="0.0" width="420" height="88"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LANDS END" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKJ-xq-Udv" customClass="InsetLabel" customModule="outside_hacks" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="293" height="34"/>
+                    <rect key="frame" x="0.0" y="0.0" width="420" height="44"/>
                     <color key="backgroundColor" red="0.91916656494140625" green="0.28634476661682129" blue="0.49893450736999512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="22"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tame Impala - Let it Happen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NS9-yI-aJh" customClass="InsetLabel" customModule="outside_hacks" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="34" width="293" height="34"/>
+                    <rect key="frame" x="0.0" y="44" width="420" height="44"/>
                     <color key="backgroundColor" red="0.3686421811580658" green="0.11336108297109604" blue="0.19897827506065369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="22"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -51,7 +51,7 @@
                 <outlet property="songLabel" destination="NS9-yI-aJh" id="5wq-Hu-1eg"/>
                 <outlet property="stageLabel" destination="KKJ-xq-Udv" id="Qgn-vU-Puq"/>
             </connections>
-            <point key="canvasLocation" x="240.5" y="117"/>
+            <point key="canvasLocation" x="304" y="127"/>
         </view>
     </objects>
 </document>

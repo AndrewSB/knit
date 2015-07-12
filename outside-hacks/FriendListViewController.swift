@@ -52,10 +52,10 @@ extension FriendListViewController {
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
-        case data.count:
-            return 50
+        case data.count - 1:
+            return 44
         default:
-            return 100
+            return 88
         }
     }
     
@@ -63,8 +63,18 @@ extension FriendListViewController {
         if let colors = Color.Stage.color(forStageName: data[section].0.stage) {
             let headerView = FriendListSectionHeaderView.instanceFromNib()
             
-            headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 122)
             headerView.configure((data[section].0.stage, colors.light), song: (data[section].0.song, colors.dark))
+            
+            print("frame here is \(headerView.frame)")
+            
+            if section == data.count - 1 {
+                (headerView.stageLabel.superview!.constraints.last! as NSLayoutConstraint).active = false
+                
+                let fullSizeContraint = NSLayoutConstraint(item: headerView, attribute: .Height, relatedBy: .Equal, toItem: headerView.stageLabel, attribute: .Height, multiplier: 1, constant: 0)
+                headerView.addConstraint(fullSizeContraint)
+                
+                headerView.stageLabel.frame = headerView.frame
+            }
             
             return headerView
         } else {

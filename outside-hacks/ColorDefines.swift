@@ -67,7 +67,7 @@ class Color {
                 return Color.Stage.TwinPeaks.colors()
             case "Panhandle":
                 return Color.Stage.Panhandle.colors()
-            case "EveryWhere":
+            case "Elsewhere":
                 return Color.Stage.Elsewhere.colors()
             default:
                 return nil
