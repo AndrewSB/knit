@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46A47CFD1B532F19005D5FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47CFC1B532F19005D5FEC /* AppDelegate.swift */; };
+		46A47CFF1B532F19005D5FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47CFE1B532F19005D5FEC /* ViewController.swift */; };
+		46A47D021B532F19005D5FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A47D001B532F19005D5FEC /* Main.storyboard */; };
+		46A47D041B532F19005D5FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A47D031B532F19005D5FEC /* Assets.xcassets */; };
+		46A47D071B532F19005D5FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A47D051B532F19005D5FEC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46A47CF91B532F19005D5FEC /* octo-peer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "octo-peer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A47CFC1B532F19005D5FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46A47CFE1B532F19005D5FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46A47D011B532F19005D5FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46A47D031B532F19005D5FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46A47D061B532F19005D5FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46A47D081B532F19005D5FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46A47CF61B532F19005D5FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46A47CF01B532F19005D5FEC = {
+			isa = PBXGroup;
+			children = (
+				46A47CFB1B532F19005D5FEC /* octo-peer */,
+				46A47CFA1B532F19005D5FEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46A47CFA1B532F19005D5FEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46A47CF91B532F19005D5FEC /* octo-peer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46A47CFB1B532F19005D5FEC /* octo-peer */ = {
+			isa = PBXGroup;
+			children = (
+				46A47CFC1B532F19005D5FEC /* AppDelegate.swift */,
+				46A47D101B532F4B005D5FEC /* Views */,
+				46A47D0E1B532F3E005D5FEC /* Resources */,
+				46A47D0F1B532F43005D5FEC /* Supporting Files */,
+			);
+			path = "octo-peer";
+			sourceTree = "<group>";
+		};
+		46A47D0E1B532F3E005D5FEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46A47D031B532F19005D5FEC /* Assets.xcassets */,
+				46A47D051B532F19005D5FEC /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		46A47D0F1B532F43005D5FEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46A47D081B532F19005D5FEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46A47D101B532F4B005D5FEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46A47CFE1B532F19005D5FEC /* ViewController.swift */,
+				46A47D001B532F19005D5FEC /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46A47CF81B532F19005D5FEC /* octo-peer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A47D0B1B532F19005D5FEC /* Build configuration list for PBXNativeTarget "octo-peer" */;
+			buildPhases = (
+				46A47CF51B532F19005D5FEC /* Sources */,
+				46A47CF61B532F19005D5FEC /* Frameworks */,
+				46A47CF71B532F19005D5FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "octo-peer";
+			productName = "octo-peer";
+			productReference = 46A47CF91B532F19005D5FEC /* octo-peer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46A47CF11B532F19005D5FEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Andrew Breckenridge";
+				TargetAttributes = {
+					46A47CF81B532F19005D5FEC = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 46A47CF41B532F19005D5FEC /* Build configuration list for PBXProject "octo-peer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46A47CF01B532F19005D5FEC;
+			productRefGroup = 46A47CFA1B532F19005D5FEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46A47CF81B532F19005D5FEC /* octo-peer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46A47CF71B532F19005D5FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A47D071B532F19005D5FEC /* LaunchScreen.storyboard in Resources */,
+				46A47D041B532F19005D5FEC /* Assets.xcassets in Resources */,
+				46A47D021B532F19005D5FEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46A47CF51B532F19005D5FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A47CFF1B532F19005D5FEC /* ViewController.swift in Sources */,
+				46A47CFD1B532F19005D5FEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46A47D001B532F19005D5FEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A47D011B532F19005D5FEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46A47D051B532F19005D5FEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A47D061B532F19005D5FEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46A47D091B532F19005D5FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46A47D0A1B532F19005D5FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46A47D0C1B532F19005D5FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "octo-peer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tfw.octo-peer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46A47D0D1B532F19005D5FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "octo-peer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tfw.octo-peer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46A47CF41B532F19005D5FEC /* Build configuration list for PBXProject "octo-peer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A47D091B532F19005D5FEC /* Debug */,
+				46A47D0A1B532F19005D5FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A47D0B1B532F19005D5FEC /* Build configuration list for PBXNativeTarget "octo-peer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A47D0C1B532F19005D5FEC /* Debug */,
+				46A47D0D1B532F19005D5FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46A47CF11B532F19005D5FEC /* Project object */;
+}
