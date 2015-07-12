@@ -108,47 +108,47 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Knit/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		464A7BDE1B52A16900F3CB5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Knit/User.swift; sourceTree = SOURCE_ROOT; };
-		464A7BE01B52A16E00F3CB5E /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Header.swift; path = Knit/Header.swift; sourceTree = SOURCE_ROOT; };
-		464A7BE21B52A17200F3CB5E /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Knit/Message.swift; sourceTree = SOURCE_ROOT; };
-		464A7BE51B52A1E900F3CB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Knit/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		464A7BE71B52A1F300F3CB5E /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Knit/MasterViewController.swift; sourceTree = SOURCE_ROOT; };
-		464A7BE91B52A20200F3CB5E /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = Knit/MessageViewController.swift; sourceTree = SOURCE_ROOT; };
-		464A7BEB1B52A20A00F3CB5E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Knit/MapViewController.swift; sourceTree = SOURCE_ROOT; };
-		464A7BED1B52A21A00F3CB5E /* AvatarAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarAnnotation.swift; path = Knit/AvatarAnnotation.swift; sourceTree = SOURCE_ROOT; };
-		464A7BEE1B52A21A00F3CB5E /* AvatarAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvatarAnnotationView.swift; path = Knit/AvatarAnnotationView.swift; sourceTree = SOURCE_ROOT; };
-		464A7BEF1B52A21A00F3CB5E /* FriendListSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendListSectionHeaderView.swift; path = Knit/FriendListSectionHeaderView.swift; sourceTree = SOURCE_ROOT; };
-		464A7BF01B52A21A00F3CB5E /* FriendListSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FriendListSectionHeaderView.xib; path = Knit/FriendListSectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
-		464A7BF11B52A21A00F3CB5E /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendListViewController.swift; path = Knit/FriendListViewController.swift; sourceTree = SOURCE_ROOT; };
-		464A7BF21B52A21A00F3CB5E /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendTableViewCell.swift; path = Knit/FriendTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		464A7BF91B52A22700F3CB5E /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InsetLabel.swift; path = Knit/InsetLabel.swift; sourceTree = SOURCE_ROOT; };
-		464A7BFB1B52A23A00F3CB5E /* headers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = headers.json; path = Knit/headers.json; sourceTree = SOURCE_ROOT; };
-		464A7BFC1B52A23A00F3CB5E /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = Knit/users.json; sourceTree = SOURCE_ROOT; };
-		464A7BFF1B52A24700F3CB5E /* HUBERT JOCHAM Susa-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HUBERT JOCHAM Susa-Bold.otf"; path = "Knit/HUBERT JOCHAM Susa-Bold.otf"; sourceTree = SOURCE_ROOT; };
-		464A7C001B52A24700F3CB5E /* Mark Simonson - Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mark Simonson - Proxima Nova Bold.otf"; path = "Knit/Mark Simonson - Proxima Nova Bold.otf"; sourceTree = SOURCE_ROOT; };
-		464A7C011B52A24700F3CB5E /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Regular.otf"; path = "Knit/ProximaNova-Regular.otf"; sourceTree = SOURCE_ROOT; };
-		464A7C021B52A24700F3CB5E /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Semibold.otf"; path = "Knit/ProximaNova-Semibold.otf"; sourceTree = SOURCE_ROOT; };
-		464A7C031B52A25000F3CB5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Knit/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		464A7C061B52A25600F3CB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Knit/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		464A7C081B52A26000F3CB5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Knit/Info.plist; sourceTree = SOURCE_ROOT; };
-		464A7C0A1B52A26400F3CB5E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Knit/API.swift; sourceTree = SOURCE_ROOT; };
-		464A7C0C1B52A26900F3CB5E /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Knit/Location.swift; sourceTree = SOURCE_ROOT; };
-		464A7C0E1B52A27500F3CB5E /* ColorDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorDefines.swift; path = Knit/ColorDefines.swift; sourceTree = SOURCE_ROOT; };
-		464A7C0F1B52A27500F3CB5E /* ImageDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDefines.swift; path = Knit/ImageDefines.swift; sourceTree = SOURCE_ROOT; };
-		464A7C101B52A27500F3CB5E /* SegueDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueDefines.swift; path = Knit/SegueDefines.swift; sourceTree = SOURCE_ROOT; };
-		464A7C141B52A28300F3CB5E /* NSNotificationCenterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSNotificationCenterHelper.swift; path = Knit/NSNotificationCenterHelper.swift; sourceTree = SOURCE_ROOT; };
-		464A7C151B52A28300F3CB5E /* NSUserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSUserDefaultHelper.swift; path = Knit/NSUserDefaultHelper.swift; sourceTree = SOURCE_ROOT; };
-		464A7C181B52A28900F3CB5E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Knit/UIColorExtension.swift; sourceTree = SOURCE_ROOT; };
-		464A7C191B52A28900F3CB5E /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtension.swift; path = Knit/UIStoryboardExtension.swift; sourceTree = SOURCE_ROOT; };
-		464A7C1A1B52A28900F3CB5E /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Knit/UIViewExtension.swift; sourceTree = SOURCE_ROOT; };
-		464A7C1E1B52A29C00F3CB5E /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Knit/StringExtension.swift; sourceTree = SOURCE_ROOT; };
-		464A7C201B52A29F00F3CB5E /* JSONExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONExtension.swift; path = Knit/JSONExtension.swift; sourceTree = SOURCE_ROOT; };
-		464A7C221B52A2A300F3CB5E /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CLLocationExtension.swift; path = Knit/CLLocationExtension.swift; sourceTree = SOURCE_ROOT; };
-		464A7C241B52A2B800F3CB5E /* Knit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Knit-Bridging-Header.h"; path = "Knit/Knit-Bridging-Header.h"; sourceTree = "<group>"; };
+		464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		464A7BDE1B52A16900F3CB5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		464A7BE01B52A16E00F3CB5E /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		464A7BE21B52A17200F3CB5E /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		464A7BE51B52A1E900F3CB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		464A7BE71B52A1F300F3CB5E /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		464A7BE91B52A20200F3CB5E /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		464A7BEB1B52A20A00F3CB5E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		464A7BED1B52A21A00F3CB5E /* AvatarAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarAnnotation.swift; sourceTree = "<group>"; };
+		464A7BEE1B52A21A00F3CB5E /* AvatarAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarAnnotationView.swift; sourceTree = "<group>"; };
+		464A7BEF1B52A21A00F3CB5E /* FriendListSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListSectionHeaderView.swift; sourceTree = "<group>"; };
+		464A7BF01B52A21A00F3CB5E /* FriendListSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendListSectionHeaderView.xib; sourceTree = "<group>"; };
+		464A7BF11B52A21A00F3CB5E /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
+		464A7BF21B52A21A00F3CB5E /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		464A7BF91B52A22700F3CB5E /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
+		464A7BFB1B52A23A00F3CB5E /* headers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = headers.json; sourceTree = "<group>"; };
+		464A7BFC1B52A23A00F3CB5E /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		464A7BFF1B52A24700F3CB5E /* HUBERT JOCHAM Susa-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HUBERT JOCHAM Susa-Bold.otf"; sourceTree = "<group>"; };
+		464A7C001B52A24700F3CB5E /* Mark Simonson - Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Bold.otf"; sourceTree = "<group>"; };
+		464A7C011B52A24700F3CB5E /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		464A7C021B52A24700F3CB5E /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		464A7C031B52A25000F3CB5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		464A7C061B52A25600F3CB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		464A7C081B52A26000F3CB5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464A7C0A1B52A26400F3CB5E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		464A7C0C1B52A26900F3CB5E /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		464A7C0E1B52A27500F3CB5E /* ColorDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDefines.swift; sourceTree = "<group>"; };
+		464A7C0F1B52A27500F3CB5E /* ImageDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDefines.swift; sourceTree = "<group>"; };
+		464A7C101B52A27500F3CB5E /* SegueDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueDefines.swift; sourceTree = "<group>"; };
+		464A7C141B52A28300F3CB5E /* NSNotificationCenterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationCenterHelper.swift; sourceTree = "<group>"; };
+		464A7C151B52A28300F3CB5E /* NSUserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultHelper.swift; sourceTree = "<group>"; };
+		464A7C181B52A28900F3CB5E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		464A7C191B52A28900F3CB5E /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		464A7C1A1B52A28900F3CB5E /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		464A7C1E1B52A29C00F3CB5E /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		464A7C201B52A29F00F3CB5E /* JSONExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONExtension.swift; sourceTree = "<group>"; };
+		464A7C221B52A2A300F3CB5E /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 		467F4DC11B51CCAD0010BE02 /* Knit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46869CE91B52A76D00FF99BF /* FontBlaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontBlaster.swift; path = Carthage/Checkouts/FontBlaster/FontBlaster/FontBlaster.swift; sourceTree = "<group>"; };
-		46869CEE1B52A92000FF99BF /* FriendMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendMasterViewController.swift; path = Knit/FriendMasterViewController.swift; sourceTree = SOURCE_ROOT; };
+		46869CEE1B52A92000FF99BF /* FriendMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendMasterViewController.swift; sourceTree = "<group>"; };
+		46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Knit-Bridging-Header.h"; path = "Knit/Knit-Bridging-Header.h"; sourceTree = "<group>"; };
 		46B688EA1B526AD100C22C4F /* JSQMessagesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSQMessagesAssets.bundle; sourceTree = "<group>"; };
 		46B688EC1B526AD100C22C4F /* JSQSystemSoundPlayer+JSQMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSQSystemSoundPlayer+JSQMessages.h"; sourceTree = "<group>"; };
 		46B688ED1B526AD100C22C4F /* JSQSystemSoundPlayer+JSQMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSQSystemSoundPlayer+JSQMessages.m"; sourceTree = "<group>"; };
@@ -262,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				467F4DC31B51CCAD0010BE02 /* Knit */,
+				46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */,
 				467F4DC21B51CCAD0010BE02 /* Products */,
 				46FEE92F1B51CF5800DA441E /* Libraries */,
 			);
@@ -284,8 +285,7 @@
 				467F4DD91B51CCF80010BE02 /* Resources */,
 				467F4DDA1B51CCFC0010BE02 /* Supporting Files */,
 			);
-			name = Knit;
-			path = "outside-hacks";
+			path = Knit;
 			sourceTree = "<group>";
 		};
 		467F4DD81B51CCF30010BE02 /* Views */ = {
@@ -298,7 +298,7 @@
 				46869CEC1B52A8F300FF99BF /* Friend List */,
 				46D96DBF1B51F22500701D69 /* Map */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		467F4DD91B51CCF80010BE02 /* Resources */ = {
@@ -310,7 +310,7 @@
 				464A7BFC1B52A23A00F3CB5E /* users.json */,
 				46D96DE21B520ED800701D69 /* Fonts */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		467F4DDA1B51CCFC0010BE02 /* Supporting Files */ = {
@@ -324,7 +324,7 @@
 				464A7C101B52A27500F3CB5E /* SegueDefines.swift */,
 				467F4DE51B51CD690010BE02 /* Extensions */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		467F4DE51B51CD690010BE02 /* Extensions */ = {
@@ -339,7 +339,7 @@
 				464A7C1E1B52A29C00F3CB5E /* StringExtension.swift */,
 				464A7C221B52A2A300F3CB5E /* CLLocationExtension.swift */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		46869CEB1B52A8E000FF99BF /* Annotations */ = {
@@ -348,7 +348,7 @@
 				464A7BED1B52A21A00F3CB5E /* AvatarAnnotation.swift */,
 				464A7BEE1B52A21A00F3CB5E /* AvatarAnnotationView.swift */,
 			);
-			name = Annotations;
+			path = Annotations;
 			sourceTree = "<group>";
 		};
 		46869CEC1B52A8F300FF99BF /* Friend List */ = {
@@ -360,7 +360,7 @@
 				464A7BF01B52A21A00F3CB5E /* FriendListSectionHeaderView.xib */,
 				464A7BF91B52A22700F3CB5E /* InsetLabel.swift */,
 			);
-			name = "Friend List";
+			path = "Friend List";
 			sourceTree = "<group>";
 		};
 		46869CED1B52A90B00FF99BF /* Messaging */ = {
@@ -368,7 +368,7 @@
 			children = (
 				464A7BE91B52A20200F3CB5E /* MessageViewController.swift */,
 			);
-			name = Messaging;
+			path = Messaging;
 			sourceTree = "<group>";
 		};
 		46B688E81B526AD100C22C4F /* JSQMessagesViewController */ = {
@@ -548,7 +548,7 @@
 				464A7BEB1B52A20A00F3CB5E /* MapViewController.swift */,
 				46869CEB1B52A8E000FF99BF /* Annotations */,
 			);
-			name = Map;
+			path = Map;
 			sourceTree = "<group>";
 		};
 		46D96DE21B520ED800701D69 /* Fonts */ = {
@@ -559,7 +559,7 @@
 				464A7C011B52A24700F3CB5E /* ProximaNova-Regular.otf */,
 				464A7C021B52A24700F3CB5E /* ProximaNova-Semibold.otf */,
 			);
-			name = Fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		46E9AE421B51D7E4007D0820 /* Models */ = {
@@ -569,13 +569,12 @@
 				464A7BE01B52A16E00F3CB5E /* Header.swift */,
 				464A7BE21B52A17200F3CB5E /* Message.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		46FEE92F1B51CF5800DA441E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				464A7C241B52A2B800F3CB5E /* Knit-Bridging-Header.h */,
 				46869CE91B52A76D00FF99BF /* FontBlaster.swift */,
 				46B689B51B526B1400C22C4F /* JSQSystemSoundPlayer */,
 				46B688E81B526AD100C22C4F /* JSQMessagesViewController */,
@@ -757,6 +756,7 @@
 				464A7BE51B52A1E900F3CB5E /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		464A7C051B52A25600F3CB5E /* LaunchScreen.storyboard */ = {
@@ -765,6 +765,7 @@
 				464A7C061B52A25600F3CB5E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -858,7 +859,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EXECUTABLE_EXTENSION = "";
 				FRAMEWORK_SEARCH_PATHS = "Carthage/Build/iOS/**";
-				INFOPLIST_FILE = "$(PRODUCT_NAME)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Knit/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = asb.Knit;
 				PRODUCT_NAME = Knit;
@@ -873,7 +874,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EXECUTABLE_EXTENSION = "";
 				FRAMEWORK_SEARCH_PATHS = "Carthage/Build/iOS/**";
-				INFOPLIST_FILE = "$(PRODUCT_NAME)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Knit/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = asb.Knit;
 				PRODUCT_NAME = Knit;
