@@ -31,7 +31,7 @@ class MapViewController: UIViewController {
         super.viewDidAppear(animated)
         
         if let curLocation = Location.sharedInstance.mostRecentLocation {
-            mapView.addAnnotation(AvatarAnnotation(face: Image.Face.Andrew, at: curLocation.coordinate))
+            mapView.addAnnotation(AvatarAnnotation(face: Image.Face.Raphie, at: curLocation.coordinate))
         }
         
         LocalMessage.observe(.NewLocationRegistered, classFunction: "updateLocation", inClass: self)

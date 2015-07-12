@@ -131,7 +131,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face-andrew" translatesAutoresizingMaskIntoConstraints="NO" id="NPo-L5-RkK">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alex" translatesAutoresizingMaskIntoConstraints="NO" id="NPo-L5-RkK">
                                             <rect key="frame" x="18" y="18" width="63.5" height="63.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="NPo-L5-RkK" secondAttribute="height" multiplier="1:1" id="d5R-Qc-8bW"/>
@@ -241,7 +241,7 @@
     </scenes>
     <resources>
         <image name="80" width="24" height="12"/>
-        <image name="face-andrew" width="614" height="614"/>
+        <image name="alex" width="44" height="44"/>
         <image name="location" width="16" height="16"/>
     </resources>
 </document>

@@ -10,8 +10,16 @@ import Foundation
 
 enum Image {
     enum Face: String {
-        case Raphie = "face-raphie"
-        case Andrew = "face-andrew"
+        case Alex = "alex"
+        case Ben = "ben"
+        case Case = "case"
+        case Condon = "condon"
+        case Benjamin = "me"
+        case Raphie = "raphie"
+        case Rohith = "rohith"
+        case Stefan = "stefan"
+        case Vikram = "vikram"
+        case Zach = "zach"
     }
 }
 
