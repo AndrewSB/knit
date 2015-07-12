@@ -19,9 +19,8 @@ class MessageViewController: JSQMessagesViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setup()
-
     }
     
     
@@ -29,10 +28,8 @@ class MessageViewController: JSQMessagesViewController {
         super.viewDidAppear(animated)
         
         let swipeDownDismissRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("didSwipe"))
-        swipeDownDismissRecognizer.numberOfTouchesRequired = 1
         swipeDownDismissRecognizer.delegate = self
         swipeDownDismissRecognizer.direction = .Down
-        //        swipeDownDismissRecognizer.cancelsTouchesInView = false
         
         self.collectionView!.addGestureRecognizer(swipeDownDismissRecognizer)
     }
@@ -74,15 +71,33 @@ extension MessageViewController {
         
         self.inputToolbar?.contentView?.leftBarButtonItem = nil
         
-        let beautifulSendButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 22))
-        beautifulSendButton.imageView!.image = ⭕Image.Icon.SendButton
         
-        self.inputToolbar?.contentView?.rightBarButtonItem = UIButton(frame: CGRect(x: 0, y: 0, width: 12, height: 6))
+        let beautifulSendButton = UIButton(type: .Custom)
+        beautifulSendButton.setImage(⭕Image.Icon.SendButton, forState: .Normal)
+        
+        self.inputToolbar!.contentView!.rightBarButtonItem = beautifulSendButton
         
         self.collectionView!.collectionViewLayout.incomingAvatarViewSize = .zeroSize
         self.collectionView!.collectionViewLayout.outgoingAvatarViewSize = .zeroSize
         
         self.collectionView!.collectionViewLayout.springinessEnabled = false
+        self.collectionView!.collectionViewLayout.messageBubbleFont = UIFont(name: "ProximaNova-Regular", size: 17)
+        
+        brand()
+    }
+    private func brand() {
+        collectionView!.backgroundColor = UIColor(hex: Color.Global.Green.Light.rawValue)
+        inputToolbar!.contentView!.backgroundColor = UIColor(hex: Color.Global.Green.Dark.rawValue)
+        
+        inputToolbar!.contentView!.textView!.backgroundColor = UIColor(hex: Color.Global.Green.SuperDark.rawValue)
+        inputToolbar!.contentView!.textView!.textColor = UIColor.whiteColor()
+        inputToolbar!.contentView!.textView!.placeHolderTextColor = UIColor.lightTextColor()
+        inputToolbar!.contentView!.textView!.font = UIFont(name: "ProximaNova-Regular", size: 15)
+        inputToolbar!.contentView!.textView!.layer.borderWidth = 0
+        print(inputToolbar!.contentView!.textView!.textContainerInset)
+        inputToolbar!.contentView!.textView!.textContainerInset.top = 8
+        inputToolbar!.contentView!.textView!.textContainerInset.bottom = 2
+
     }
     
     override func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {

@@ -13,6 +13,7 @@ class Color {
         enum Green: String {
             case Light = "81C784"
             case Dark = "54AD58"
+            case SuperDark = "3F8B42"
         }
     }
     
