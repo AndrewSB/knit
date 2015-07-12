@@ -13,13 +13,9 @@ class MapViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     
-    let location = Location.sharedInstance
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        mapView.showsUserLocation = true
         mapView.delegate = self
         
         if let _ = Location.sharedInstance.mostRecentLocation {
@@ -45,14 +41,16 @@ class MapViewController: UIViewController {
 extension MapViewController: MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-        
         if let annotation = annotation as? AvatarAnnotation {
             return AvatarAnnotationView(face: annotation.face)
+        } else {
+            return MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
         }
-        return MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+        
     }
     
     func updateLocation() {
+        mapView.showsUserLocation = true
         let userRegion = MKCoordinateRegion(center: Location.sharedInstance.mostRecentLocation!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
         mapView.setRegion(userRegion, animated: true)
     }
