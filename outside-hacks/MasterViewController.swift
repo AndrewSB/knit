@@ -27,7 +27,7 @@ class MasterViewController: MBPullDownController {
         closeDragOffsetPercentage = 0
         
         (backgroundView as! MBPullDownControllerBackgroundView).dropShadowVisible = false
-        setOpen(true, animated: false)
+//        setOpen(true, animated: false)
     }
 
 }

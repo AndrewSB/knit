@@ -15,9 +15,14 @@ import CoreLocation
 
 struct User {
     let id: String
+    
     let name: String
     let pictureUrl: String
+    
     let currentLocation: CLLocation
+    
+    let battery: Double
+    let seat: String
     
     init?(json: [String: String]) {
         guard let id = json["id"], name = json["name"], pictureUrl = json["pictureUrl"], loc = json["loc"]
@@ -30,10 +35,4 @@ struct User {
         let locs = split(loc.characters){ $0 == "," }.map({ String($0).toDouble()! })
         self.currentLocation = CLLocation(loc: (locs[0], locs[1]))
     }
-    
-//    init (id: String, name: String, pictureUrl: String) {
-//        self.id = id
-//        self.name = name
-//        self.pictureUrl = pictureUrl
-//    }
 }

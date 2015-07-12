@@ -36,6 +36,10 @@
 		46D96DEE1B521E3100701D69 /* headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DED1B521E3100701D69 /* headers.json */; };
 		46D96DF01B521E5B00701D69 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DEF1B521E5B00701D69 /* users.json */; };
 		46D96DF21B521FE900701D69 /* JSONExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DF11B521FE900701D69 /* JSONExtension.swift */; };
+		46D96DF61B523BBD00701D69 /* FriendListSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DF51B523BBD00701D69 /* FriendListSectionHeaderView.swift */; };
+		46D96DF81B523BD600701D69 /* FriendListSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DF71B523BD600701D69 /* FriendListSectionHeaderView.xib */; };
+		46D96DFA1B523D7500701D69 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DF91B523D7500701D69 /* UIViewExtension.swift */; };
+		46D96DFC1B524BEF00701D69 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DFB1B524BEF00701D69 /* InsetLabel.swift */; };
 		46E9AE411B51D496007D0820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE401B51D496007D0820 /* User.swift */; };
 		46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */; };
 		46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE451B51DA31007D0820 /* StringExtension.swift */; };
@@ -90,6 +94,10 @@
 		46D96DED1B521E3100701D69 /* headers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = headers.json; sourceTree = "<group>"; };
 		46D96DEF1B521E5B00701D69 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		46D96DF11B521FE900701D69 /* JSONExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONExtension.swift; sourceTree = "<group>"; };
+		46D96DF51B523BBD00701D69 /* FriendListSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListSectionHeaderView.swift; sourceTree = "<group>"; };
+		46D96DF71B523BD600701D69 /* FriendListSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendListSectionHeaderView.xib; sourceTree = "<group>"; };
+		46D96DF91B523D7500701D69 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		46D96DFB1B524BEF00701D69 /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
 		46E9AE401B51D496007D0820 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 		46E9AE451B51DA31007D0820 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -183,6 +191,7 @@
 				467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */,
 				46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */,
 				46E9AE451B51DA31007D0820 /* StringExtension.swift */,
+				46D96DF91B523D7500701D69 /* UIViewExtension.swift */,
 				46D96DF11B521FE900701D69 /* JSONExtension.swift */,
 			);
 			name = Extensions;
@@ -206,6 +215,9 @@
 				46D96DC41B52055800701D69 /* AvatarAnnotation.swift */,
 				46D96DC01B51FF3C00701D69 /* AvatarAnnotationView.swift */,
 				46C1261E1B51E6840020CB6A /* FriendListViewController.swift */,
+				46D96DF51B523BBD00701D69 /* FriendListSectionHeaderView.swift */,
+				46D96DFB1B524BEF00701D69 /* InsetLabel.swift */,
+				46D96DF71B523BD600701D69 /* FriendListSectionHeaderView.xib */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -316,6 +328,7 @@
 				46D96DE01B520ED500701D69 /* ProximaNova-Semibold.otf in Resources */,
 				46D96DF01B521E5B00701D69 /* users.json in Resources */,
 				46D96DDE1B520ED500701D69 /* ProximaNova-Regular.otf in Resources */,
+				46D96DF81B523BD600701D69 /* FriendListSectionHeaderView.xib in Resources */,
 				46D96DDF1B520ED500701D69 /* Mark Simonson - Proxima Nova Bold.otf in Resources */,
 				46D96DE11B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf in Resources */,
 				467F4DCC1B51CCAD0010BE02 /* Assets.xcassets in Resources */,
@@ -336,16 +349,19 @@
 				46D96DEA1B52195900701D69 /* Header.swift in Sources */,
 				467F4DE21B51CD660010BE02 /* NSUserDefaultHelper.swift in Sources */,
 				467F4DDD1B51CD210010BE02 /* Location.swift in Sources */,
+				46D96DFA1B523D7500701D69 /* UIViewExtension.swift in Sources */,
 				46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */,
 				46E9AE411B51D496007D0820 /* User.swift in Sources */,
 				467F4DE41B51CD660010BE02 /* UIStoryboardExtension.swift in Sources */,
 				46D96DE61B520F5000701D69 /* UIColorExtension.swift in Sources */,
 				46C1261F1B51E6840020CB6A /* FriendListViewController.swift in Sources */,
 				46D96DC11B51FF3C00701D69 /* AvatarAnnotationView.swift in Sources */,
+				46D96DFC1B524BEF00701D69 /* InsetLabel.swift in Sources */,
 				467F4DD71B51CCD40010BE02 /* MapViewController.swift in Sources */,
 				46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */,
 				46D96DE81B52139E00701D69 /* FontBlaster.swift in Sources */,
 				46D96DB41B51E74000701D69 /* Friend.swift in Sources */,
+				46D96DF61B523BBD00701D69 /* FriendListSectionHeaderView.swift in Sources */,
 				46D96DD91B520DED00701D69 /* ColorDefines.swift in Sources */,
 				46D96DC51B52055800701D69 /* AvatarAnnotation.swift in Sources */,
 				46D96DBC1B51F20400701D69 /* MBPullDownController.m in Sources */,

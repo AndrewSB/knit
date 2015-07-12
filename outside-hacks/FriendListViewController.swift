@@ -50,6 +50,28 @@ extension FriendListViewController {
         return data.count
     }
     
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        switch section {
+        case data.count:
+            return 50
+        default:
+            
+        }
+    }
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if let colors = Color.Stage.color(forStageName: data[section].0.stage) {
+            let headerView = FriendListSectionHeaderView.instanceFromNib()
+            
+            headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 122)
+            headerView.configure((data[section].0.stage, colors.light), song: (data[section].0.song, colors.dark))
+            
+            return headerView
+        } else {
+            return nil
+        }
+    }
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data[section].1.count
     }
