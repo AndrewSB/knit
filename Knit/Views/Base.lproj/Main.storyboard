@@ -24,7 +24,7 @@
         <!--Master View Controller-->
         <scene sceneID="gKj-Ok-WNZ">
             <objects>
-                <viewController id="Yct-N3-wVS" customClass="MasterViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yct-N3-wVS" customClass="MasterViewController" customModule="Knit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2gG-rG-Z8h"/>
                         <viewControllerLayoutGuide type="bottom" id="n7p-Mt-y1x"/>
@@ -43,7 +43,7 @@
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Map" id="BYZ-38-t0r" customClass="MapViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Map" id="BYZ-38-t0r" customClass="MapViewController" customModule="Knit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -75,12 +75,12 @@
         <!--Friend List View Controller-->
         <scene sceneID="r9z-nC-UvB">
             <objects>
-                <tableViewController storyboardIdentifier="Friends" id="Chd-wb-idL" customClass="FriendListViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Friends" id="Chd-wb-idL" customClass="FriendListViewController" customModule="Knit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="100" sectionHeaderHeight="10" sectionFooterHeight="10" id="JMi-nT-e8S">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.48850429058074951" green="0.78926283121109009" blue="0.49454915523529053" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="separatorColor" red="0.29768484830856323" green="0.68788403272628784" blue="0.31118106842041016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.49687498807907104" green="0.7851409912109375" blue="0.50724333524703979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.31493979692459106" green="0.68377017974853516" blue="0.32868444919586182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="vBl-Ki-akz">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -114,7 +114,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" red="0.31493979692459106" green="0.68377017974853516" blue="0.32868444919586182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.29768484830856323" green="0.68788403272628784" blue="0.31118106842041016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="hse-IZ-ReS" firstAttribute="centerY" secondItem="vBl-Ki-akz" secondAttribute="centerY" id="1L7-Ae-thf"/>
                                 <constraint firstItem="cAT-cK-wyE" firstAttribute="centerY" secondItem="E7D-RH-VjM" secondAttribute="centerY" id="3Yd-ry-zEk"/>
@@ -125,7 +125,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="cellID" rowHeight="100" id="SO8-y6-zFU" customClass="FriendTableViewCell" customModule="outside_hacks" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="cellID" rowHeight="100" id="SO8-y6-zFU" customClass="FriendTableViewCell" customModule="Knit" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="113.5" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SO8-y6-zFU" id="ImJ-QK-PIY">
@@ -178,7 +178,7 @@
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.48850429058074951" green="0.78926283121109009" blue="0.49454915523529053" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.49687498807907104" green="0.7851409912109375" blue="0.50724333524703979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="Z5j-Hf-vda" firstAttribute="top" secondItem="ImJ-QK-PIY" secondAttribute="topMargin" constant="10" id="0f7-FO-fBL"/>
                                         <constraint firstItem="NPo-L5-RkK" firstAttribute="leading" secondItem="ImJ-QK-PIY" secondAttribute="leadingMargin" constant="10" id="1T1-aj-jxO"/>
@@ -229,7 +229,7 @@
         <!--Message View Controller-->
         <scene sceneID="Rzu-tX-etC">
             <objects>
-                <viewController id="NJJ-cz-8lS" customClass="MessageViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NJJ-cz-8lS" customClass="MessageViewController" customModule="Knit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sou-5Q-2au"/>
                         <viewControllerLayoutGuide type="bottom" id="KW5-09-fuP"/>
@@ -237,7 +237,7 @@
                     <view key="view" contentMode="scaleToFill" id="i94-Zr-O00">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.49687498807907104" green="0.7851409912109375" blue="0.50724333524703979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <segue destination="RdG-4R-JjQ" kind="unwind" identifier="unwindSegueToFriendListViewController" unwindAction="unwindToFriendList:" id="nTU-XJ-vld"/>

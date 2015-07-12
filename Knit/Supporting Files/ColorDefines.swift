@@ -11,7 +11,7 @@ import Foundation
 class Color {
     enum Global {
         enum Green: String {
-            case Light = "7FC881"
+            case Light = "81C784"
             case Dark = "54AD58"
         }
     }

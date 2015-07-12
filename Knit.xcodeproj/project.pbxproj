@@ -42,6 +42,10 @@
 		464A7C231B52A2A300F3CB5E /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7C221B52A2A300F3CB5E /* CLLocationExtension.swift */; };
 		46869CEA1B52A76D00FF99BF /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46869CE91B52A76D00FF99BF /* FontBlaster.swift */; };
 		46869CEF1B52A92000FF99BF /* FriendMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46869CEE1B52A92000FF99BF /* FriendMasterViewController.swift */; };
+		46869CF21B52AB7500FF99BF /* HUBERT JOCHAM Susa-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7BFF1B52A24700F3CB5E /* HUBERT JOCHAM Susa-Bold.otf */; };
+		46869CF31B52AB7500FF99BF /* Mark Simonson - Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C001B52A24700F3CB5E /* Mark Simonson - Proxima Nova Bold.otf */; };
+		46869CF41B52AB7500FF99BF /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C011B52A24700F3CB5E /* ProximaNova-Regular.otf */; };
+		46869CF51B52AB7500FF99BF /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C021B52A24700F3CB5E /* ProximaNova-Semibold.otf */; };
 		46B689461B526AD200C22C4F /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46B688EA1B526AD100C22C4F /* JSQMessagesAssets.bundle */; };
 		46B689471B526AD200C22C4F /* JSQSystemSoundPlayer+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B688ED1B526AD100C22C4F /* JSQSystemSoundPlayer+JSQMessages.m */; };
 		46B689481B526AD200C22C4F /* NSBundle+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B688EF1B526AD100C22C4F /* NSBundle+JSQMessages.m */; };
@@ -661,11 +665,15 @@
 				464A7BFD1B52A23A00F3CB5E /* headers.json in Resources */,
 				464A7C041B52A25000F3CB5E /* Assets.xcassets in Resources */,
 				46B6896B1B526AD200C22C4F /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
+				46869CF21B52AB7500FF99BF /* HUBERT JOCHAM Susa-Bold.otf in Resources */,
 				464A7C091B52A26000F3CB5E /* Info.plist in Resources */,
 				464A7BFE1B52A23A00F3CB5E /* users.json in Resources */,
+				46869CF41B52AB7500FF99BF /* ProximaNova-Regular.otf in Resources */,
+				46869CF31B52AB7500FF99BF /* Mark Simonson - Proxima Nova Bold.otf in Resources */,
 				46B689461B526AD200C22C4F /* JSQMessagesAssets.bundle in Resources */,
 				464A7BE61B52A1E900F3CB5E /* Main.storyboard in Resources */,
 				464A7C071B52A25600F3CB5E /* LaunchScreen.storyboard in Resources */,
+				46869CF51B52AB7500FF99BF /* ProximaNova-Semibold.otf in Resources */,
 				46B689641B526AD200C22C4F /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
 				46B689501B526AD200C22C4F /* JSQMessagesViewController.xib in Resources */,
 			);
