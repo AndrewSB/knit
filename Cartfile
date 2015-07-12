@@ -3,3 +3,5 @@ github "matej/MBPullDownController"
 github "AndrewSB/FontBlaster"
 github "jessesquires/JSQMessagesViewController"
 github "jessesquires/JSQSystemSoundPlayer"
+
+github "whittlbc/MCDemo"
