@@ -34,7 +34,7 @@ class MasterViewController: MBPullDownController {
         
         LocalMessage.observe(.KnitHeaderWasTapped, classFunction: "openIfNotOpen", inClass: self)
 
-        self.backgroundView.backgroundColor = UIColor(hex: Color.Global.Green.Light.rawValue)
+        self.backgroundView.backgroundColor = UIColor(hex: "81C784")//Color.Global.Green.Light.rawValue)
     }
     
     override func viewWillDisappear(animated: Bool) {

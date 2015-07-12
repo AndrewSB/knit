@@ -81,9 +81,9 @@ extension FriendListViewController {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath) as! FriendTableViewCell
         
         let friend = data[indexPath.section].1[indexPath.row]
+        let firstName = String(split(friend.name.characters) { $0 == " " }.first!).lowercaseString
         
-        
-        cell.avatarImageView.image = UIImage(named: "alex")
+        cell.avatarImageView.image = UIImage(named: firstName)
         cell.nameLabel.text = friend.name
         
         let imageName: Int

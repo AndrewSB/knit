@@ -93,9 +93,7 @@ extension MessageViewController {
         inputToolbar!.contentView!.textView!.textColor = UIColor.whiteColor()
         inputToolbar!.contentView!.textView!.placeHolderTextColor = UIColor.lightTextColor()
         inputToolbar!.contentView!.textView!.font = UIFont(name: "ProximaNova-Regular", size: 15)
-        inputToolbar!.contentView!.textView!.layer.borderWidth = 0
-        print(inputToolbar!.contentView!.textView!.textContainerInset)
-        
+        inputToolbar!.contentView!.textView!.layer.borderWidth = 0        
         inputToolbar!.contentView!.textView!.contentInset.top += 2
     }
     
