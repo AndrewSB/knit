@@ -22,22 +22,6 @@ class MessageViewController: JSQMessagesViewController {
         
         setup()
     }
-    
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let swipeDownDismissRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("didSwipe"))
-        swipeDownDismissRecognizer.delegate = self
-        swipeDownDismissRecognizer.direction = .Down
-        
-        self.collectionView!.addGestureRecognizer(swipeDownDismissRecognizer)
-    }
-
-    
-    func didSwipe() {
-        performSegueWithIdentifier(Segue.UnwindTo.FriendList.rawValue, sender: nil)
-    }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)

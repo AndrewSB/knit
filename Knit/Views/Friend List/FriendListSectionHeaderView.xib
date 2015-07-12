@@ -47,7 +47,7 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="ac4-Eq-H0g">
-                    <rect key="frame" x="16" y="57.5" width="16" height="16"/>
+                    <rect key="frame" x="20" y="57.5" width="16" height="16"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="16" id="aJH-rq-5dh"/>
                         <constraint firstAttribute="width" secondItem="ac4-Eq-H0g" secondAttribute="height" multiplier="1:1" id="dt5-4d-RzT"/>
@@ -56,7 +56,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ac4-Eq-H0g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="42m-4N-wJP"/>
+                <constraint firstItem="ac4-Eq-H0g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="42m-4N-wJP"/>
                 <constraint firstItem="KKJ-xq-Udv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C4S-NH-m4U"/>
                 <constraint firstItem="NS9-yI-aJh" firstAttribute="top" secondItem="KKJ-xq-Udv" secondAttribute="bottom" id="IUW-cd-CEu"/>
                 <constraint firstItem="ac4-Eq-H0g" firstAttribute="centerY" secondItem="NS9-yI-aJh" secondAttribute="centerY" id="PFq-d9-vxU"/>

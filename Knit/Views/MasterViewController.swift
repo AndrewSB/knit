@@ -33,7 +33,6 @@ class MasterViewController: MBPullDownController {
         super.viewDidAppear(animated)
         
         LocalMessage.observe(.KnitHeaderWasTapped, classFunction: "openIfNotOpen", inClass: self)
-
         self.backgroundView.backgroundColor = UIColor(hex: "81C784")//Color.Global.Green.Light.rawValue)
     }
     
@@ -49,7 +48,7 @@ extension MasterViewController {
     
     func openIfNotOpen() {
         dispatch_async(dispatch_get_main_queue(), {
-            self.setOpen(false, animated: true)
+            self.setOpen(!self.open, animated: true)
         })
     }
     

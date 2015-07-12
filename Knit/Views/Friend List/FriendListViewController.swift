@@ -68,8 +68,16 @@ class FriendListViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         
+        if let des = segue.destinationViewController as? MessageWrapperViewController {
+            des.user = [sender as! User]
+        }
+        
         if let des = segue.destinationViewController as? MessageViewController {
             des.otherUser = sender as! User
+            
+//            let cell = 
+            
+//            des.header = tableView
         }
     }
     
@@ -104,7 +112,7 @@ extension FriendListViewController {
             imageName = 100
         }
         cell.batteryImageView.image = UIImage(named: "\(imageName)")
-        cell.batteryLabel.text = "\(round(friend.battery))%"
+        cell.batteryLabel.text = "\(Int(round(friend.battery)))%"
         
         cell.locationLabel.text = friend.seat
         
@@ -120,7 +128,7 @@ extension FriendListViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        performSegueWithIdentifier(Segue.To.Message.rawValue, sender: data[indexPath.section].1[indexPath.row] as AnyObject)
+        performSegueWithIdentifier(Segue.To.Message.rawValue, sender: data[indexPath.section].1[indexPath.row] as? AnyObject)
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

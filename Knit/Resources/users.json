@@ -4,17 +4,20 @@
                 {
                 "name": "Vikram Rajagopalan",
                 "battery": "50",
-                "seat": "Back Left"
+                "seat": "Back Left",
+                "stage": "Lands End"
                 },
                 {
                 "name": "Raphie Palefsky-Smith",
                 "battery": "80",
-                "seat": "Front Right"
+                "seat": "Front Right",
+                "stage": "Lands End"
                 },
                 {
                 "name": "Alex Kern",
                 "battery": "20",
-                "seat": "Middle Center"
+                "seat": "Middle Center",
+                "stage": "Lands End"
                 }
                 ]
   },
@@ -23,7 +26,8 @@
                  {
                  "name": "Case Sandberg",
                  "battery": "100",
-                 "seat": "Front Center"
+                 "seat": "Front Center",
+                 "stage": "Twin Peaks"
                  }
                  ]
   },
@@ -32,12 +36,14 @@
             {
             "name": "Matt Condon",
             "battery": "100",
-            "seat": "Middle Center"
+            "seat": "Middle Center",
+            "stage": "Sutro"
             },
             {
             "name": "Zach Latta",
             "battery": "90",
-            "seat": "Back Right"
+            "seat": "Back Right",
+            "stage": "Sutro"
             }
             ]
   },
@@ -46,7 +52,8 @@
                 {
                 "name": "Rohith Varanasi",
                 "battery": "80",
-                "seat": "Front Center"
+                "seat": "Front Center",
+                "stage": "Panhandle"
                 }
                 ]
   },
@@ -55,17 +62,20 @@
                 {
                 "name": "Ben Alderfer",
                 "battery": "60",
-                "seat": "Porta Potties"
+                "seat": "Porta Potties",
+                "stage": "Elsewhere"
                 },
                 {
                 "name": "Benjamin Zweig",
                 "battery": "90",
-                "seat": "Choco Lands"
+                "seat": "Choco Lands",
+                "stage": "Elsewhere"
                 },
                 {
                 "name": "Stefan Aleksić",
                 "battery": "10",
-                "seat": "The Barbary"
+                "seat": "The Barbary",
+                "stage": "Elsewhere"
                 }
                 ]
   }

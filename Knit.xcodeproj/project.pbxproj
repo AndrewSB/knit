@@ -42,8 +42,8 @@
 		464A7C1F1B52A29C00F3CB5E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7C1E1B52A29C00F3CB5E /* StringExtension.swift */; };
 		464A7C211B52A29F00F3CB5E /* JSONExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7C201B52A29F00F3CB5E /* JSONExtension.swift */; };
 		464A7C231B52A2A300F3CB5E /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7C221B52A2A300F3CB5E /* CLLocationExtension.swift */; };
+		4676D8B51B52F20A00012955 /* MessageWrapperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676D8B41B52F20A00012955 /* MessageWrapperViewController.swift */; };
 		46869CEA1B52A76D00FF99BF /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46869CE91B52A76D00FF99BF /* FontBlaster.swift */; };
-		46869CEF1B52A92000FF99BF /* FriendMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46869CEE1B52A92000FF99BF /* FriendMasterViewController.swift */; };
 		46869CF21B52AB7500FF99BF /* HUBERT JOCHAM Susa-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7BFF1B52A24700F3CB5E /* HUBERT JOCHAM Susa-Bold.otf */; };
 		46869CF31B52AB7500FF99BF /* Mark Simonson - Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C001B52A24700F3CB5E /* Mark Simonson - Proxima Nova Bold.otf */; };
 		46869CF41B52AB7500FF99BF /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C011B52A24700F3CB5E /* ProximaNova-Regular.otf */; };
@@ -157,9 +157,9 @@
 		464A7C1E1B52A29C00F3CB5E /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		464A7C201B52A29F00F3CB5E /* JSONExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONExtension.swift; sourceTree = "<group>"; };
 		464A7C221B52A2A300F3CB5E /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
+		4676D8B41B52F20A00012955 /* MessageWrapperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageWrapperViewController.swift; sourceTree = "<group>"; };
 		467F4DC11B51CCAD0010BE02 /* Knit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46869CE91B52A76D00FF99BF /* FontBlaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontBlaster.swift; path = Carthage/Checkouts/FontBlaster/FontBlaster/FontBlaster.swift; sourceTree = "<group>"; };
-		46869CEE1B52A92000FF99BF /* FriendMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendMasterViewController.swift; sourceTree = "<group>"; };
 		46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Knit-Bridging-Header.h"; sourceTree = "<group>"; };
 		46B688EA1B526AD100C22C4F /* JSQMessagesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSQMessagesAssets.bundle; sourceTree = "<group>"; };
 		46B688EC1B526AD100C22C4F /* JSQSystemSoundPlayer+JSQMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSQSystemSoundPlayer+JSQMessages.h"; sourceTree = "<group>"; };
@@ -317,7 +317,6 @@
 			children = (
 				464A7BE41B52A1E900F3CB5E /* Main.storyboard */,
 				464A7BE71B52A1F300F3CB5E /* MasterViewController.swift */,
-				46869CEE1B52A92000FF99BF /* FriendMasterViewController.swift */,
 				46869CED1B52A90B00FF99BF /* Messaging */,
 				46869CEC1B52A8F300FF99BF /* Friend List */,
 				46D96DBF1B51F22500701D69 /* Map */,
@@ -391,6 +390,7 @@
 		46869CED1B52A90B00FF99BF /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
+				4676D8B41B52F20A00012955 /* MessageWrapperViewController.swift */,
 				464A7BE91B52A20200F3CB5E /* MessageViewController.swift */,
 			);
 			path = Messaging;
@@ -724,6 +724,7 @@
 				464A7C0D1B52A26900F3CB5E /* Location.swift in Sources */,
 				46B6895B1B526AD200C22C4F /* JSQMessage.m in Sources */,
 				46B6894A1B526AD200C22C4F /* UIColor+JSQMessages.m in Sources */,
+				4676D8B51B52F20A00012955 /* MessageWrapperViewController.swift in Sources */,
 				464A7C171B52A28300F3CB5E /* NSUserDefaultHelper.swift in Sources */,
 				464A7C161B52A28300F3CB5E /* NSNotificationCenterHelper.swift in Sources */,
 				464A7BF81B52A21A00F3CB5E /* FriendTableViewCell.swift in Sources */,
@@ -761,7 +762,6 @@
 				464A7C211B52A29F00F3CB5E /* JSONExtension.swift in Sources */,
 				460861161B52CA7B00CD1174 /* PopupContentView.swift in Sources */,
 				464A7C111B52A27500F3CB5E /* ColorDefines.swift in Sources */,
-				46869CEF1B52A92000FF99BF /* FriendMasterViewController.swift in Sources */,
 				46B689551B526AD200C22C4F /* JSQMessagesToolbarButtonFactory.m in Sources */,
 				464A7C1C1B52A28900F3CB5E /* UIStoryboardExtension.swift in Sources */,
 				46B6895F1B526AD200C22C4F /* JSQVideoMediaItem.m in Sources */,
