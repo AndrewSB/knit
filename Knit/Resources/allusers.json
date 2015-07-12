@@ -2,51 +2,71 @@
   {
     "name": "Vikram Rajagopalan",
     "battery": "50",
-    "seat": "Back Left"
+    "seat": "Back Left",
+    "loc": "37.767409, -122.493572",
+    "stage": "Lands End"
   },
   {
     "name": "Raphie Palefsky-Smith",
     "battery": "80",
-    "seat": "Front Right"
+    "seat": "Front Right",
+    "loc": "37.767764, -122.494195",
+    "stage": "Lands End"
   },
   {
     "name": "Alex Kern",
     "battery": "20",
-    "seat": "Middle Center"
+    "seat": "Middle Center",
+    "loc": "37.767974, -122.494668",
+    "stage": "Lands End"
   },
   {
     "name": "Case Sandberg",
     "battery": "100",
-    "seat": "Front Center"
+    "seat": "Front Center",
+    "loc": "37.769046, -122.485702",
+    "stage": "Twin Peaks"
   },
   {
     "name": "Matt Condon",
     "battery": "100",
-    "seat": "Middle Center"
+    "seat": "Middle Center",
+    "loc": "37.769929, -122.492447",
+    "stage": "Sutro"
   },
   {
     "name": "Zach Latta",
     "battery": "90",
-    "seat": "Back Right"
+    "seat": "Back Right",
+    "loc": "37.770301, -122.492137"
+    "stage": "Sutro"
   },
   {
     "name": "Rohith Varanasi",
     "battery": "80",
-    "seat": "Front Center"
+    "seat": "Front Center",
+    "loc": "37.768996, -122.487233",
+    "stage": "Panhandle"
   },
   {
     "name": "Ben Alderfer",
     "battery": "60",
-    "seat": "Porta Potties"
+    "seat": "Porta Potties",
+    "loc": "37.769141, -122.48648",
+    "stage": "Elsewhere"
   },
   {
     "name": "Benjamin Zweig",
     "battery": "90",
-    "seat": "Choco Lands"
+    "seat": "Choco Lands",
+    "loc": "37.769395, -122.488952",
+    "stage": "Elsewhere"
   },
   {
     "name": "Stefan Aleksić",
     "battery": "10",
-    "seat": "The Barbary"
+    "seat": "The Barbary",
+    "loc": "37.769947, -122.489811",
+    "stage": "Elsewhere"
   }
 ]
