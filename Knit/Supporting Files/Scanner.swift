@@ -9,7 +9,7 @@
 import Foundation
 import MultipeerConnectivity
 
-class Scanner {
+class Scanner: NSObject {
     let scanHelper: ScanHelper
     
     class var sharedInstance : Scanner {
@@ -19,24 +19,32 @@ class Scanner {
         return Static.instance
     }
     
-    init() {
+    override init() {
         scanHelper = ScanHelper()
-        
-        LocalMessage.observe(.NewMessageReceived, classFunction: "newMessage", inClass: self)
+        super.init()
+        LocalMessage.observe(.NewMessageReceived, classFunction: "newMessageRecieved:", inClass: self)
     }
     
-    func newMessage(sender: AnyObject) {
-        print("new message recieved \(sender)")
+    func newMessageRecieved() {
+        print("fuck u no data")
+    }
+    
+    func newMessageRecieved(notification : NSNotification) {
+        print("new message recieved \(notification)")
         
-        let peerID = sender["peerID"] as! MCPeerID
+        let peerID = notification.userInfo!["peerID"] as! MCPeerID
         let peerDisplayName = peerID.displayName
-        let data = sender["data"] as! NSData
+        let data = notification.userInfo!["data"] as! NSData
         let text = NSString(data: data, encoding: NSUTF8StringEncoding)!
         
         let message = Message(text: String(text), sender: (id: peerDisplayName, dispayName: peerDisplayName))
         print("got that message son \(message)")
         
         LocalMessage.post(.NewMessageProcessed, arg: ["message": message])
+    }
+    
+    func processNewMessageForSending(message: Message) {
+        scanHelper.sendMessage(message.text())
     }
     
     deinit {

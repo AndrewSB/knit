@@ -13,7 +13,7 @@ enum LocalMessageNotification: String {
     case NewLocationRegistered = "NewLocationRegistered"
     case KnitHeaderWasTapped = "KnitHeaderWasTapped"
     
-    case NewMessageReceived = "grabMessage"
+    case NewMessageReceived = "receiveMessage"
     case NewMessageProcessed = "NewMessageProcessed"
 }
 

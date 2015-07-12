@@ -36,13 +36,15 @@ extension MessageViewController {
         messages.append(message)
         
         if message.senderId() == self.senderId {
-            JSQSystemSoundPlayer.sharedPlayer().playSoundWithFilename("warm-tap", fileExtension: "aif", completion: nil)
+            JSQSystemSoundPlayer.sharedPlayer().playSoundWithFilename("tap-warm", fileExtension: "aif", completion: nil)
             self.finishSendingMessage()
+            Scanner.sharedInstance.processNewMessageForSending(message)
         } else {
             JSQSystemSoundPlayer.sharedPlayer().playSoundWithFilename("tap-metallic", fileExtension: "aif", completion: nil)
             self.finishReceivingMessage()
         }
     }
+    
 }
 
 /*
