@@ -11,7 +11,9 @@ import CoreLocation
 
 enum UserDefaultKeys: String {
     case lastLocation = "lastLocation"
-    case profilePictureURL = "profilePictureURL"
+    
+    case userID = "userID"
+    case userDisplayName = "userDisplayName"
 }
 
 class UserDefaults {
@@ -34,12 +36,21 @@ class UserDefaults {
         }
     }
     
-    class var profilePictureURL: String? {
+    class var userID: String? {
         get {
-            return get(UserDefaultKeys.profilePictureURL.rawValue) as? String
+            return get(UserDefaultKeys.userID.rawValue) as? String
         }
         set {
-            set(newValue, forKey: UserDefaultKeys.profilePictureURL.rawValue)
+            set(newValue, forKey: UserDefaultKeys.userID.rawValue)
+        }
+    }
+    
+    class var userDisplayName: String? {
+        get {
+            return get(UserDefaultKeys.userDisplayName.rawValue) as? String
+        }
+        set {
+            set(newValue, forKey: UserDefaultKeys.userDisplayName.rawValue)
         }
     }
 }
