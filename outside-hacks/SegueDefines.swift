@@ -8,6 +8,13 @@
 
 import Foundation
 
-enum Segue: String {
-    case Message = "segueToMessages"
+enum Segue {
+    
+    enum To: String {
+        case Message = "segueToMessages"
+    }
+    
+    enum UnwindTo: String {
+        case FriendList = "unwindSegueToFriendListViewController"
+    }
 }

@@ -61,6 +61,8 @@ class FriendListViewController: UITableViewController {
             des.otherUser = sender as! User
         }
     }
+    
+    @IBAction func unwindToFriendList(sender: UIStoryboardSegue){}
 }
 
 extension FriendListViewController {
@@ -107,7 +109,7 @@ extension FriendListViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        performSegueWithIdentifier(Segue.Message.rawValue, sender: data[indexPath.section].1[indexPath.row] as AnyObject)
+        performSegueWithIdentifier(Segue.To.Message.rawValue, sender: data[indexPath.section].1[indexPath.row] as AnyObject)
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

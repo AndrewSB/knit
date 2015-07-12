@@ -21,8 +21,31 @@ class MessageViewController: JSQMessagesViewController {
         super.viewDidLoad()
 
         setup()
+
+    }
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
-//        let panDownDismissRecognizer = 
+        let swipeDownDismissRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("didSwipe"))
+        swipeDownDismissRecognizer.numberOfTouchesRequired = 1
+        swipeDownDismissRecognizer.delegate = self
+        swipeDownDismissRecognizer.direction = .Down
+        //        swipeDownDismissRecognizer.cancelsTouchesInView = false
+        
+        self.collectionView!.addGestureRecognizer(swipeDownDismissRecognizer)
+    }
+    
+    func didSwipe(sender: UISwipeGestureRecognizer) {
+        print("fuck you")
+    }
+
+    
+    func didSwipe() {
+        print("didpan")
+        
+        performSegueWithIdentifier(Segue.UnwindTo.FriendList.rawValue, sender: nil)
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -126,4 +149,10 @@ extension MessageViewController {
         return kJSQMessagesCollectionViewCellLabelHeightDefault
     }
     
+}
+
+extension MessageViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
 }
