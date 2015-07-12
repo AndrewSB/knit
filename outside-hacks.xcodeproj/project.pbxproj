@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		467790C21B52837B00CF3BE0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467790C11B52837B00CF3BE0 /* Message.swift */; };
 		467F4DC51B51CCAD0010BE02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DC41B51CCAD0010BE02 /* AppDelegate.swift */; };
 		467F4DCC1B51CCAD0010BE02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DCB1B51CCAD0010BE02 /* Assets.xcassets */; };
 		467F4DCF1B51CCAD0010BE02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DCD1B51CCAD0010BE02 /* LaunchScreen.storyboard */; };
@@ -108,6 +109,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		467790C11B52837B00CF3BE0 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		467F4DC11B51CCAD0010BE02 /* outside-hacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "outside-hacks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		467F4DC41B51CCAD0010BE02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		467F4DC91B51CCAD0010BE02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -537,6 +539,7 @@
 			children = (
 				46E9AE401B51D496007D0820 /* User.swift */,
 				46D96DE91B52195900701D69 /* Header.swift */,
+				467790C11B52837B00CF3BE0 /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -696,6 +699,7 @@
 				46B6896F1B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
 				46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */,
 				46B689551B526AD200C22C4F /* JSQMessagesToolbarButtonFactory.m in Sources */,
+				467790C21B52837B00CF3BE0 /* Message.swift in Sources */,
 				46D96DE81B52139E00701D69 /* FontBlaster.swift in Sources */,
 				46D96DF61B523BBD00701D69 /* FriendListSectionHeaderView.swift in Sources */,
 				46B6895F1B526AD200C22C4F /* JSQVideoMediaItem.m in Sources */,
