@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="ProximaNova-Regular.otf">
@@ -29,18 +30,41 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tame Impala - Let it Happen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NS9-yI-aJh" customClass="InsetLabel" customModule="outside_hacks" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="44" width="420" height="44"/>
                     <color key="backgroundColor" red="0.3686421811580658" green="0.11336108297109604" blue="0.19897827506065369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="22"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltp-fp-kV2">
+                    <rect key="frame" x="345" y="14" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.91916656494140625" green="0.28634476661682129" blue="0.49893450736999512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ltp-fp-kV2" secondAttribute="height" multiplier="11:11" id="5Hc-go-8Qn"/>
+                        <constraint firstAttribute="height" constant="60" id="q1O-Ar-R58"/>
+                    </constraints>
+                    <state key="normal" image="chat"/>
+                    <connections>
+                        <action selector="messageButtonWasHit" destination="iN0-l3-epB" eventType="touchUpInside" id="tfh-Sa-irE"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="ac4-Eq-H0g">
+                    <rect key="frame" x="12" y="52.5" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="aJH-rq-5dh"/>
+                        <constraint firstAttribute="width" secondItem="ac4-Eq-H0g" secondAttribute="height" multiplier="1:1" id="dt5-4d-RzT"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="ac4-Eq-H0g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="42m-4N-wJP"/>
                 <constraint firstItem="KKJ-xq-Udv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C4S-NH-m4U"/>
                 <constraint firstItem="NS9-yI-aJh" firstAttribute="top" secondItem="KKJ-xq-Udv" secondAttribute="bottom" id="IUW-cd-CEu"/>
+                <constraint firstItem="ac4-Eq-H0g" firstAttribute="centerY" secondItem="NS9-yI-aJh" secondAttribute="centerY" id="PFq-d9-vxU"/>
                 <constraint firstAttribute="trailing" secondItem="NS9-yI-aJh" secondAttribute="trailing" id="XNk-Ar-DxL"/>
                 <constraint firstItem="KKJ-xq-Udv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bKr-0K-Kpw"/>
+                <constraint firstItem="ltp-fp-kV2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bXF-aw-gjR"/>
                 <constraint firstAttribute="bottom" secondItem="NS9-yI-aJh" secondAttribute="bottom" id="dmK-nX-YXE"/>
+                <constraint firstAttribute="trailing" secondItem="ltp-fp-kV2" secondAttribute="trailing" constant="15" id="eDi-QX-SLw"/>
                 <constraint firstItem="NS9-yI-aJh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nfB-lh-ake"/>
                 <constraint firstAttribute="trailing" secondItem="KKJ-xq-Udv" secondAttribute="trailing" id="y3R-6C-qCA"/>
                 <constraint firstItem="NS9-yI-aJh" firstAttribute="height" secondItem="KKJ-xq-Udv" secondAttribute="height" id="zV8-DR-WZg"/>
@@ -48,10 +72,15 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="messageButton" destination="ltp-fp-kV2" id="7Ht-iZ-lbM"/>
                 <outlet property="songLabel" destination="NS9-yI-aJh" id="5wq-Hu-1eg"/>
                 <outlet property="stageLabel" destination="KKJ-xq-Udv" id="Qgn-vU-Puq"/>
             </connections>
             <point key="canvasLocation" x="304" y="127"/>
         </view>
     </objects>
+    <resources>
+        <image name="chat" width="24" height="22"/>
+        <image name="music" width="16" height="16"/>
+    </resources>
 </document>

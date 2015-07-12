@@ -9,9 +9,11 @@
 import UIKit
 
 class InsetLabel: UILabel {
+    
+    var leftInset: CGFloat?
 
     override func drawTextInRect(rect: CGRect) {
-        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, UIEdgeInsets(top: 0, left: 22, bottom: 0, right: 0)))
+        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, UIEdgeInsets(top: 0, left: leftInset ?? 22, bottom: 0, right: 0)))
     }
 
 }

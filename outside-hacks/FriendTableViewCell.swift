@@ -19,12 +19,13 @@ class FriendTableViewCell: UITableViewCell {
     @IBOutlet weak var locationImageView: UIImageView!
     @IBOutlet weak var locationLabel: UILabel!
     
+    
+    
     var activeColor: UIColor! {
         didSet {
             avatarImageView.layer.borderColor = activeColor.CGColor
         }
     }
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()

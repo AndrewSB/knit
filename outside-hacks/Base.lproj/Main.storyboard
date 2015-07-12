@@ -79,7 +79,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.5616876482963562" green="0.80018812417984009" blue="0.57247895002365112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="separatorColor" red="0.31493979692459106" green="0.68377017974853516" blue="0.32868444919586182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.29768484830856323" green="0.68788403272628784" blue="0.31118106842041016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="vBl-Ki-akz">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -169,17 +169,27 @@
                                                 <constraint firstAttribute="height" constant="11" id="zIj-O1-sRC"/>
                                             </constraints>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHO-bg-oee">
+                                            <rect key="frame" x="16" y="98.5" width="584" height="1"/>
+                                            <color key="backgroundColor" red="0.29768484830856323" green="0.68788403272628784" blue="0.31118106842041016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="d5L-lZ-vn3"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" red="0.49687498807907104" green="0.7851409912109375" blue="0.50724333524703979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="Z5j-Hf-vda" firstAttribute="top" secondItem="ImJ-QK-PIY" secondAttribute="topMargin" constant="10" id="0f7-FO-fBL"/>
                                         <constraint firstItem="NPo-L5-RkK" firstAttribute="leading" secondItem="ImJ-QK-PIY" secondAttribute="leadingMargin" constant="10" id="1T1-aj-jxO"/>
+                                        <constraint firstAttribute="bottom" secondItem="xHO-bg-oee" secondAttribute="bottom" id="5iF-Am-oDO"/>
                                         <constraint firstAttribute="centerYWithinMargins" secondItem="Z5j-Hf-vda" secondAttribute="bottom" id="7JY-2M-cjT"/>
                                         <constraint firstItem="pct-cf-VaG" firstAttribute="leading" secondItem="X0L-Px-rxd" secondAttribute="trailing" constant="22" id="7Rd-Nr-CkJ"/>
                                         <constraint firstItem="Z5j-Hf-vda" firstAttribute="leading" secondItem="NPo-L5-RkK" secondAttribute="trailing" constant="22" id="9qJ-qN-Ach"/>
                                         <constraint firstItem="X0L-Px-rxd" firstAttribute="centerY" secondItem="BNB-t8-xxH" secondAttribute="centerY" id="DV0-Ad-aOh"/>
+                                        <constraint firstItem="xHO-bg-oee" firstAttribute="leading" secondItem="ImJ-QK-PIY" secondAttribute="leadingMargin" constant="8" id="DoA-jG-hAr"/>
                                         <constraint firstItem="pct-cf-VaG" firstAttribute="centerY" secondItem="X0L-Px-rxd" secondAttribute="centerY" id="EGU-z8-Uxo"/>
                                         <constraint firstItem="DbM-ZT-Q2Y" firstAttribute="leading" secondItem="pct-cf-VaG" secondAttribute="trailing" constant="7" id="HJn-Ag-EDd"/>
+                                        <constraint firstAttribute="trailing" secondItem="xHO-bg-oee" secondAttribute="trailing" id="Qaf-nm-Kxv"/>
                                         <constraint firstItem="BNB-t8-xxH" firstAttribute="leading" secondItem="Z5j-Hf-vda" secondAttribute="leading" id="Zbp-Pe-50B"/>
                                         <constraint firstItem="X0L-Px-rxd" firstAttribute="height" secondItem="Z5j-Hf-vda" secondAttribute="height" id="cpd-3U-DBt"/>
                                         <constraint firstItem="X0L-Px-rxd" firstAttribute="leading" secondItem="BNB-t8-xxH" secondAttribute="trailing" constant="7" id="deh-t0-8jg"/>
@@ -209,6 +219,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LsU-Ux-FIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="253" y="1035"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="Rzu-tX-etC">
+            <objects>
+                <viewController id="NJJ-cz-8lS" customClass="MessageViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sou-5Q-2au"/>
+                        <viewControllerLayoutGuide type="bottom" id="KW5-09-fuP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i94-Zr-O00">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGZ-br-Ecm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205" y="708"/>
         </scene>
     </scenes>
     <resources>

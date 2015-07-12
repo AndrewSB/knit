@@ -49,6 +49,31 @@ extension FriendListViewController {
         let friend = data[indexPath.section].1[indexPath.row]
         
         
+//        cell.avatarImageView.image = UIImage(named: friend.name)
+        cell.nameLabel.text = friend.name
+        
+        let imageName: Int
+        switch friend.battery {
+        case 0...15:
+            imageName = 10
+        case 15...40:
+            imageName = 20
+        case 40...55:
+            imageName = 50
+        case 55...70:
+            imageName = 60
+        case 70...85:
+            imageName = 80
+        case 85...95:
+            imageName = 90
+        default:
+            imageName = 100
+        }
+        cell.batteryImageView.image = UIImage(named: "\(imageName)")
+        cell.batteryLabel.text = "\(round(friend.battery))%"
+        
+        
+        cell.locationLabel.text = friend.seat
         
         let hex = Color.Stage.color(forStageName: data[indexPath.section].0.stage)!.light
         cell.activeColor = UIColor(hex: hex)
