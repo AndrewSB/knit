@@ -23,4 +23,8 @@ class LocalMessage {
         
         NSNotificationCenter.defaultCenter().addObserver(inClass, selector: Selector(classFunction), name: message.rawValue, object: nil)
     }
+    
+    class func resign(me classToResign: AnyObject) {
+        NSNotificationCenter.defaultCenter().removeObserver(classToResign)
+    }
 }

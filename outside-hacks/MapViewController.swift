@@ -37,8 +37,8 @@ class MapViewController: UIViewController {
         LocalMessage.observe(.NewLocationRegistered, classFunction: "updateLocation", inClass: self)
     }
     
-    override func viewDidDisappear(animated: Bool) {
-//        LocalMessage.
+    override func viewWillDisappear(animated: Bool) {
+        LocalMessage.resign(me: self)
     }
 }
 
