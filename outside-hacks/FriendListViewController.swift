@@ -87,7 +87,7 @@ extension FriendListViewController {
         
         let hex = Color.Stage.color(forStageName: data[indexPath.section].0.stage)!.light
         cell.activeColor = UIColor(hex: hex)
-        
+    
         return cell
     }
     
@@ -126,9 +126,9 @@ extension FriendListViewController {
             
             if section == data.count - 1 {
                 (headerView.stageLabel.superview!.constraints.last! as NSLayoutConstraint).active = false
+                headerView.addConstraint(NSLayoutConstraint(item: headerView, attribute: .Height, relatedBy: .Equal, toItem: headerView.stageLabel, attribute: .Height, multiplier: 1, constant: 0))
                 
-                let fullSizeContraint = NSLayoutConstraint(item: headerView, attribute: .Height, relatedBy: .Equal, toItem: headerView.stageLabel, attribute: .Height, multiplier: 1, constant: 0)
-                headerView.addConstraint(fullSizeContraint)
+                headerView.messageButton.hidden = true
             }
             
             return headerView
