@@ -9,6 +9,10 @@
 import Foundation
 import CoreLocation
 
+/*
+    For current user and server communication
+*/
+
 struct User {
     let id: String
     let name: String

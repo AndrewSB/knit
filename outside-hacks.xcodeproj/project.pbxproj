@@ -17,7 +17,8 @@
 		467F4DE31B51CD660010BE02 /* NSNotificationCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE01B51CD660010BE02 /* NSNotificationCenterHelper.swift */; };
 		467F4DE41B51CD660010BE02 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */; };
 		467F4DE71B51CDA60010BE02 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DE61B51CDA60010BE02 /* API.swift */; };
-		46B0130B1B51DFED0088C577 /* PullableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B0130A1B51DFED0088C577 /* PullableView.m */; };
+		46C1261F1B51E6840020CB6A /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C1261E1B51E6840020CB6A /* FriendListViewController.swift */; };
+		46D96DB41B51E74000701D69 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DB31B51E74000701D69 /* Friend.swift */; };
 		46E9AE411B51D496007D0820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE401B51D496007D0820 /* User.swift */; };
 		46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */; };
 		46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE451B51DA31007D0820 /* StringExtension.swift */; };
@@ -38,8 +39,8 @@
 		467F4DE01B51CD660010BE02 /* NSNotificationCenterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationCenterHelper.swift; sourceTree = "<group>"; };
 		467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		467F4DE61B51CDA60010BE02 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		46B013091B51DFEC0088C577 /* PullableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PullableView.h; path = Carthage/Checkouts/PullableView/PullableView/PullableView.h; sourceTree = "<group>"; };
-		46B0130A1B51DFED0088C577 /* PullableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PullableView.m; path = Carthage/Checkouts/PullableView/PullableView/PullableView.m; sourceTree = "<group>"; };
+		46C1261E1B51E6840020CB6A /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
+		46D96DB31B51E74000701D69 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		46E9AE401B51D496007D0820 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 		46E9AE451B51DA31007D0820 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				467F4DD61B51CCD40010BE02 /* MapViewController.swift */,
+				46C1261E1B51E6840020CB6A /* FriendListViewController.swift */,
 				467F4DC81B51CCAD0010BE02 /* Main.storyboard */,
 			);
 			name = View;
@@ -131,19 +133,11 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		46B0130C1B51DFF00088C577 /* PullableView */ = {
-			isa = PBXGroup;
-			children = (
-				46B013091B51DFEC0088C577 /* PullableView.h */,
-				46B0130A1B51DFED0088C577 /* PullableView.m */,
-			);
-			name = PullableView;
-			sourceTree = "<group>";
-		};
 		46E9AE421B51D7E4007D0820 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				46E9AE401B51D496007D0820 /* User.swift */,
+				46D96DB31B51E74000701D69 /* Friend.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -152,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				46FEE9381B51D11A00DA441E /* outside-hacks-Bridging-Header.h */,
-				46B0130C1B51DFF00088C577 /* PullableView */,
 				46FEE9301B51CF5E00DA441E /* Frameworks */,
 			);
 			name = Libraries;
@@ -244,10 +237,11 @@
 				467F4DDD1B51CD210010BE02 /* Location.swift in Sources */,
 				46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */,
 				46E9AE411B51D496007D0820 /* User.swift in Sources */,
-				46B0130B1B51DFED0088C577 /* PullableView.m in Sources */,
 				467F4DE41B51CD660010BE02 /* UIStoryboardExtension.swift in Sources */,
+				46C1261F1B51E6840020CB6A /* FriendListViewController.swift in Sources */,
 				467F4DD71B51CCD40010BE02 /* MapViewController.swift in Sources */,
 				46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */,
+				46D96DB41B51E74000701D69 /* Friend.swift in Sources */,
 				467F4DE71B51CDA60010BE02 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
