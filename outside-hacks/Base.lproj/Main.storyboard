@@ -4,6 +4,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HUBERT JOCHAM Susa-Bold.otf">
+            <string>SusaBold</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Master View Controller-->
         <scene sceneID="gKj-Ok-WNZ">
@@ -63,9 +71,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="vBl-Ki-akz">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hse-IZ-ReS">
+                                    <rect key="frame" x="28" y="31" width="55.5" height="26.5"/>
+                                    <fontDescription key="fontDescription" name="SusaBold" family="SusaBold" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Friends Found" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7D-RH-VjM">
+                                    <rect key="frame" x="274" y="33.5" width="162" height="21"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="21"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAT-cK-wyE">
+                                    <rect key="frame" x="513" y="20.5" width="33" height="47"/>
+                                    <color key="backgroundColor" red="0.21067416667938232" green="0.92213642597198486" blue="0.23415806889533997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="47" id="5zb-uX-e0g"/>
+                                        <constraint firstAttribute="width" constant="33" id="SeN-6J-Rwy"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.49687498807907104" green="0.7851409912109375" blue="0.50724333524703979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="hse-IZ-ReS" firstAttribute="centerY" secondItem="vBl-Ki-akz" secondAttribute="centerY" id="1L7-Ae-thf"/>
+                                <constraint firstItem="cAT-cK-wyE" firstAttribute="centerY" secondItem="E7D-RH-VjM" secondAttribute="centerY" id="3Yd-ry-zEk"/>
+                                <constraint firstItem="hse-IZ-ReS" firstAttribute="centerY" secondItem="E7D-RH-VjM" secondAttribute="centerY" id="Kwb-qi-rJ8"/>
+                                <constraint firstItem="cAT-cK-wyE" firstAttribute="leading" secondItem="E7D-RH-VjM" secondAttribute="trailing" constant="77" id="PNF-yu-h0i"/>
+                                <constraint firstAttribute="trailing" secondItem="cAT-cK-wyE" secondAttribute="trailing" constant="54" id="V62-in-XLs"/>
+                                <constraint firstItem="hse-IZ-ReS" firstAttribute="leading" secondItem="vBl-Ki-akz" secondAttribute="leading" constant="28" id="jwN-TY-JDA"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="SO8-y6-zFU">
-                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="110" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SO8-y6-zFU" id="ImJ-QK-PIY">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>

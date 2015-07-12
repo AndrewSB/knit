@@ -26,6 +26,12 @@
 		46D96DC51B52055800701D69 /* AvatarAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DC41B52055800701D69 /* AvatarAnnotation.swift */; };
 		46D96DD61B520A5200701D69 /* Toucan.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46D96DD31B5209E100701D69 /* Toucan.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46D96DD91B520DED00701D69 /* ColorDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DD81B520DED00701D69 /* ColorDefines.swift */; };
+		46D96DDE1B520ED500701D69 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DDA1B520ED500701D69 /* ProximaNova-Regular.otf */; };
+		46D96DDF1B520ED500701D69 /* Mark Simonson - Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DDB1B520ED500701D69 /* Mark Simonson - Proxima Nova Bold.otf */; };
+		46D96DE01B520ED500701D69 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DDC1B520ED500701D69 /* ProximaNova-Semibold.otf */; };
+		46D96DE11B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DDD1B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf */; };
+		46D96DE61B520F5000701D69 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DE51B520F5000701D69 /* UIColorExtension.swift */; };
+		46D96DE81B52139E00701D69 /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DE71B52139E00701D69 /* FontBlaster.swift */; };
 		46E9AE411B51D496007D0820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE401B51D496007D0820 /* User.swift */; };
 		46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */; };
 		46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE451B51DA31007D0820 /* StringExtension.swift */; };
@@ -70,6 +76,12 @@
 		46D96DC41B52055800701D69 /* AvatarAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarAnnotation.swift; sourceTree = "<group>"; };
 		46D96DD31B5209E100701D69 /* Toucan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toucan.framework; path = Carthage/Build/iOS/Toucan.framework; sourceTree = SOURCE_ROOT; };
 		46D96DD81B520DED00701D69 /* ColorDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDefines.swift; sourceTree = "<group>"; };
+		46D96DDA1B520ED500701D69 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		46D96DDB1B520ED500701D69 /* Mark Simonson - Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Simonson - Proxima Nova Bold.otf"; sourceTree = "<group>"; };
+		46D96DDC1B520ED500701D69 /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		46D96DDD1B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HUBERT JOCHAM Susa-Bold.otf"; sourceTree = "<group>"; };
+		46D96DE51B520F5000701D69 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		46D96DE71B52139E00701D69 /* FontBlaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontBlaster.swift; path = Carthage/Checkouts/FontBlaster/FontBlaster/FontBlaster.swift; sourceTree = "<group>"; };
 		46E9AE401B51D496007D0820 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 		46E9AE451B51DA31007D0820 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -132,6 +144,7 @@
 		467F4DD91B51CCF80010BE02 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				46D96DE21B520ED800701D69 /* Fonts */,
 				467F4DCB1B51CCAD0010BE02 /* Assets.xcassets */,
 				467F4DCD1B51CCAD0010BE02 /* LaunchScreen.storyboard */,
 			);
@@ -155,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				467F4DDF1B51CD660010BE02 /* NSUserDefaultHelper.swift */,
+				46D96DE51B520F5000701D69 /* UIColorExtension.swift */,
 				467F4DE01B51CD660010BE02 /* NSNotificationCenterHelper.swift */,
 				467F4DE11B51CD660010BE02 /* UIStoryboardExtension.swift */,
 				46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */,
@@ -185,11 +199,21 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
+		46D96DE21B520ED800701D69 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				46D96DDA1B520ED500701D69 /* ProximaNova-Regular.otf */,
+				46D96DDB1B520ED500701D69 /* Mark Simonson - Proxima Nova Bold.otf */,
+				46D96DDC1B520ED500701D69 /* ProximaNova-Semibold.otf */,
+				46D96DDD1B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		46E9AE421B51D7E4007D0820 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				46E9AE401B51D496007D0820 /* User.swift */,
-				46D96DD31B5209E100701D69 /* Toucan.framework */,
 				46D96DB31B51E74000701D69 /* Friend.swift */,
 			);
 			name = Model;
@@ -199,6 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				46FEE9381B51D11A00DA441E /* outside-hacks-Bridging-Header.h */,
+				46D96DD31B5209E100701D69 /* Toucan.framework */,
+				46D96DE71B52139E00701D69 /* FontBlaster.swift */,
 				46D96DB91B51F20400701D69 /* MBPullDownController */,
 				46FEE9301B51CF5E00DA441E /* Frameworks */,
 			);
@@ -274,6 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				467F4DCF1B51CCAD0010BE02 /* LaunchScreen.storyboard in Resources */,
+				46D96DE01B520ED500701D69 /* ProximaNova-Semibold.otf in Resources */,
+				46D96DDE1B520ED500701D69 /* ProximaNova-Regular.otf in Resources */,
+				46D96DDF1B520ED500701D69 /* Mark Simonson - Proxima Nova Bold.otf in Resources */,
+				46D96DE11B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf in Resources */,
 				467F4DCC1B51CCAD0010BE02 /* Assets.xcassets in Resources */,
 				467F4DCA1B51CCAD0010BE02 /* Main.storyboard in Resources */,
 			);
@@ -293,10 +323,12 @@
 				46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */,
 				46E9AE411B51D496007D0820 /* User.swift in Sources */,
 				467F4DE41B51CD660010BE02 /* UIStoryboardExtension.swift in Sources */,
+				46D96DE61B520F5000701D69 /* UIColorExtension.swift in Sources */,
 				46C1261F1B51E6840020CB6A /* FriendListViewController.swift in Sources */,
 				46D96DC11B51FF3C00701D69 /* AvatarAnnotationView.swift in Sources */,
 				467F4DD71B51CCD40010BE02 /* MapViewController.swift in Sources */,
 				46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */,
+				46D96DE81B52139E00701D69 /* FontBlaster.swift in Sources */,
 				46D96DB41B51E74000701D69 /* Friend.swift in Sources */,
 				46D96DD91B520DED00701D69 /* ColorDefines.swift in Sources */,
 				46D96DC51B52055800701D69 /* AvatarAnnotation.swift in Sources */,
