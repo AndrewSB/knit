@@ -117,7 +117,7 @@ extension MessageViewController {
         let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as! JSQMessagesCollectionViewCell
         
         if messages[indexPath.row].senderId() == senderId {
-            cell.textView!.textColor = UIColor(hex: Color.Global.Green.Light.rawValue)
+            cell.textView!.textColor = UIColor(hex: Color.Global.Green.Dark.rawValue)
         } else {
             cell.textView!.textColor = UIColor.whiteColor()
         }

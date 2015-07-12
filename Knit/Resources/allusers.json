@@ -38,21 +38,21 @@
     "name": "Zach Latta",
     "battery": "90",
     "seat": "Back Right",
-    "loc": "37.770301, -122.492137"
+    "loc": "37.770301, -122.492137",
     "stage": "Sutro"
   },
   {
     "name": "Rohith Varanasi",
     "battery": "80",
     "seat": "Front Center",
-    "loc": "37.768996, -122.487233",
+    "loc": "37.769345, -122.487553",
     "stage": "Panhandle"
   },
   {
     "name": "Ben Alderfer",
     "battery": "60",
     "seat": "Porta Potties",
-    "loc": "37.769141, -122.48648",
+    "loc": "37.767853, -122.491621",
     "stage": "Elsewhere"
   },
   {

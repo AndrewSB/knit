@@ -10,11 +10,11 @@ import UIKit
 import MapKit
 
 class AvatarAnnotation: NSObject, MKAnnotation {
-    var face: Image.Face
+    var user: User
     var coordinate: CLLocationCoordinate2D
     
-    init(face: Image.Face, at: CLLocationCoordinate2D) {
-        self.face = face
+    init(user: User, at: CLLocationCoordinate2D) {
+        self.user = user
         self.coordinate = at
     }
 }

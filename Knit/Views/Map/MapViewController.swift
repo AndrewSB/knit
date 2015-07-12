@@ -29,12 +29,14 @@ class MapViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        LocalMessage.observe(.NewLocationRegistered, classFunction: "updateLocation", inClass: self)
         
-        if let curLocation = Location.sharedInstance.mostRecentLocation {
-            mapView.addAnnotation(AvatarAnnotation(face: Image.Face.Raphie, at: curLocation.coordinate))
+        for user in NSBundle.json("allusers")!.json()!.map({ User(json: $0 as! [String: String])! }) {
+            let annotation = AvatarAnnotation(user: user, at: CLLocation(latitude: user.currentLocation!.coordinate.latitude, longitude: user.currentLocation!.coordinate.longitude).coordinate)
+            
+            mapView.addAnnotation(annotation)
         }
         
-        LocalMessage.observe(.NewLocationRegistered, classFunction: "updateLocation", inClass: self)
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -45,8 +47,8 @@ class MapViewController: UIViewController {
 extension MapViewController: MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-        if let _ = annotation as? AvatarAnnotation {
-            return AvatarAnnotationView(user: User(name: "Rohith Varanasi")!)
+        if let a = annotation as? AvatarAnnotation {
+            return AvatarAnnotationView(user: a.user)
         } else {
             return MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
         }
