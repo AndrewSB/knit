@@ -63,6 +63,7 @@
                 <constraint firstAttribute="trailing" secondItem="NS9-yI-aJh" secondAttribute="trailing" id="XNk-Ar-DxL"/>
                 <constraint firstItem="KKJ-xq-Udv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bKr-0K-Kpw"/>
                 <constraint firstItem="ltp-fp-kV2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bXF-aw-gjR"/>
+                <constraint firstAttribute="bottom" secondItem="KKJ-xq-Udv" secondAttribute="bottom" constant="44" id="czm-yQ-Tjc"/>
                 <constraint firstAttribute="bottom" secondItem="NS9-yI-aJh" secondAttribute="bottom" id="dmK-nX-YXE"/>
                 <constraint firstAttribute="trailing" secondItem="ltp-fp-kV2" secondAttribute="trailing" constant="15" id="eDi-QX-SLw"/>
                 <constraint firstItem="NS9-yI-aJh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nfB-lh-ake"/>
@@ -72,9 +73,12 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="labelEqualHeightsConstraint" destination="zV8-DR-WZg" id="qG1-lb-rYY"/>
                 <outlet property="messageButton" destination="ltp-fp-kV2" id="7Ht-iZ-lbM"/>
+                <outlet property="musicPinImageView" destination="ac4-Eq-H0g" id="FRj-in-eFF"/>
                 <outlet property="songLabel" destination="NS9-yI-aJh" id="5wq-Hu-1eg"/>
                 <outlet property="stageLabel" destination="KKJ-xq-Udv" id="Qgn-vU-Puq"/>
+                <outlet property="stageToBottomConstraint" destination="czm-yQ-Tjc" id="ibo-Wz-VB1"/>
             </connections>
             <point key="canvasLocation" x="304" y="127"/>
         </view>

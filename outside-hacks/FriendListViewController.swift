@@ -93,12 +93,14 @@ extension FriendListViewController {
         cell.batteryImageView.image = UIImage(named: "\(imageName)")
         cell.batteryLabel.text = "\(round(friend.battery))%"
         
-        
         cell.locationLabel.text = friend.seat
         
         let hex = Color.Stage.color(forStageName: data[indexPath.section].0.stage)!.light
         cell.activeColor = UIColor(hex: hex)
-    
+        
+        
+        cell.onePxBottomView.hidden = indexPath.row == data[indexPath.section].1.count - 1
+        
         return cell
     }
     
@@ -128,10 +130,14 @@ extension FriendListViewController {
             headerView.configure((data[section].0.stage, colors.light), song: (data[section].0.song, colors.dark))
             
             if section == data.count - 1 {
-                (headerView.stageLabel.superview!.constraints.last! as NSLayoutConstraint).active = false
+                headerView.labelEqualHeightsConstraint.active = false
+                headerView.stageToBottomConstraint.constant = 0
+                headerView.updateConstraintsIfNeeded()
+               
                 headerView.addConstraint(NSLayoutConstraint(item: headerView, attribute: .Height, relatedBy: .Equal, toItem: headerView.stageLabel, attribute: .Height, multiplier: 1, constant: 0))
                 
                 headerView.messageButton.hidden = true
+                headerView.musicPinImageView.hidden = true
             }
             
             return headerView

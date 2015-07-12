@@ -207,6 +207,7 @@
                                     <outlet property="locationImageView" destination="pct-cf-VaG" id="Sia-Ls-Edh"/>
                                     <outlet property="locationLabel" destination="DbM-ZT-Q2Y" id="btu-3n-Ifd"/>
                                     <outlet property="nameLabel" destination="Z5j-Hf-vda" id="Dbj-je-FjM"/>
+                                    <outlet property="onePxBottomView" destination="xHO-bg-oee" id="FCX-yQ-yCI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -19,6 +19,7 @@ class FriendTableViewCell: UITableViewCell {
     @IBOutlet weak var locationImageView: UIImageView!
     @IBOutlet weak var locationLabel: UILabel!
     
+    @IBOutlet weak var onePxBottomView: UIView!
     
     
     var activeColor: UIColor! {

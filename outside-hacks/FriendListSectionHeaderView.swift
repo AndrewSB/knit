@@ -13,6 +13,11 @@ class FriendListSectionHeaderView: UIView {
     @IBOutlet weak var stageLabel: InsetLabel!
     @IBOutlet weak var songLabel: InsetLabel!
     @IBOutlet weak var messageButton: UIButton!
+    @IBOutlet weak var musicPinImageView: UIImageView!
+    
+    @IBOutlet weak var labelEqualHeightsConstraint: NSLayoutConstraint!
+    @IBOutlet weak var stageToBottomConstraint: NSLayoutConstraint!
+    
     
     class func instanceFromNib() -> FriendListSectionHeaderView {
         return UINib(nibName: "FriendListSectionHeaderView", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! FriendListSectionHeaderView
@@ -31,8 +36,6 @@ class FriendListSectionHeaderView: UIView {
         messageButton.layer.cornerRadius = messageButton.frame.width / 2
         messageButton.layer.borderWidth = 4
         messageButton.layer.borderColor = UIColor.whiteColor().CGColor
-        
-
     }
 
     @IBAction func messageButtonWasHit() {
