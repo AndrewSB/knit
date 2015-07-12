@@ -38,7 +38,7 @@ class Scanner: NSObject {
         let text = NSString(data: data, encoding: NSUTF8StringEncoding)!
         
         let message = Message(text: String(text), sender: (id: peerDisplayName, dispayName: peerDisplayName))
-        print("got that message son \(message)")
+        print("got that message son \(message.text())")
         
         LocalMessage.post(.NewMessageProcessed, arg: ["message": message])
     }

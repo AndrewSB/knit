@@ -42,10 +42,11 @@ class Message: NSObject, JSQMessageData {
     func date() -> NSDate! { return _date }
     func isMediaMessage() -> Bool { return _imageUrl != nil }
     func messageHash() -> UInt {
-        let contentHash = self.isMediaMessage() ? _imageUrl!.hash : _text!.hash
-        let combinedHash = _senderId.hash ^ _date.hash //^ contentHash
-        let normalized = Int(combinedHash.distanceTo(0)).distanceTo(0)
-        return UInt(normalized)
+        var signed = rand()
+        let unsigned = signed >= 0 ?
+            UInt(signed) :
+            UInt(signed  - Int.min) + UInt(Int.max) + 1
+        return unsigned
     }
     func text() -> String! { return self._text }
     

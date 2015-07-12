@@ -12,7 +12,7 @@ class MessageViewController: JSQMessagesViewController {
     
     var otherUser: User!
     
-    var messages = [Message]()
+    var messages = MessageCoordinator.sharedInstance.messages
     
     let outgoingBubbleImageView = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.whiteColor())
     let incomingBubbleImageView = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor(hex: "#62B2F1"))

@@ -23,6 +23,7 @@ class MapViewController: UIViewController {
             updateLocation()
             let userRegion = MKCoordinateRegion(center: Location.sharedInstance.mostRecentLocation!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
             mapView.setRegion(userRegion, animated: true)
+//            mapView.
         }
         
     }
