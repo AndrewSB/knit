@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		460861121B52C98700CD1174 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 4608610C1B52C98700CD1174 /* .gitkeep */; };
-		460861131B52C98700CD1174 /* MMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4608610E1B52C98700CD1174 /* MMLabel.m */; };
-		460861141B52C98700CD1174 /* MMPopLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 460861101B52C98700CD1174 /* MMPopLabel.m */; };
 		460861161B52CA7B00CD1174 /* PopupContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460861151B52CA7A00CD1174 /* PopupContentView.swift */; };
 		460861181B52CA8700CD1174 /* PopupContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460861171B52CA8700CD1174 /* PopupContentView.xib */; };
 		4608611A1B52CEF600CD1174 /* allusers.json in Resources */ = {isa = PBXBuildFile; fileRef = 460861191B52CEF600CD1174 /* allusers.json */; };
+		460861201B52DA9C00CD1174 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4608611D1B52DA9C00CD1174 /* WYPopoverController.m */; };
+		460861211B52DA9C00CD1174 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4608611F1B52DA9C00CD1174 /* WYStoryboardPopoverSegue.m */; };
 		464A7BDD1B52A15F00F3CB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */; };
 		464A7BDF1B52A16900F3CB5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BDE1B52A16900F3CB5E /* User.swift */; };
 		464A7BE11B52A16E00F3CB5E /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BE01B52A16E00F3CB5E /* Header.swift */; };
@@ -32,7 +31,6 @@
 		464A7BFE1B52A23A00F3CB5E /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 464A7BFC1B52A23A00F3CB5E /* users.json */; };
 		464A7C041B52A25000F3CB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C031B52A25000F3CB5E /* Assets.xcassets */; };
 		464A7C071B52A25600F3CB5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C051B52A25600F3CB5E /* LaunchScreen.storyboard */; };
-		464A7C091B52A26000F3CB5E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C081B52A26000F3CB5E /* Info.plist */; };
 		464A7C0B1B52A26400F3CB5E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7C0A1B52A26400F3CB5E /* API.swift */; };
 		464A7C0D1B52A26900F3CB5E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7C0C1B52A26900F3CB5E /* Location.swift */; };
 		464A7C111B52A27500F3CB5E /* ColorDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7C0E1B52A27500F3CB5E /* ColorDefines.swift */; };
@@ -95,7 +93,6 @@
 		46B6896E1B526AD200C22C4F /* JSQMessagesToolbarContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B689421B526AD200C22C4F /* JSQMessagesToolbarContentView.xib */; };
 		46B6896F1B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B689441B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.m */; };
 		46B689701B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B689451B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.xib */; };
-		46B689B91B526B1400C22C4F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46B689B61B526B1400C22C4F /* Info.plist */; };
 		46B689BA1B526B1400C22C4F /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B689B81B526B1400C22C4F /* JSQSystemSoundPlayer.m */; };
 		46D96DBC1B51F20400701D69 /* MBPullDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DBB1B51F20400701D69 /* MBPullDownController.m */; };
 		46D96DD61B520A5200701D69 /* Toucan.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46D96DD31B5209E100701D69 /* Toucan.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -118,15 +115,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4608610C1B52C98700CD1174 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		4608610D1B52C98700CD1174 /* MMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLabel.h; sourceTree = "<group>"; };
-		4608610E1B52C98700CD1174 /* MMLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLabel.m; sourceTree = "<group>"; };
-		4608610F1B52C98700CD1174 /* MMPopLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopLabel.h; sourceTree = "<group>"; };
-		460861101B52C98700CD1174 /* MMPopLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPopLabel.m; sourceTree = "<group>"; };
-		460861111B52C98700CD1174 /* MMPopLabelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopLabelDelegate.h; sourceTree = "<group>"; };
 		460861151B52CA7A00CD1174 /* PopupContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupContentView.swift; sourceTree = "<group>"; };
 		460861171B52CA8700CD1174 /* PopupContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupContentView.xib; sourceTree = "<group>"; };
 		460861191B52CEF600CD1174 /* allusers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allusers.json; sourceTree = "<group>"; };
+		4608611C1B52DA9C00CD1174 /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
+		4608611D1B52DA9C00CD1174 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
+		4608611E1B52DA9C00CD1174 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
+		4608611F1B52DA9C00CD1174 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
 		464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		464A7BDE1B52A16900F3CB5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		464A7BE01B52A16E00F3CB5E /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
@@ -167,7 +162,7 @@
 		467F4DC11B51CCAD0010BE02 /* Knit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46869CE91B52A76D00FF99BF /* FontBlaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontBlaster.swift; path = Carthage/Checkouts/FontBlaster/FontBlaster/FontBlaster.swift; sourceTree = "<group>"; };
 		46869CEE1B52A92000FF99BF /* FriendMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendMasterViewController.swift; sourceTree = "<group>"; };
-		46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Knit-Bridging-Header.h"; path = "Knit/Knit-Bridging-Header.h"; sourceTree = "<group>"; };
+		46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Knit-Bridging-Header.h"; sourceTree = "<group>"; };
 		46B688EA1B526AD100C22C4F /* JSQMessagesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSQMessagesAssets.bundle; sourceTree = "<group>"; };
 		46B688EC1B526AD100C22C4F /* JSQSystemSoundPlayer+JSQMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSQSystemSoundPlayer+JSQMessages.h"; sourceTree = "<group>"; };
 		46B688ED1B526AD100C22C4F /* JSQSystemSoundPlayer+JSQMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSQSystemSoundPlayer+JSQMessages.m"; sourceTree = "<group>"; };
@@ -277,25 +272,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4608610B1B52C98700CD1174 /* MMPopLabel */ = {
+		4608611B1B52DA9C00CD1174 /* WYPopoverController */ = {
 			isa = PBXGroup;
 			children = (
-				4608610C1B52C98700CD1174 /* .gitkeep */,
-				4608610D1B52C98700CD1174 /* MMLabel.h */,
-				4608610E1B52C98700CD1174 /* MMLabel.m */,
-				4608610F1B52C98700CD1174 /* MMPopLabel.h */,
-				460861101B52C98700CD1174 /* MMPopLabel.m */,
-				460861111B52C98700CD1174 /* MMPopLabelDelegate.h */,
+				4608611C1B52DA9C00CD1174 /* WYPopoverController.h */,
+				4608611D1B52DA9C00CD1174 /* WYPopoverController.m */,
+				4608611E1B52DA9C00CD1174 /* WYStoryboardPopoverSegue.h */,
+				4608611F1B52DA9C00CD1174 /* WYStoryboardPopoverSegue.m */,
 			);
-			name = MMPopLabel;
-			path = Carthage/Checkouts/MMPopLabel/Classes/ios;
+			name = WYPopoverController;
+			path = Carthage/Checkouts/WYPopoverController/WYPopoverController;
 			sourceTree = "<group>";
 		};
 		467F4DB81B51CCAD0010BE02 = {
 			isa = PBXGroup;
 			children = (
 				467F4DC31B51CCAD0010BE02 /* Knit */,
-				46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */,
 				467F4DC21B51CCAD0010BE02 /* Products */,
 				46FEE92F1B51CF5800DA441E /* Libraries */,
 			);
@@ -312,6 +304,7 @@
 		467F4DC31B51CCAD0010BE02 /* Knit */ = {
 			isa = PBXGroup;
 			children = (
+				46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */,
 				464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */,
 				467F4DD81B51CCF30010BE02 /* Views */,
 				46E9AE421B51D7E4007D0820 /* Models */,
@@ -612,7 +605,7 @@
 			isa = PBXGroup;
 			children = (
 				46869CE91B52A76D00FF99BF /* FontBlaster.swift */,
-				4608610B1B52C98700CD1174 /* MMPopLabel */,
+				4608611B1B52DA9C00CD1174 /* WYPopoverController */,
 				46B689B51B526B1400C22C4F /* JSQSystemSoundPlayer */,
 				46B688E81B526AD100C22C4F /* JSQMessagesViewController */,
 				46D96DD31B5209E100701D69 /* Toucan.framework */,
@@ -691,18 +684,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B689701B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
-				46B689B91B526B1400C22C4F /* Info.plist in Resources */,
 				46B6896E1B526AD200C22C4F /* JSQMessagesToolbarContentView.xib in Resources */,
 				464A7BF61B52A21A00F3CB5E /* FriendListSectionHeaderView.xib in Resources */,
 				46B689661B526AD200C22C4F /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
 				464A7BFD1B52A23A00F3CB5E /* headers.json in Resources */,
 				4608611A1B52CEF600CD1174 /* allusers.json in Resources */,
 				464A7C041B52A25000F3CB5E /* Assets.xcassets in Resources */,
-				460861121B52C98700CD1174 /* .gitkeep in Resources */,
 				460861181B52CA8700CD1174 /* PopupContentView.xib in Resources */,
 				46B6896B1B526AD200C22C4F /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				46869CF21B52AB7500FF99BF /* HUBERT JOCHAM Susa-Bold.otf in Resources */,
-				464A7C091B52A26000F3CB5E /* Info.plist in Resources */,
 				464A7BFE1B52A23A00F3CB5E /* users.json in Resources */,
 				46869CF41B52AB7500FF99BF /* ProximaNova-Regular.otf in Resources */,
 				46869CF31B52AB7500FF99BF /* Mark Simonson - Proxima Nova Bold.otf in Resources */,
@@ -750,7 +740,6 @@
 				464A7BE81B52A1F300F3CB5E /* MasterViewController.swift in Sources */,
 				46B689621B526AD200C22C4F /* JSQMessagesCollectionViewCell.m in Sources */,
 				46B689571B526AD200C22C4F /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
-				460861141B52C98700CD1174 /* MMPopLabel.m in Sources */,
 				46B689531B526AD200C22C4F /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
 				46B689601B526AD200C22C4F /* JSQMessagesCellTextView.m in Sources */,
 				46B6894B1B526AD200C22C4F /* UIDevice+JSQMessages.m in Sources */,
@@ -759,7 +748,6 @@
 				464A7BE31B52A17200F3CB5E /* Message.swift in Sources */,
 				464A7C121B52A27500F3CB5E /* ImageDefines.swift in Sources */,
 				46B6894F1B526AD200C22C4F /* JSQMessagesViewController.m in Sources */,
-				460861131B52C98700CD1174 /* MMLabel.m in Sources */,
 				46B6894C1B526AD200C22C4F /* UIImage+JSQMessages.m in Sources */,
 				46869CEA1B52A76D00FF99BF /* FontBlaster.swift in Sources */,
 				464A7BF51B52A21A00F3CB5E /* FriendListSectionHeaderView.swift in Sources */,
@@ -767,12 +755,14 @@
 				46B6895D1B526AD200C22C4F /* JSQMessagesBubbleImage.m in Sources */,
 				464A7BEA1B52A20200F3CB5E /* MessageViewController.swift in Sources */,
 				464A7BF41B52A21A00F3CB5E /* AvatarAnnotationView.swift in Sources */,
+				460861201B52DA9C00CD1174 /* WYPopoverController.m in Sources */,
 				46B6896D1B526AD200C22C4F /* JSQMessagesToolbarContentView.m in Sources */,
 				464A7C231B52A2A300F3CB5E /* CLLocationExtension.swift in Sources */,
 				46B689611B526AD200C22C4F /* JSQMessagesCollectionView.m in Sources */,
 				46B6896F1B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
 				464A7C1B1B52A28900F3CB5E /* UIColorExtension.swift in Sources */,
 				464A7C211B52A29F00F3CB5E /* JSONExtension.swift in Sources */,
+				460861211B52DA9C00CD1174 /* WYStoryboardPopoverSegue.m in Sources */,
 				460861161B52CA7B00CD1174 /* PopupContentView.swift in Sources */,
 				464A7C111B52A27500F3CB5E /* ColorDefines.swift in Sources */,
 				46869CEF1B52A92000FF99BF /* FriendMasterViewController.swift in Sources */,

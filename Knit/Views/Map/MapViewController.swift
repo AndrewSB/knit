@@ -12,7 +12,6 @@ import MapKit
 class MapViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
-    let d = MMPopLabel(text: "hi")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +33,6 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(AvatarAnnotation(face: Image.Face.Raphie, at: curLocation.coordinate))
         }
         
-        mapView.addSubview(d)
-        
         LocalMessage.observe(.NewLocationRegistered, classFunction: "updateLocation", inClass: self)
     }
     
@@ -56,21 +53,18 @@ extension MapViewController: MKMapViewDelegate {
     }
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-        if let view = view as? AvatarAnnotationView {
-//            var popoverView = MMPopLabel(frame: CGRect(origin: .zeroPoint, size: CGSize(width: self.mapView.frame.width * 0.9, height: 200)))
-//            popoverView.set
+        if let annotationView = view as? AvatarAnnotationView {
+            let popoverContent = PopupContentView.instanceFromNib()
+            print(annotationView.user)
+            popoverContent.configure(annotationView.user)
             
-//            text: "", options: MMPopLabelAnimationOptions.PopViewOnly
-            
-//            let popoverContent = PopupContentView.instanceFromNib()
-//            print(view.user)
-//            popoverContent.configure(view.user)
-//            popoverContent.frame = popoverView.frame
+            let popoverView = WYPopoverController(contentViewController: self)
+            popoverView.delegate = self
+            popoverView.presentPopoverFromRect(annotationView.bounds, inView: self.mapView, permittedArrowDirections: .Up, animated: true)
 //
 //            popoverView.addSubview(popoverContent)
             
             
-            d.popAtView(view)
 //            mapView.addSubview(popoverView)
         }
     }
@@ -78,5 +72,9 @@ extension MapViewController: MKMapViewDelegate {
     func updateLocation() {
         mapView.showsUserLocation = true
     }
+    
+}
+
+extension MapViewController: WYPopoverControllerDelegate {
     
 }

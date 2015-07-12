@@ -14,8 +14,11 @@
         <mutableArray key="ProximaNova-Regular.otf">
             <string>ProximaNova-Regular</string>
             <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
         </mutableArray>
         <mutableArray key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
             <string>ProximaNova-Semibold</string>
             <string>ProximaNova-Semibold</string>
         </mutableArray>
@@ -71,6 +74,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="253" y="363"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ioi-H2-NpA">
+            <objects>
+                <viewController id="zA6-SS-MJQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YXk-Qz-AMe"/>
+                        <viewControllerLayoutGuide type="bottom" id="9nM-x1-xCD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="acd-vP-b9h">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="80"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front Center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL6-n3-0tn">
+                                <rect key="frame" x="159" y="47" width="111" height="20"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15U-g9-ZkH">
+                                <rect key="frame" x="62" y="47" width="39" height="20"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="VKR-dZ-Qck">
+                                <rect key="frame" x="133" y="48" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="FLB-9s-GoH"/>
+                                    <constraint firstAttribute="width" secondItem="VKR-dZ-Qck" secondAttribute="height" multiplier="1:1" id="qFC-oZ-76s"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rohith Varanasi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWl-xE-onh">
+                                <rect key="frame" x="12" y="12" width="167.5" height="24"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="80" translatesAutoresizingMaskIntoConstraints="NO" id="8lc-t5-vsH">
+                                <rect key="frame" x="16" y="48" width="36" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="sE9-nx-zG4"/>
+                                    <constraint firstAttribute="width" secondItem="8lc-t5-vsH" secondAttribute="height" multiplier="24:12" id="yTU-ce-qid"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2106741667" green="0.92213642600000001" blue="0.23415806889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yWl-xE-onh" firstAttribute="leading" secondItem="acd-vP-b9h" secondAttribute="leading" constant="12" id="63z-cA-e6o"/>
+                            <constraint firstItem="9nM-x1-xCD" firstAttribute="top" secondItem="8lc-t5-vsH" secondAttribute="bottom" constant="14" id="Ecq-hb-wGY"/>
+                            <constraint firstItem="SL6-n3-0tn" firstAttribute="centerY" secondItem="VKR-dZ-Qck" secondAttribute="centerY" id="Kss-ke-Fi0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SL6-n3-0tn" secondAttribute="trailing" constant="-6" id="Oj3-ut-nkg"/>
+                            <constraint firstItem="VKR-dZ-Qck" firstAttribute="centerY" secondItem="15U-g9-ZkH" secondAttribute="centerY" id="SKj-mz-C1J"/>
+                            <constraint firstItem="SL6-n3-0tn" firstAttribute="leading" secondItem="VKR-dZ-Qck" secondAttribute="trailing" constant="8" id="SpK-aE-3ZK"/>
+                            <constraint firstItem="15U-g9-ZkH" firstAttribute="leading" secondItem="8lc-t5-vsH" secondAttribute="trailing" constant="10" id="WYj-wi-mX4"/>
+                            <constraint firstItem="yWl-xE-onh" firstAttribute="top" secondItem="YXk-Qz-AMe" secondAttribute="bottom" constant="12" id="XQX-cc-Fda"/>
+                            <constraint firstItem="8lc-t5-vsH" firstAttribute="centerY" secondItem="15U-g9-ZkH" secondAttribute="centerY" id="bJe-JZ-Cte"/>
+                            <constraint firstItem="8lc-t5-vsH" firstAttribute="leading" secondItem="acd-vP-b9h" secondAttribute="leadingMargin" id="kv6-dn-gsW"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="280" height="80"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBU-Fq-LMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="253"/>
         </scene>
         <!--Friend List View Controller-->
         <scene sceneID="r9z-nC-UvB">

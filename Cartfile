@@ -1,7 +1,6 @@
 github "gavinbunney/Toucan"
 
 github "matej/MBPullDownController"
-github "mgcm/MMPopLabel"
 
 github "AndrewSB/FontBlaster" "master"
 
