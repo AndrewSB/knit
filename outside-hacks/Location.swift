@@ -10,7 +10,12 @@ import Foundation
 import CoreLocation
 
 class Location: CLLocationManager, CLLocationManagerDelegate {
-    static let singleton = Location()
+    class var sharedInstance : Location {
+        struct Static {
+            static let instance : Location = Location()
+        }
+        return Static.instance
+    }
     
     var mostRecentLocation: CLLocation? {
         didSet {
@@ -30,7 +35,9 @@ class Location: CLLocationManager, CLLocationManagerDelegate {
         case .AuthorizedWhenInUse, .AuthorizedAlways:
             self.startUpdatingLocation()
         case .Denied, .NotDetermined, .Restricted:
-            self.requestWhenInUseAuthorization()
+            dispatch_async(dispatch_get_main_queue(), {
+                self.requestWhenInUseAuthorization()
+            })
             print("you can't see me")
         }
     }

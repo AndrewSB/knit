@@ -9,12 +9,17 @@
 import UIKit
 
 class MasterViewController: MBPullDownController {
+    
+    let viewControllers = (
+        map: UIStoryboard.idIn("Map", inStoryboard: "Main"),
+        friends: UIStoryboard.idIn("Friends", inStoryboard: "Main")
+    )
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        frontController = UIStoryboard.idIn("Friends", inStoryboard: "Main")
-        backController = UIStoryboard.idIn("Map", inStoryboard: "Main")
+        frontController = viewControllers.friends
+        backController = viewControllers.map
         
         openBottomOffset = 88
         closedTopOffset = 0
