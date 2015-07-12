@@ -15,33 +15,27 @@ class FriendListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        reloadData()
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
-        reloadData()
     }
     
     private func reloadData() {
-//        var headerArray = [Header]()
         
         let userJSON = NSBundle.json("users")!.json()!
-        
-        guard let d = NSBundle.json("headers")!.json() else { return }
-        for i in d {
-            let header = Header(json: i as! [String: String])
-            let stageName = i["stage"]
-            print("stage name is \(stageName)")
-            for j in userJSON {
-                if let k = j[stageName as! String] {
-                    let header = Header(json: i as! [String: String])!
-                    let friend = (k as! [[String: String]]).map({ return Friend(json: $0)! })
-                    let newElement = (header, friend)
+        let headerJSON = NSBundle.json("headers")!.json()!
+    
+        for header in headerJSON {
+            for userBlock in userJSON {
+                if let uB = userBlock[header["stage"] as! String] {
+                    let header = Header(json: header as! [String: String])!
+                    let friend = (uB as! [[String: String]]).map({ return Friend(json: $0)! })
                     
                     self.data.append((header, friend))
                 }
             }
         }
-        print(data)
     }
 }
 
@@ -53,10 +47,10 @@ extension FriendListViewController {
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 5
+        return data.count
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return data[section].1.count
     }
 }
