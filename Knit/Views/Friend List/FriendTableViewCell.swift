@@ -33,5 +33,7 @@ class FriendTableViewCell: UITableViewCell {
         
         avatarImageView.layer.cornerRadius = avatarImageView.frame.width / 2
         avatarImageView.layer.borderWidth = 4
+        
+        self.selectedBackgroundView = UIView(backgroundColor: UIColor(hex: Color.Global.Green.Dark.rawValue))
     }
 }

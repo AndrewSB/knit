@@ -95,9 +95,8 @@ extension MessageViewController {
         inputToolbar!.contentView!.textView!.font = UIFont(name: "ProximaNova-Regular", size: 15)
         inputToolbar!.contentView!.textView!.layer.borderWidth = 0
         print(inputToolbar!.contentView!.textView!.textContainerInset)
-        inputToolbar!.contentView!.textView!.textContainerInset.top = 8
-        inputToolbar!.contentView!.textView!.textContainerInset.bottom = 2
-
+        
+        inputToolbar!.contentView!.textView!.contentInset.top += 2
     }
     
     override func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {

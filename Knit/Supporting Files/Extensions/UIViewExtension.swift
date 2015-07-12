@@ -13,5 +13,10 @@ extension UIView {
     class func fromXib(named xibName: String) -> UIView {
         return NSBundle.mainBundle().loadNibNamed(xibName, owner: nil, options: nil).first! as! UIView
     }
+    
+    convenience init(backgroundColor: UIColor) {
+        self.init()
+        self.backgroundColor = backgroundColor
+    }
 
 }

@@ -29,6 +29,13 @@ enum Image {
         case LocationPin = "location"
         case MusicPin = "music"
     }
+    
+    enum OutsideLands: String {
+        case Landsend = "landsend"
+        case Panhandle = "panhandle"
+        case Sutro = "sutro"
+        case Twinpeaks = "twinpeaks"
+    }
 }
 
 
