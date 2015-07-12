@@ -39,7 +39,7 @@ extension MessageViewController {
             JSQSystemSoundPlayer.sharedPlayer().playSoundWithFilename("warm-tap", fileExtension: "aif", completion: nil)
             self.finishSendingMessage()
         } else {
-            JSQSystemSoundPlayer.jsq_playMessageReceivedSound()
+            JSQSystemSoundPlayer.sharedPlayer().playSoundWithFilename("tap-metallic", fileExtension: "aif", completion: nil)
             self.finishReceivingMessage()
         }
     }

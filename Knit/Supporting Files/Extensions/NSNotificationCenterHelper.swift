@@ -12,12 +12,20 @@ import UIKit
 enum LocalMessageNotification: String {
     case NewLocationRegistered = "NewLocationRegistered"
     case KnitHeaderWasTapped = "KnitHeaderWasTapped"
+    
+    case NewMessageReceived = "grabMessage"
+    case NewMessageProcessed = "NewMessageProcessed"
 }
 
 class LocalMessage {
     class func post(message: LocalMessageNotification) {
 
         NSNotificationCenter.defaultCenter().postNotificationName(message.rawValue, object: self)
+    }
+    
+    class func post(message: LocalMessageNotification, arg: [NSObject: AnyObject]) {
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(message.rawValue, object: self, userInfo: arg)
     }
     
     class func observe(message: LocalMessageNotification, classFunction: String, inClass: AnyObject) {

@@ -45,6 +45,11 @@
 		4676D8B51B52F20A00012955 /* MessageWrapperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676D8B41B52F20A00012955 /* MessageWrapperViewController.swift */; };
 		4676D8B71B52FF3000012955 /* SWISH.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4676D8B61B52FF3000012955 /* SWISH.mp3 */; };
 		4676D8B91B53015500012955 /* tap-warm.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4676D8B81B52FF3500012955 /* tap-warm.aif */; };
+		4676D8BB1B53024800012955 /* tap-metallic.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4676D8BA1B53024800012955 /* tap-metallic.aif */; };
+		4676D8C11B53029800012955 /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4676D8BE1B53029800012955 /* MCManager.m */; };
+		4676D8C21B53029800012955 /* ScanHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4676D8C01B53029800012955 /* ScanHelper.m */; };
+		4676D8C41B53030800012955 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676D8C31B53030800012955 /* Scanner.swift */; };
+		4676D8C61B5304A800012955 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4676D8C51B5304A800012955 /* MultipeerConnectivity.framework */; };
 		46869CEA1B52A76D00FF99BF /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46869CE91B52A76D00FF99BF /* FontBlaster.swift */; };
 		46869CF21B52AB7500FF99BF /* HUBERT JOCHAM Susa-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7BFF1B52A24700F3CB5E /* HUBERT JOCHAM Susa-Bold.otf */; };
 		46869CF31B52AB7500FF99BF /* Mark Simonson - Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C001B52A24700F3CB5E /* Mark Simonson - Proxima Nova Bold.otf */; };
@@ -162,6 +167,13 @@
 		4676D8B41B52F20A00012955 /* MessageWrapperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageWrapperViewController.swift; sourceTree = "<group>"; };
 		4676D8B61B52FF3000012955 /* SWISH.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SWISH.mp3; sourceTree = "<group>"; };
 		4676D8B81B52FF3500012955 /* tap-warm.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tap-warm.aif"; sourceTree = "<group>"; };
+		4676D8BA1B53024800012955 /* tap-metallic.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tap-metallic.aif"; sourceTree = "<group>"; };
+		4676D8BD1B53029800012955 /* MCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCManager.h; sourceTree = "<group>"; };
+		4676D8BE1B53029800012955 /* MCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCManager.m; sourceTree = "<group>"; };
+		4676D8BF1B53029800012955 /* ScanHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanHelper.h; sourceTree = "<group>"; };
+		4676D8C01B53029800012955 /* ScanHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanHelper.m; sourceTree = "<group>"; };
+		4676D8C31B53030800012955 /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		4676D8C51B5304A800012955 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		467F4DC11B51CCAD0010BE02 /* Knit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46869CE91B52A76D00FF99BF /* FontBlaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontBlaster.swift; path = Carthage/Checkouts/FontBlaster/FontBlaster/FontBlaster.swift; sourceTree = "<group>"; };
 		46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Knit-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -266,6 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4676D8C61B5304A800012955 /* MultipeerConnectivity.framework in Frameworks */,
 				46FEE92E1B51CF5300DA441E /* CoreLocation.framework in Frameworks */,
 				46FEE92C1B51CF4F00DA441E /* MapKit.framework in Frameworks */,
 			);
@@ -284,6 +297,18 @@
 			);
 			name = WYPopoverController;
 			path = Carthage/Checkouts/WYPopoverController/WYPopoverController;
+			sourceTree = "<group>";
+		};
+		4676D8BC1B53029800012955 /* MCAssets */ = {
+			isa = PBXGroup;
+			children = (
+				4676D8BD1B53029800012955 /* MCManager.h */,
+				4676D8BE1B53029800012955 /* MCManager.m */,
+				4676D8BF1B53029800012955 /* ScanHelper.h */,
+				4676D8C01B53029800012955 /* ScanHelper.m */,
+			);
+			name = MCAssets;
+			path = Carthage/Checkouts/MCAssets;
 			sourceTree = "<group>";
 		};
 		467F4DB81B51CCAD0010BE02 = {
@@ -331,6 +356,7 @@
 		467F4DD91B51CCF80010BE02 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4676D8BA1B53024800012955 /* tap-metallic.aif */,
 				4676D8B81B52FF3500012955 /* tap-warm.aif */,
 				4676D8B61B52FF3000012955 /* SWISH.mp3 */,
 				464A7C031B52A25000F3CB5E /* Assets.xcassets */,
@@ -349,6 +375,7 @@
 				464A7C081B52A26000F3CB5E /* Info.plist */,
 				464A7C0A1B52A26400F3CB5E /* API.swift */,
 				464A7C0C1B52A26900F3CB5E /* Location.swift */,
+				4676D8C31B53030800012955 /* Scanner.swift */,
 				464A7C0E1B52A27500F3CB5E /* ColorDefines.swift */,
 				464A7C0F1B52A27500F3CB5E /* ImageDefines.swift */,
 				464A7C101B52A27500F3CB5E /* SegueDefines.swift */,
@@ -609,6 +636,7 @@
 			isa = PBXGroup;
 			children = (
 				46869CE91B52A76D00FF99BF /* FontBlaster.swift */,
+				4676D8BC1B53029800012955 /* MCAssets */,
 				4608611B1B52DA9C00CD1174 /* WYPopoverController */,
 				46B689B51B526B1400C22C4F /* JSQSystemSoundPlayer */,
 				46B688E81B526AD100C22C4F /* JSQMessagesViewController */,
@@ -622,6 +650,7 @@
 		46FEE9301B51CF5E00DA441E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4676D8C51B5304A800012955 /* MultipeerConnectivity.framework */,
 				46FEE92D1B51CF5300DA441E /* CoreLocation.framework */,
 				46FEE92B1B51CF4F00DA441E /* MapKit.framework */,
 			);
@@ -688,6 +717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B689701B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
+				4676D8BB1B53024800012955 /* tap-metallic.aif in Resources */,
 				46B6896E1B526AD200C22C4F /* JSQMessagesToolbarContentView.xib in Resources */,
 				464A7BF61B52A21A00F3CB5E /* FriendListSectionHeaderView.xib in Resources */,
 				46B689661B526AD200C22C4F /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
@@ -735,6 +765,7 @@
 				4676D8B51B52F20A00012955 /* MessageWrapperViewController.swift in Sources */,
 				464A7C171B52A28300F3CB5E /* NSUserDefaultHelper.swift in Sources */,
 				464A7C161B52A28300F3CB5E /* NSNotificationCenterHelper.swift in Sources */,
+				4676D8C11B53029800012955 /* MCManager.m in Sources */,
 				464A7BF81B52A21A00F3CB5E /* FriendTableViewCell.swift in Sources */,
 				46B689471B526AD200C22C4F /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				464A7C1F1B52A29C00F3CB5E /* StringExtension.swift in Sources */,
@@ -779,11 +810,13 @@
 				464A7BEC1B52A20A00F3CB5E /* MapViewController.swift in Sources */,
 				46B6895C1B526AD200C22C4F /* JSQMessagesAvatarImage.m in Sources */,
 				464A7BF71B52A21A00F3CB5E /* FriendListViewController.swift in Sources */,
+				4676D8C21B53029800012955 /* ScanHelper.m in Sources */,
 				46B689BA1B526B1400C22C4F /* JSQSystemSoundPlayer.m in Sources */,
 				46D96DBC1B51F20400701D69 /* MBPullDownController.m in Sources */,
 				46B689521B526AD200C22C4F /* JSQMessagesBubbleImageFactory.m in Sources */,
 				46B689511B526AD200C22C4F /* JSQMessagesAvatarImageFactory.m in Sources */,
 				46B689581B526AD200C22C4F /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
+				4676D8C41B53030800012955 /* Scanner.swift in Sources */,
 				46B689671B526AD200C22C4F /* JSQMessagesComposerTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
