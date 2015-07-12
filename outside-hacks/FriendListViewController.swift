@@ -24,11 +24,21 @@ class FriendListViewController: UITableViewController {
         self.tableView.backgroundColor = UIColor.redColor()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+        if let des = segue.destinationViewController as? MessageViewController {
+            des.otherUser = sender as! User
+        }
+    }
+}
+
+extension FriendListViewController {
     private func reloadData() {
         
         let userJSON = NSBundle.json("users")!.json()!
         let headerJSON = NSBundle.json("headers")!.json()!
-    
+        
         for header in headerJSON {
             for userBlock in userJSON {
                 if let uB = userBlock[header["stage"] as! String] {
@@ -49,7 +59,7 @@ extension FriendListViewController {
         let friend = data[indexPath.section].1[indexPath.row]
         
         
-//        cell.avatarImageView.image = UIImage(named: friend.name)
+        cell.avatarImageView.image = UIImage(named: "alex")
         cell.nameLabel.text = friend.name
         
         let imageName: Int
@@ -79,6 +89,12 @@ extension FriendListViewController {
         cell.activeColor = UIColor(hex: hex)
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+//        performSegueWithIdentifier("segueToMessages", sender: data[indexPath.section].1[indexPath.row] as! AnyObject)
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

@@ -13,7 +13,7 @@ import CoreLocation
     For current user and server communication
 */
 
-struct User {
+class User {
     let id: String?
     
     let name: String
@@ -26,7 +26,16 @@ struct User {
     
     init?(json: [String: String]) {
         guard let name = json["name"], battery = json["battery"], seat = json["seat"]
-            else { return nil }
+            else {
+                self.id = nil
+                self.name = ""
+                self.pictureUrl = nil
+                self.currentLocation = nil
+                self.battery = 0
+                self.seat = ""
+                
+                return nil
+        }
         
         self.id = json["id"]
         

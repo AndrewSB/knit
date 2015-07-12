@@ -22,14 +22,23 @@ class MapViewController: UIViewController {
         mapView.showsUserLocation = true
         mapView.delegate = self
         
-        let userRegion = MKCoordinateRegion(center: Location.sharedInstance.mostRecentLocation!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
-        mapView.setRegion(userRegion, animated: true)
+        if let _ = Location.sharedInstance.mostRecentLocation {
+            updateLocation()
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        mapView.addAnnotation(AvatarAnnotation(face: Image.Face.Andrew, at: Location.sharedInstance.mostRecentLocation!.coordinate))
+        if let curLocation = Location.sharedInstance.mostRecentLocation {
+            mapView.addAnnotation(AvatarAnnotation(face: Image.Face.Andrew, at: curLocation.coordinate))
+        }
+        
+        LocalMessage.observe(.NewLocationRegistered, classFunction: "updateLocation", inClass: self)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+//        LocalMessage.
     }
 }
 
@@ -41,6 +50,11 @@ extension MapViewController: MKMapViewDelegate {
             return AvatarAnnotationView(face: annotation.face)
         }
         return MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+    }
+    
+    func updateLocation() {
+        let userRegion = MKCoordinateRegion(center: Location.sharedInstance.mostRecentLocation!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+        mapView.setRegion(userRegion, animated: true)
     }
     
 }

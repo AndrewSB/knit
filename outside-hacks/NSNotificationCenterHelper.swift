@@ -10,17 +10,6 @@ import Foundation
 import UIKit
 
 enum LocalMessageNotification: String {
-    case HomeFeedPageOne = "HomeFeedDidGoToPageOne"
-    case HomeFeedPageTwo = "HomeFeedDidGoToPageTwo"
-    case ActivityFeedPageOne = "ActivityFeedDidGoToPageOne"
-    case ActivityFeedPageTwo = "ActivityFeedDidGoToPageTwo"
-    
-    case HomeTitlePageOne = "HomeTitleDidClickPageOne"
-    case HomeTitlePageTwo = "HomeTitleDidClickPageTwo"
-    case ActivityTitlePageOne = "ActivityTitleDidClickPageOne"
-    case ActivityTitlePageTwo = "ActivityTitleDidClickPageTwo"
-    
-    
     case NewLocationRegistered = "NewLocationRegistered"
 }
 

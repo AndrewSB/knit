@@ -9,6 +9,8 @@
 import UIKit
 
 class MessageViewController: JSQMessagesViewController {
+    
+    var otherUser: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,4 +34,8 @@ class MessageViewController: JSQMessagesViewController {
     }
     */
 
+}
+
+extension MessageViewController {
+    
 }
