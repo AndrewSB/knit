@@ -44,7 +44,6 @@ class MessageWrapperViewController: UIViewController {
         
         nameLabel.text = cur.name
         
-        
         let imageName: Int
         switch cur.battery {
         case 0...15:

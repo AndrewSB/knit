@@ -37,6 +37,17 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(annotation)
         }
         
+        let centerCoord = CLLocationCoordinate2D(latitude: 37.769044, longitude: -122.489614)
+        
+        let rotationCamera = self.mapView.camera.copy() as! MKMapCamera
+        rotationCamera.heading = 90
+        
+        self.mapView.setCamera(rotationCamera, animated: false)
+        
+        
+        let adjustRegion = self.mapView.regionThatFits(MKCoordinateRegion(center: centerCoord, span: MKCoordinateSpan(latitudeDelta: 0.0001, longitudeDelta: 0.0001)))
+    
+        self.mapView.setRegion(adjustRegion, animated: true)
     }
     
     override func viewWillDisappear(animated: Bool) {
