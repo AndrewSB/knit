@@ -1,62 +1,72 @@
-[
-    "Lands End": [
-        {
-            "name": "Vikram Rajagopalan",
-            "battery": "50",
-            "seat": "Back Left"
-        },
-        {
-            "name": "Raphie Palefsky-Smith",
-            "battery": "80",
-            "seat": "Front Right"
-        },
-        {
-            "name": "Alex Kern",
-            "battery": "20",
-            "seat": "Middle Center"
-        }
-    ],
-    "Twin Peaks": [
-        {
-            "name": "Case Sandberg",
-            "battery": "100",
-            "seat": "Front Center"
-        }
-    ],
-    "Sutro": [
-        {
+ [
+  {
+  "Lands End": [
+                {
+                "name": "Vikram Rajagopalan",
+                "battery": "50",
+                "seat": "Back Left"
+                },
+                {
+                "name": "Raphie Palefsky-Smith",
+                "battery": "80",
+                "seat": "Front Right"
+                },
+                {
+                "name": "Alex Kern",
+                "battery": "20",
+                "seat": "Middle Center"
+                }
+                ]
+  },
+  {
+  "Twin Peaks": [
+                 {
+                 "name": "Case Sandberg",
+                 "battery": "100",
+                 "seat": "Front Center"
+                 }
+                 ]
+  },
+  {
+  "Sutro": [
+            {
             "name": "Matt Condon",
             "battery": "100",
             "seat": "Middle Center"
-        },
-        {
+            },
+            {
             "name": "Zach Latta",
             "battery": "90",
             "seat": "Back Right"
-        }
-    ],
-    "Panhandle": [
-        {
-            "name": "Henry Boldizsar",
-            "battery": "80",
-            "seat": "Front Center"
-        }
-    ],
-    "Elsewhere": [
-        {
-            "name": "Ben Alderfer",
-            "battery": "60",
-            "seat": "Porta Potties"
-        },
-        {
-            "name": "Benjamin Zweig",
-            "battery": "90",
-            "seat": "Choco Lands"
-        },
-        {
-            "name": "Stefan Aleksić",
-            "battery": "10",
-            "seat": "The Barbary"
-        }
-    ],
-]
+            }
+            ]
+  },
+  {
+  "Panhandle": [
+                {
+                "name": "Henry Boldizsar",
+                "battery": "80",
+                "seat": "Front Center"
+                }
+                ]
+  },
+  {
+  "Elsewhere": [
+                {
+                "name": "Ben Alderfer",
+                "battery": "60",
+                "seat": "Porta Potties"
+                },
+                {
+                "name": "Benjamin Zweig",
+                "battery": "90",
+                "seat": "Choco Lands"
+                },
+                {
+                "name": "Stefan Aleksić",
+                "battery": "10",
+                "seat": "The Barbary"
+                }
+                ]
+  }
+  ]

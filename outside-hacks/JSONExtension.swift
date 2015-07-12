@@ -19,9 +19,9 @@ extension NSBundle {
 }
 
 extension NSData {
-    func json() -> [[String: String]]? {
+    func json() -> [[String: AnyObject]]? {
         do {
-            return try NSJSONSerialization.JSONObjectWithData(self, options: []) as? [[String: String]]
+            return try NSJSONSerialization.JSONObjectWithData(self, options: []) as? [[String: AnyObject]]
         } catch {
             return nil
         }

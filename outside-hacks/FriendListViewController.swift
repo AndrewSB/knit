@@ -10,7 +10,7 @@ import UIKit
 
 class FriendListViewController: UITableViewController {
     
-    var data: [(Header, [Friend])]!
+    var data = [(Header, [Friend])]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,15 +22,27 @@ class FriendListViewController: UITableViewController {
     }
     
     private func reloadData() {
-        var headerArray = [[String: String]]()
+//        var headerArray = [Header]()
+        
+        let userJSON = NSBundle.json("users")!.json()!
         
         guard let d = NSBundle.json("headers")!.json() else { return }
         for i in d {
-            headerArray.append(i)
+            let header = Header(json: i as! [String: String])
+            let stageName = i["stage"]
+            print("stage name is \(stageName)")
+            for j in userJSON {
+                if let k = j[stageName as! String] {
+                    let header = Header(json: i as! [String: String])!
+                    let friend = (k as! [[String: String]]).map({ return Friend(json: $0)! })
+                    let newElement = (header, friend)
+                    
+                    self.data.append((header, friend))
+                }
+            }
         }
- 
+        print(data)
     }
-    
 }
 
 extension FriendListViewController {
