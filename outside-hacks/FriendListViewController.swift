@@ -41,8 +41,15 @@ class FriendListViewController: UITableViewController {
 
 extension FriendListViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath)
-        cell.textLabel?.text = "lol"
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath) as! FriendTableViewCell
+        
+        let friend = data[indexPath.section].1[indexPath.row]
+        
+        
+        
+        let hex = Color.Stage.color(forStageName: data[indexPath.section].0.stage)!.light
+        cell.activeColor = UIColor(hex: hex)
+        
         return cell
     }
     
@@ -65,15 +72,11 @@ extension FriendListViewController {
             
             headerView.configure((data[section].0.stage, colors.light), song: (data[section].0.song, colors.dark))
             
-            print("frame here is \(headerView.frame)")
-            
             if section == data.count - 1 {
                 (headerView.stageLabel.superview!.constraints.last! as NSLayoutConstraint).active = false
                 
                 let fullSizeContraint = NSLayoutConstraint(item: headerView, attribute: .Height, relatedBy: .Equal, toItem: headerView.stageLabel, attribute: .Height, multiplier: 1, constant: 0)
                 headerView.addConstraint(fullSizeContraint)
-                
-                headerView.stageLabel.frame = headerView.frame
             }
             
             return headerView

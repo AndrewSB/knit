@@ -3,12 +3,20 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HUBERT JOCHAM Susa-Bold.otf">
             <string>SusaBold</string>
         </mutableArray>
+        <mutableArray key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
         <mutableArray key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
             <string>ProximaNova-Semibold</string>
         </mutableArray>
     </customFonts>
@@ -67,15 +75,15 @@
         <scene sceneID="r9z-nC-UvB">
             <objects>
                 <tableViewController storyboardIdentifier="Friends" id="Chd-wb-idL" customClass="FriendListViewController" customModule="outside_hacks" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JMi-nT-e8S">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="100" sectionHeaderHeight="10" sectionFooterHeight="10" id="JMi-nT-e8S">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="vBl-Ki-akz">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mesh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hse-IZ-ReS">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hse-IZ-ReS">
                                     <rect key="frame" x="10" y="10" width="104.5" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="104.5" id="FgI-p3-uwM"/>
@@ -104,7 +112,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" red="0.49687498807907104" green="0.7851409912109375" blue="0.50724333524703979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.28025129437446594" green="0.69198757410049438" blue="0.29347819089889526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="hse-IZ-ReS" firstAttribute="centerY" secondItem="vBl-Ki-akz" secondAttribute="centerY" id="1L7-Ae-thf"/>
                                 <constraint firstItem="cAT-cK-wyE" firstAttribute="centerY" secondItem="E7D-RH-VjM" secondAttribute="centerY" id="3Yd-ry-zEk"/>
@@ -115,13 +123,79 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="SO8-y6-zFU">
-                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="100" id="SO8-y6-zFU" customClass="FriendTableViewCell" customModule="outside_hacks" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SO8-y6-zFU" id="ImJ-QK-PIY">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face-andrew" translatesAutoresizingMaskIntoConstraints="NO" id="NPo-L5-RkK">
+                                            <rect key="frame" x="18" y="18" width="63.5" height="63.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="NPo-L5-RkK" secondAttribute="height" multiplier="1:1" id="d5R-Qc-8bW"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vikram lol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5j-Hf-vda">
+                                            <rect key="frame" x="103" y="18" width="77" height="32"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0L-Px-rxd">
+                                            <rect key="frame" x="132" y="55" width="33" height="32"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front Center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbM-ZT-Q2Y">
+                                            <rect key="frame" x="216" y="62" width="94.5" height="17"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="pct-cf-VaG">
+                                            <rect key="frame" x="187" y="60" width="22" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="Rvp-e4-8c9"/>
+                                                <constraint firstAttribute="width" secondItem="pct-cf-VaG" secondAttribute="height" multiplier="1:1" id="hNz-eh-gcq"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="80" translatesAutoresizingMaskIntoConstraints="NO" id="BNB-t8-xxH">
+                                            <rect key="frame" x="103" y="66" width="22" height="11"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="BNB-t8-xxH" secondAttribute="height" multiplier="24:12" id="VQL-yR-fr1"/>
+                                                <constraint firstAttribute="height" constant="11" id="zIj-O1-sRC"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.49687498807907104" green="0.7851409912109375" blue="0.50724333524703979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="Z5j-Hf-vda" firstAttribute="top" secondItem="ImJ-QK-PIY" secondAttribute="topMargin" constant="10" id="0f7-FO-fBL"/>
+                                        <constraint firstItem="NPo-L5-RkK" firstAttribute="leading" secondItem="ImJ-QK-PIY" secondAttribute="leadingMargin" constant="10" id="1T1-aj-jxO"/>
+                                        <constraint firstAttribute="centerYWithinMargins" secondItem="Z5j-Hf-vda" secondAttribute="bottom" id="7JY-2M-cjT"/>
+                                        <constraint firstItem="pct-cf-VaG" firstAttribute="leading" secondItem="X0L-Px-rxd" secondAttribute="trailing" constant="22" id="7Rd-Nr-CkJ"/>
+                                        <constraint firstItem="Z5j-Hf-vda" firstAttribute="leading" secondItem="NPo-L5-RkK" secondAttribute="trailing" constant="22" id="9qJ-qN-Ach"/>
+                                        <constraint firstItem="X0L-Px-rxd" firstAttribute="centerY" secondItem="BNB-t8-xxH" secondAttribute="centerY" id="DV0-Ad-aOh"/>
+                                        <constraint firstItem="pct-cf-VaG" firstAttribute="centerY" secondItem="X0L-Px-rxd" secondAttribute="centerY" id="EGU-z8-Uxo"/>
+                                        <constraint firstItem="DbM-ZT-Q2Y" firstAttribute="leading" secondItem="pct-cf-VaG" secondAttribute="trailing" constant="7" id="HJn-Ag-EDd"/>
+                                        <constraint firstItem="BNB-t8-xxH" firstAttribute="leading" secondItem="Z5j-Hf-vda" secondAttribute="leading" id="Zbp-Pe-50B"/>
+                                        <constraint firstItem="X0L-Px-rxd" firstAttribute="height" secondItem="Z5j-Hf-vda" secondAttribute="height" id="cpd-3U-DBt"/>
+                                        <constraint firstItem="X0L-Px-rxd" firstAttribute="leading" secondItem="BNB-t8-xxH" secondAttribute="trailing" constant="7" id="deh-t0-8jg"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="NPo-L5-RkK" secondAttribute="bottom" constant="10" id="fe9-fU-iKJ"/>
+                                        <constraint firstItem="pct-cf-VaG" firstAttribute="centerY" secondItem="DbM-ZT-Q2Y" secondAttribute="centerY" id="gbi-Vn-1xh"/>
+                                        <constraint firstItem="NPo-L5-RkK" firstAttribute="top" secondItem="ImJ-QK-PIY" secondAttribute="topMargin" constant="10" id="nLV-MX-b3d"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="X0L-Px-rxd" secondAttribute="bottom" constant="4" id="wjX-y5-lzx"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="avatarImageView" destination="NPo-L5-RkK" id="sxy-y9-na4"/>
+                                    <outlet property="batteryImageView" destination="BNB-t8-xxH" id="ah3-tw-qBz"/>
+                                    <outlet property="batteryLabel" destination="X0L-Px-rxd" id="VPn-4s-UWI"/>
+                                    <outlet property="locationImageView" destination="pct-cf-VaG" id="Sia-Ls-Edh"/>
+                                    <outlet property="locationLabel" destination="DbM-ZT-Q2Y" id="btu-3n-Ifd"/>
+                                    <outlet property="nameLabel" destination="Z5j-Hf-vda" id="Dbj-je-FjM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -136,4 +210,9 @@
             <point key="canvasLocation" x="253" y="1035"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="80" width="24" height="12"/>
+        <image name="face-andrew" width="614" height="614"/>
+        <image name="location" width="16" height="16"/>
+    </resources>
 </document>

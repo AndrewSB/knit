@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		467F4DC51B51CCAD0010BE02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DC41B51CCAD0010BE02 /* AppDelegate.swift */; };
-		467F4DCA1B51CCAD0010BE02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DC81B51CCAD0010BE02 /* Main.storyboard */; };
 		467F4DCC1B51CCAD0010BE02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DCB1B51CCAD0010BE02 /* Assets.xcassets */; };
 		467F4DCF1B51CCAD0010BE02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DCD1B51CCAD0010BE02 /* LaunchScreen.storyboard */; };
 		467F4DD71B51CCD40010BE02 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DD61B51CCD40010BE02 /* MapViewController.swift */; };
@@ -39,6 +38,8 @@
 		46D96DF81B523BD600701D69 /* FriendListSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46D96DF71B523BD600701D69 /* FriendListSectionHeaderView.xib */; };
 		46D96DFA1B523D7500701D69 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DF91B523D7500701D69 /* UIViewExtension.swift */; };
 		46D96DFC1B524BEF00701D69 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DFB1B524BEF00701D69 /* InsetLabel.swift */; };
+		46D96DFE1B52562500701D69 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DFD1B52562500701D69 /* FriendTableViewCell.swift */; };
+		46D96DFF1B5258C400701D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DC81B51CCAD0010BE02 /* Main.storyboard */; };
 		46E9AE411B51D496007D0820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE401B51D496007D0820 /* User.swift */; };
 		46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */; };
 		46E9AE461B51DA31007D0820 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9AE451B51DA31007D0820 /* StringExtension.swift */; };
@@ -96,6 +97,7 @@
 		46D96DF71B523BD600701D69 /* FriendListSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendListSectionHeaderView.xib; sourceTree = "<group>"; };
 		46D96DF91B523D7500701D69 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		46D96DFB1B524BEF00701D69 /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
+		46D96DFD1B52562500701D69 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		46E9AE401B51D496007D0820 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		46E9AE431B51D8EF007D0820 /* CLLocationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
 		46E9AE451B51DA31007D0820 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				46D96DC41B52055800701D69 /* AvatarAnnotation.swift */,
 				46D96DC01B51FF3C00701D69 /* AvatarAnnotationView.swift */,
 				46C1261E1B51E6840020CB6A /* FriendListViewController.swift */,
+				46D96DFD1B52562500701D69 /* FriendTableViewCell.swift */,
 				46D96DF51B523BBD00701D69 /* FriendListSectionHeaderView.swift */,
 				46D96DFB1B524BEF00701D69 /* InsetLabel.swift */,
 				46D96DF71B523BD600701D69 /* FriendListSectionHeaderView.xib */,
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46D96DEE1B521E3100701D69 /* headers.json in Resources */,
+				46D96DFF1B5258C400701D69 /* Main.storyboard in Resources */,
 				467F4DCF1B51CCAD0010BE02 /* LaunchScreen.storyboard in Resources */,
 				46D96DE01B520ED500701D69 /* ProximaNova-Semibold.otf in Resources */,
 				46D96DF01B521E5B00701D69 /* users.json in Resources */,
@@ -329,7 +333,6 @@
 				46D96DDF1B520ED500701D69 /* Mark Simonson - Proxima Nova Bold.otf in Resources */,
 				46D96DE11B520ED500701D69 /* HUBERT JOCHAM Susa-Bold.otf in Resources */,
 				467F4DCC1B51CCAD0010BE02 /* Assets.xcassets in Resources */,
-				467F4DCA1B51CCAD0010BE02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +350,7 @@
 				467F4DE21B51CD660010BE02 /* NSUserDefaultHelper.swift in Sources */,
 				467F4DDD1B51CD210010BE02 /* Location.swift in Sources */,
 				46D96DFA1B523D7500701D69 /* UIViewExtension.swift in Sources */,
+				46D96DFE1B52562500701D69 /* FriendTableViewCell.swift in Sources */,
 				46E9AE441B51D8EF007D0820 /* CLLocationExtension.swift in Sources */,
 				46E9AE411B51D496007D0820 /* User.swift in Sources */,
 				467F4DE41B51CD660010BE02 /* UIStoryboardExtension.swift in Sources */,
