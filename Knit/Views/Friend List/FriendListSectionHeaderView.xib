@@ -47,9 +47,9 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="ac4-Eq-H0g">
-                    <rect key="frame" x="16" y="54.5" width="22" height="22"/>
+                    <rect key="frame" x="16" y="57.5" width="16" height="16"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="22" id="aJH-rq-5dh"/>
+                        <constraint firstAttribute="height" constant="16" id="aJH-rq-5dh"/>
                         <constraint firstAttribute="width" secondItem="ac4-Eq-H0g" secondAttribute="height" multiplier="1:1" id="dt5-4d-RzT"/>
                     </constraints>
                 </imageView>

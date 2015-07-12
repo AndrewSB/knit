@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460861121B52C98700CD1174 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 4608610C1B52C98700CD1174 /* .gitkeep */; };
+		460861131B52C98700CD1174 /* MMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4608610E1B52C98700CD1174 /* MMLabel.m */; };
+		460861141B52C98700CD1174 /* MMPopLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 460861101B52C98700CD1174 /* MMPopLabel.m */; };
+		460861161B52CA7B00CD1174 /* PopupContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460861151B52CA7A00CD1174 /* PopupContentView.swift */; };
+		460861181B52CA8700CD1174 /* PopupContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460861171B52CA8700CD1174 /* PopupContentView.xib */; };
+		4608611A1B52CEF600CD1174 /* allusers.json in Resources */ = {isa = PBXBuildFile; fileRef = 460861191B52CEF600CD1174 /* allusers.json */; };
 		464A7BDD1B52A15F00F3CB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */; };
 		464A7BDF1B52A16900F3CB5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BDE1B52A16900F3CB5E /* User.swift */; };
 		464A7BE11B52A16E00F3CB5E /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BE01B52A16E00F3CB5E /* Header.swift */; };
@@ -112,6 +118,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4608610C1B52C98700CD1174 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		4608610D1B52C98700CD1174 /* MMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLabel.h; sourceTree = "<group>"; };
+		4608610E1B52C98700CD1174 /* MMLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLabel.m; sourceTree = "<group>"; };
+		4608610F1B52C98700CD1174 /* MMPopLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopLabel.h; sourceTree = "<group>"; };
+		460861101B52C98700CD1174 /* MMPopLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPopLabel.m; sourceTree = "<group>"; };
+		460861111B52C98700CD1174 /* MMPopLabelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopLabelDelegate.h; sourceTree = "<group>"; };
+		460861151B52CA7A00CD1174 /* PopupContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupContentView.swift; sourceTree = "<group>"; };
+		460861171B52CA8700CD1174 /* PopupContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupContentView.xib; sourceTree = "<group>"; };
+		460861191B52CEF600CD1174 /* allusers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allusers.json; sourceTree = "<group>"; };
 		464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		464A7BDE1B52A16900F3CB5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		464A7BE01B52A16E00F3CB5E /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
@@ -262,6 +277,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4608610B1B52C98700CD1174 /* MMPopLabel */ = {
+			isa = PBXGroup;
+			children = (
+				4608610C1B52C98700CD1174 /* .gitkeep */,
+				4608610D1B52C98700CD1174 /* MMLabel.h */,
+				4608610E1B52C98700CD1174 /* MMLabel.m */,
+				4608610F1B52C98700CD1174 /* MMPopLabel.h */,
+				460861101B52C98700CD1174 /* MMPopLabel.m */,
+				460861111B52C98700CD1174 /* MMPopLabelDelegate.h */,
+			);
+			name = MMPopLabel;
+			path = Carthage/Checkouts/MMPopLabel/Classes/ios;
+			sourceTree = "<group>";
+		};
 		467F4DB81B51CCAD0010BE02 = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +341,7 @@
 				464A7C051B52A25600F3CB5E /* LaunchScreen.storyboard */,
 				464A7BFB1B52A23A00F3CB5E /* headers.json */,
 				464A7BFC1B52A23A00F3CB5E /* users.json */,
+				460861191B52CEF600CD1174 /* allusers.json */,
 				46D96DE21B520ED800701D69 /* Fonts */,
 			);
 			path = Resources;
@@ -550,6 +580,8 @@
 			isa = PBXGroup;
 			children = (
 				464A7BEB1B52A20A00F3CB5E /* MapViewController.swift */,
+				460861151B52CA7A00CD1174 /* PopupContentView.swift */,
+				460861171B52CA8700CD1174 /* PopupContentView.xib */,
 				46869CEB1B52A8E000FF99BF /* Annotations */,
 			);
 			path = Map;
@@ -580,6 +612,7 @@
 			isa = PBXGroup;
 			children = (
 				46869CE91B52A76D00FF99BF /* FontBlaster.swift */,
+				4608610B1B52C98700CD1174 /* MMPopLabel */,
 				46B689B51B526B1400C22C4F /* JSQSystemSoundPlayer */,
 				46B688E81B526AD100C22C4F /* JSQMessagesViewController */,
 				46D96DD31B5209E100701D69 /* Toucan.framework */,
@@ -663,7 +696,10 @@
 				464A7BF61B52A21A00F3CB5E /* FriendListSectionHeaderView.xib in Resources */,
 				46B689661B526AD200C22C4F /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
 				464A7BFD1B52A23A00F3CB5E /* headers.json in Resources */,
+				4608611A1B52CEF600CD1174 /* allusers.json in Resources */,
 				464A7C041B52A25000F3CB5E /* Assets.xcassets in Resources */,
+				460861121B52C98700CD1174 /* .gitkeep in Resources */,
+				460861181B52CA8700CD1174 /* PopupContentView.xib in Resources */,
 				46B6896B1B526AD200C22C4F /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				46869CF21B52AB7500FF99BF /* HUBERT JOCHAM Susa-Bold.otf in Resources */,
 				464A7C091B52A26000F3CB5E /* Info.plist in Resources */,
@@ -714,6 +750,7 @@
 				464A7BE81B52A1F300F3CB5E /* MasterViewController.swift in Sources */,
 				46B689621B526AD200C22C4F /* JSQMessagesCollectionViewCell.m in Sources */,
 				46B689571B526AD200C22C4F /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
+				460861141B52C98700CD1174 /* MMPopLabel.m in Sources */,
 				46B689531B526AD200C22C4F /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
 				46B689601B526AD200C22C4F /* JSQMessagesCellTextView.m in Sources */,
 				46B6894B1B526AD200C22C4F /* UIDevice+JSQMessages.m in Sources */,
@@ -722,6 +759,7 @@
 				464A7BE31B52A17200F3CB5E /* Message.swift in Sources */,
 				464A7C121B52A27500F3CB5E /* ImageDefines.swift in Sources */,
 				46B6894F1B526AD200C22C4F /* JSQMessagesViewController.m in Sources */,
+				460861131B52C98700CD1174 /* MMLabel.m in Sources */,
 				46B6894C1B526AD200C22C4F /* UIImage+JSQMessages.m in Sources */,
 				46869CEA1B52A76D00FF99BF /* FontBlaster.swift in Sources */,
 				464A7BF51B52A21A00F3CB5E /* FriendListSectionHeaderView.swift in Sources */,
@@ -735,6 +773,7 @@
 				46B6896F1B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
 				464A7C1B1B52A28900F3CB5E /* UIColorExtension.swift in Sources */,
 				464A7C211B52A29F00F3CB5E /* JSONExtension.swift in Sources */,
+				460861161B52CA7B00CD1174 /* PopupContentView.swift in Sources */,
 				464A7C111B52A27500F3CB5E /* ColorDefines.swift in Sources */,
 				46869CEF1B52A92000FF99BF /* FriendMasterViewController.swift in Sources */,
 				46B689551B526AD200C22C4F /* JSQMessagesToolbarButtonFactory.m in Sources */,

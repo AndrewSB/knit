@@ -1,7 +1,11 @@
 github "gavinbunney/Toucan"
+
 github "matej/MBPullDownController"
+github "mgcm/MMPopLabel"
+
 github "AndrewSB/FontBlaster" "master"
+
 github "jessesquires/JSQMessagesViewController"
 github "jessesquires/JSQSystemSoundPlayer"
 
-github "whittlbc/MCDemo"
+github "whittlbc/MCDemo" "master"

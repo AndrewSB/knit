@@ -1,0 +1,52 @@
+ [
+  {
+    "name": "Vikram Rajagopalan",
+    "battery": "50",
+    "seat": "Back Left"
+  },
+  {
+    "name": "Raphie Palefsky-Smith",
+    "battery": "80",
+    "seat": "Front Right"
+  },
+  {
+    "name": "Alex Kern",
+    "battery": "20",
+    "seat": "Middle Center"
+  },
+  {
+    "name": "Case Sandberg",
+    "battery": "100",
+    "seat": "Front Center"
+  },
+  {
+    "name": "Matt Condon",
+    "battery": "100",
+    "seat": "Middle Center"
+  },
+  {
+    "name": "Zach Latta",
+    "battery": "90",
+    "seat": "Back Right"
+  },
+  {
+    "name": "Rohith Varanasi",
+    "battery": "80",
+    "seat": "Front Center"
+  },
+  {
+    "name": "Ben Alderfer",
+    "battery": "60",
+    "seat": "Porta Potties"
+  },
+  {
+    "name": "Benjamin Zweig",
+    "battery": "90",
+    "seat": "Choco Lands"
+  },
+  {
+    "name": "Stefan Aleksić",
+    "battery": "10",
+    "seat": "The Barbary"
+  }
+]

@@ -24,6 +24,8 @@ class User {
     let battery: Double
     let seat: String
     
+    let stage: String?
+    
     init?(json: [String: String]) {
         guard let name = json["name"], battery = json["battery"], seat = json["seat"]
             else {
@@ -33,6 +35,7 @@ class User {
                 self.currentLocation = nil
                 self.battery = 0
                 self.seat = ""
+                self.stage = nil
                 
                 return nil
         }
@@ -51,5 +54,23 @@ class User {
         
         self.battery = battery.toDouble()!
         self.seat = seat
+        
+        self.stage = json["stage"]
+    }
+    
+    convenience init?(name: String) {
+        var userJson: [String: String]?
+        
+        for user in  NSBundle.json("allusers")!.json()! {
+            if (user["name"] as! String) == name {
+                userJson = user as! [String: String]
+            }
+        }
+        
+        if let userJson = userJson {
+            self.init(json: userJson)
+        } else {
+            return nil
+        }
     }
 }
