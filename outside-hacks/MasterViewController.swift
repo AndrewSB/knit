@@ -21,7 +21,7 @@ class MasterViewController: MBPullDownController {
         frontController = viewControllers.friends
         backController = viewControllers.map
         
-        openBottomOffset = 88
+        openBottomOffset = 64
         closedTopOffset = 0
         openDragOffsetPercentage = 0
         closeDragOffsetPercentage = 0
