@@ -27,7 +27,7 @@ class FriendListSectionHeaderView: UIView {
         songLabel.text = song.name
         songLabel.backgroundColor = UIColor(hex: song.hex)
         
-        messageButton.backgroundColor = UIColor(hex: stage.hex)
+        messageButton.backgroundColor = UIColor(hex: song.hex)
         messageButton.layer.cornerRadius = messageButton.frame.width / 2
         messageButton.layer.borderWidth = 4
         messageButton.layer.borderColor = UIColor.whiteColor().CGColor

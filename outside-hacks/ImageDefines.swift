@@ -21,11 +21,23 @@ enum Image {
         case Vikram = "vikram"
         case Zach = "zach"
     }
+    
+    enum Icon: String {
+        case SendButton = "send-button"
+        
+        case Chat = "chat"
+        case LocationPin = "location"
+        case MusicPin = "music"
+    }
 }
 
 
 prefix operator ⭕ {}
 
 prefix func ⭕ (named: Image.Face) -> UIImage {
+    return UIImage(named: named.rawValue)!
+}
+
+prefix func ⭕ (named: Image.Icon) -> UIImage {
     return UIImage(named: named.rawValue)!
 }

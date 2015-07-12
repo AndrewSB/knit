@@ -10,34 +10,23 @@ import UIKit
 
 class FriendListViewController: UITableViewController {
     
-    var data = [(Header, [User])]()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        reloadData()
-        
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        
-        self.tableView.backgroundView = nil
-        self.tableView.backgroundColor = UIColor.redColor()
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        super.prepareForSegue(segue, sender: sender)
-        
-        if let des = segue.destinationViewController as? MessageViewController {
-            des.otherUser = sender as! User
-        }
-    }
-}
-
-extension FriendListViewController {
-    private func reloadData() {
+    lazy var data: [(Header, [User])] = {
+        var data = [(Header, [User])]()
         
         let userJSON = NSBundle.json("users")!.json()!
         let headerJSON = NSBundle.json("headers")!.json()!
+        
+        
+        /* 
+            Translate to functional ASAP
+        */
+//        headerJSON.map({ header in
+//            let relevantUserJSON = userJSON.filter({ users in
+//                users[header["stage"] as! String] as? String
+//            }).first
+//            
+//            return (header, User(json: relevantUserJSON))
+//        })
         
         for header in headerJSON {
             for userBlock in userJSON {
@@ -45,9 +34,31 @@ extension FriendListViewController {
                     let header = Header(json: header as! [String: String])!
                     let user = (uB as! [[String: String]]).map({ return User(json: $0)! })
                     
-                    self.data.append((header, user))
+                    data.append((header, user))
                 }
             }
+        }
+        return data
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+        self.tableView.sectionFooterHeight = 0
+        
+        self.tableView.tableFooterView = UIView(frame: .zeroRect)
+        self.tableView.contentInset.bottom = -20
+    }
+    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+        if let des = segue.destinationViewController as? MessageViewController {
+            des.otherUser = sender as! User
         }
     }
 }
@@ -94,7 +105,7 @@ extension FriendListViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-//        performSegueWithIdentifier("segueToMessages", sender: data[indexPath.section].1[indexPath.row] as! AnyObject)
+        performSegueWithIdentifier(Segue.Message.rawValue, sender: data[indexPath.section].1[indexPath.row] as AnyObject)
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -110,14 +121,6 @@ extension FriendListViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0
-    }
-    
-    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return UIView(frame: .zeroRect)
-    }
-        
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let colors = Color.Stage.color(forStageName: data[section].0.stage) {
             let headerView = FriendListSectionHeaderView.instanceFromNib()

@@ -27,7 +27,12 @@ class MasterViewController: MBPullDownController {
         closeDragOffsetPercentage = 0
         
         (backgroundView as! MBPullDownControllerBackgroundView).dropShadowVisible = false
-//        setOpen(true, animated: false)
     }
 
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.backgroundView.backgroundColor = UIColor(hex: Color.Global.Green.Light.rawValue)
+    }
 }

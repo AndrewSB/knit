@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		467790C21B52837B00CF3BE0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467790C11B52837B00CF3BE0 /* Message.swift */; };
+		467790C41B52857100CF3BE0 /* SegueDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467790C31B52857100CF3BE0 /* SegueDefines.swift */; };
 		467F4DC51B51CCAD0010BE02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F4DC41B51CCAD0010BE02 /* AppDelegate.swift */; };
 		467F4DCC1B51CCAD0010BE02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DCB1B51CCAD0010BE02 /* Assets.xcassets */; };
 		467F4DCF1B51CCAD0010BE02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467F4DCD1B51CCAD0010BE02 /* LaunchScreen.storyboard */; };
@@ -110,6 +111,7 @@
 
 /* Begin PBXFileReference section */
 		467790C11B52837B00CF3BE0 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		467790C31B52857100CF3BE0 /* SegueDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueDefines.swift; sourceTree = "<group>"; };
 		467F4DC11B51CCAD0010BE02 /* outside-hacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "outside-hacks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		467F4DC41B51CCAD0010BE02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		467F4DC91B51CCAD0010BE02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				467F4DE61B51CDA60010BE02 /* API.swift */,
 				46D96DD81B520DED00701D69 /* ColorDefines.swift */,
 				46D96DC21B51FFA700701D69 /* ImageDefines.swift */,
+				467790C31B52857100CF3BE0 /* SegueDefines.swift */,
 				467F4DE51B51CD690010BE02 /* Extensions */,
 			);
 			name = "Supporting Files";
@@ -658,6 +661,7 @@
 				46B689651B526AD200C22C4F /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
 				46B6894E1B526AD200C22C4F /* JSQMessagesKeyboardController.m in Sources */,
 				46B6895A1B526AD200C22C4F /* JSQMediaItem.m in Sources */,
+				467790C41B52857100CF3BE0 /* SegueDefines.swift in Sources */,
 				467F4DE31B51CD660010BE02 /* NSNotificationCenterHelper.swift in Sources */,
 				46B689561B526AD200C22C4F /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				46B689491B526AD200C22C4F /* NSString+JSQMessages.m in Sources */,

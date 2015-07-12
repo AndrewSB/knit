@@ -12,17 +12,23 @@ class MessageViewController: JSQMessagesViewController {
     
     var otherUser: User!
     
-    var messages: [Message]!
-    let outgoingBubbleImageView = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor(red:0.14, green:0.562, blue:0.985, alpha:1))
-    let incomingBubbleImageView = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor.lightGrayColor())
-
+    var messages = [Message]()
+    
+    let outgoingBubbleImageView = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.whiteColor())
+    let incomingBubbleImageView = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor(hex: "#62B2F1"))
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setup()
+        
+//        let panDownDismissRecognizer = 
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+    }
 }
 /*
     Useful message APIs
@@ -49,14 +55,22 @@ extension MessageViewController {
         self.senderId = UserDefaults.userID ?? "me"
         self.senderDisplayName = UserDefaults.userDisplayName ?? "Andrew"
         
-        self.collectionView.collectionViewLayout.incomingAvatarViewSize = .zeroSize
-        self.collectionView.collectionViewLayout.outgoingAvatarViewSize = .zeroSize
+        self.inputToolbar?.contentView?.leftBarButtonItem = nil
         
-        self.collectionView.collectionViewLayout.springinessEnabled = false
+        let beautifulSendButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 22))
+        beautifulSendButton.imageView!.image = ⭕Image.Icon.SendButton
+        
+        self.inputToolbar?.contentView?.rightBarButtonItem = UIButton(frame: CGRect(x: 0, y: 0, width: 12, height: 6))
+        
+        self.collectionView!.collectionViewLayout.incomingAvatarViewSize = .zeroSize
+        self.collectionView!.collectionViewLayout.outgoingAvatarViewSize = .zeroSize
+        
+        self.collectionView!.collectionViewLayout.springinessEnabled = false
     }
     
     override func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {
         
+        processNewMessage(Message(text: text, sender: (id: senderId, dispayName: senderDisplayName)))
     }
     
     override func didPressAccessoryButton(sender: UIButton!) {
@@ -64,7 +78,7 @@ extension MessageViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return messages?.count ?? 0
+        return messages.count
     }
     override func collectionView(collectionView: JSQMessagesCollectionView!, messageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageData! {
         return messages[indexPath.row]
@@ -74,9 +88,9 @@ extension MessageViewController {
         let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as! JSQMessagesCollectionViewCell
         
         if messages[indexPath.row].senderId() == senderId {
-            cell.textView.textColor = UIColor.whiteColor()
+            cell.textView!.textColor = UIColor(hex: Color.Global.Green.Light.rawValue)
         } else {
-            cell.textView.textColor = UIColor.blackColor()
+            cell.textView!.textColor = UIColor.whiteColor()
         }
         
         return cell
@@ -88,8 +102,6 @@ extension MessageViewController {
     
     override func collectionView(collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageBubbleImageDataSource! {
         let message = messages[indexPath.row]
-        
-        println("\(message.senderId() == senderId ? true : false)")
         
         return message.senderId() == senderId ? outgoingBubbleImageView : incomingBubbleImageView
     }
