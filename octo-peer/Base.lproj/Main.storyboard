@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,7 +18,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ews-FC-GCq">
+                                <rect key="frame" x="226" y="285" width="30" height="30"/>
+                                <state key="normal" title="dot"/>
+                                <connections>
+                                    <action selector="buttonWasHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mxc-fW-j0N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HT-cb-X5q">
+                                <rect key="frame" x="344" y="285" width="34" height="30"/>
+                                <state key="normal" title="dash"/>
+                                <connections>
+                                    <action selector="buttonWasHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sST-IK-Ea7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ews-FC-GCq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Fm-fn-kpC"/>
+                            <constraint firstAttribute="centerXWithinMargins" secondItem="Ews-FC-GCq" secondAttribute="trailing" constant="44" id="D9t-N1-oCI"/>
+                            <constraint firstItem="8HT-cb-X5q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" constant="44" id="mWa-MN-d3U"/>
+                            <constraint firstItem="8HT-cb-X5q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tCx-gB-Vbk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

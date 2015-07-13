@@ -12,6 +12,8 @@
 		46A47D021B532F19005D5FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A47D001B532F19005D5FEC /* Main.storyboard */; };
 		46A47D041B532F19005D5FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A47D031B532F19005D5FEC /* Assets.xcassets */; };
 		46A47D071B532F19005D5FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A47D051B532F19005D5FEC /* LaunchScreen.storyboard */; };
+		46A47D121B532F77005D5FEC /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A47D111B532F77005D5FEC /* MultipeerConnectivity.framework */; };
+		46A47D141B532F7D005D5FEC /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A47D131B532F7D005D5FEC /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		46A47D031B532F19005D5FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46A47D061B532F19005D5FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46A47D081B532F19005D5FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A47D111B532F77005D5FEC /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		46A47D131B532F7D005D5FEC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A47D141B532F7D005D5FEC /* CoreBluetooth.framework in Frameworks */,
+				46A47D121B532F77005D5FEC /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				46A47CFB1B532F19005D5FEC /* octo-peer */,
 				46A47CFA1B532F19005D5FEC /* Products */,
+				46A47D161B532F88005D5FEC /* Libraries */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +93,23 @@
 				46A47D001B532F19005D5FEC /* Main.storyboard */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		46A47D151B532F82005D5FEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46A47D131B532F7D005D5FEC /* CoreBluetooth.framework */,
+				46A47D111B532F77005D5FEC /* MultipeerConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46A47D161B532F88005D5FEC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				46A47D151B532F82005D5FEC /* Frameworks */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -259,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
