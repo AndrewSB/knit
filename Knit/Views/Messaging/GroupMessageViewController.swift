@@ -10,12 +10,9 @@ import UIKit
 
 class GroupMessageViewController: JSQMessagesViewController {
     
-    var messages: [Message] = [
-        Message(text: "Hey man, where you at?", sender: (id: "BH", dispayName: "BH")),
-        Message(text: "yo yo, I'm at Land's end! Come find me!", sender: (id: "AB", dispayName: "AB")),
-        Message(text: "I'm almost there guys - wait for me!", sender: (id: "andrew", dispayName: "andrew")),
-        Message(text: "yo", sender: (id: "AB", dispayName: "AB"))
-    ]
+    var messages: [Message] = MessageCoordinator.sharedInstance.messages
+    
+    
     
     let outgoingBubbleImageView = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.whiteColor())
     let incomingBubbleImageView = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor(hex: "#62B2F1"))

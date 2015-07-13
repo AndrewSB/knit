@@ -362,14 +362,10 @@
 		467F4DD91B51CCF80010BE02 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4676D8BA1B53024800012955 /* tap-metallic.aif */,
-				4676D8B81B52FF3500012955 /* tap-warm.aif */,
-				4676D8B61B52FF3000012955 /* SWISH.mp3 */,
+				46A47D181B533979005D5FEC /* Stubs */,
+				46A47D171B533969005D5FEC /* Tones */,
 				464A7C031B52A25000F3CB5E /* Assets.xcassets */,
 				464A7C051B52A25600F3CB5E /* LaunchScreen.storyboard */,
-				464A7BFB1B52A23A00F3CB5E /* headers.json */,
-				464A7BFC1B52A23A00F3CB5E /* users.json */,
-				460861191B52CEF600CD1174 /* allusers.json */,
 				46D96DE21B520ED800701D69 /* Fonts */,
 			);
 			path = Resources;
@@ -379,13 +375,8 @@
 			isa = PBXGroup;
 			children = (
 				464A7C081B52A26000F3CB5E /* Info.plist */,
-				464A7C0A1B52A26400F3CB5E /* API.swift */,
-				464A7C0C1B52A26900F3CB5E /* Location.swift */,
-				4676D8C31B53030800012955 /* Scanner.swift */,
-				4676D8C71B53107B00012955 /* MessageCoordinator.swift */,
-				464A7C0E1B52A27500F3CB5E /* ColorDefines.swift */,
-				464A7C0F1B52A27500F3CB5E /* ImageDefines.swift */,
-				464A7C101B52A27500F3CB5E /* SegueDefines.swift */,
+				46A47D191B533A68005D5FEC /* Singletons */,
+				46A47D1A1B533A6F005D5FEC /* Defines */,
 				467F4DE51B51CD690010BE02 /* Extensions */,
 			);
 			path = "Supporting Files";
@@ -436,6 +427,47 @@
 				4676D8C91B5311FE00012955 /* GroupMessageViewController.swift */,
 			);
 			path = Messaging;
+			sourceTree = "<group>";
+		};
+		46A47D171B533969005D5FEC /* Tones */ = {
+			isa = PBXGroup;
+			children = (
+				4676D8BA1B53024800012955 /* tap-metallic.aif */,
+				4676D8B81B52FF3500012955 /* tap-warm.aif */,
+				4676D8B61B52FF3000012955 /* SWISH.mp3 */,
+			);
+			name = Tones;
+			sourceTree = "<group>";
+		};
+		46A47D181B533979005D5FEC /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				464A7BFB1B52A23A00F3CB5E /* headers.json */,
+				464A7BFC1B52A23A00F3CB5E /* users.json */,
+				460861191B52CEF600CD1174 /* allusers.json */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
+		46A47D191B533A68005D5FEC /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				464A7C0A1B52A26400F3CB5E /* API.swift */,
+				464A7C0C1B52A26900F3CB5E /* Location.swift */,
+				4676D8C31B53030800012955 /* Scanner.swift */,
+				4676D8C71B53107B00012955 /* MessageCoordinator.swift */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		46A47D1A1B533A6F005D5FEC /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				464A7C0E1B52A27500F3CB5E /* ColorDefines.swift */,
+				464A7C0F1B52A27500F3CB5E /* ImageDefines.swift */,
+				464A7C101B52A27500F3CB5E /* SegueDefines.swift */,
+			);
+			name = Defines;
 			sourceTree = "<group>";
 		};
 		46B688E81B526AD100C22C4F /* JSQMessagesViewController */ = {

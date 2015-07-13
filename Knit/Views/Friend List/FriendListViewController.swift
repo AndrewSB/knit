@@ -52,6 +52,8 @@ class FriendListViewController: UITableViewController {
         
         self.tableView.tableFooterView = UIView(frame: .zeroRect)
         self.tableView.contentInset.bottom = -20
+        
+        Scanner.sharedInstance
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -156,6 +158,7 @@ extension FriendListViewController {
     }
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        // GRACENOTE HERE
         if let colors = Color.Stage.color(forStageName: data[section].0.stage) {
             let headerView = FriendListSectionHeaderView.instanceFromNib()
             

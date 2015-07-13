@@ -18,8 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         FontBlaster.blast()
-        Scanner.sharedInstance
-        MessageCoordinator.sharedInstance
         
         return true
     }
