@@ -63,7 +63,7 @@ class User {
         
         for user in  NSBundle.json("allusers")!.json()! {
             if (user["name"] as! String) == name {
-                userJson = user as! [String: String]
+                userJson = user as? [String: String]
             }
         }
         

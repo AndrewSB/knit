@@ -10,6 +10,7 @@
 		460861161B52CA7B00CD1174 /* PopupContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460861151B52CA7A00CD1174 /* PopupContentView.swift */; };
 		460861181B52CA8700CD1174 /* PopupContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460861171B52CA8700CD1174 /* PopupContentView.xib */; };
 		4608611A1B52CEF600CD1174 /* allusers.json in Resources */ = {isa = PBXBuildFile; fileRef = 460861191B52CEF600CD1174 /* allusers.json */; };
+		461BB92D1B562D9D00907BE6 /* Toucan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461BB92C1B562D9D00907BE6 /* Toucan.swift */; };
 		464A7BDD1B52A15F00F3CB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */; };
 		464A7BDF1B52A16900F3CB5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BDE1B52A16900F3CB5E /* User.swift */; };
 		464A7BE11B52A16E00F3CB5E /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A7BE01B52A16E00F3CB5E /* Header.swift */; };
@@ -130,6 +131,7 @@
 		4608611D1B52DA9C00CD1174 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
 		4608611E1B52DA9C00CD1174 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
 		4608611F1B52DA9C00CD1174 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
+		461BB92C1B562D9D00907BE6 /* Toucan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Toucan.swift; path = Carthage/Checkouts/Toucan/Source/Toucan.swift; sourceTree = "<group>"; };
 		464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		464A7BDE1B52A16900F3CB5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		464A7BE01B52A16E00F3CB5E /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
@@ -679,6 +681,7 @@
 		46FEE92F1B51CF5800DA441E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				461BB92C1B562D9D00907BE6 /* Toucan.swift */,
 				46869CE91B52A76D00FF99BF /* FontBlaster.swift */,
 				4676D8BC1B53029800012955 /* MCAssets */,
 				4608611B1B52DA9C00CD1174 /* WYPopoverController */,
@@ -852,6 +855,7 @@
 				464A7C1C1B52A28900F3CB5E /* UIStoryboardExtension.swift in Sources */,
 				46B6895F1B526AD200C22C4F /* JSQVideoMediaItem.m in Sources */,
 				46B6894D1B526AD200C22C4F /* UIView+JSQMessages.m in Sources */,
+				461BB92D1B562D9D00907BE6 /* Toucan.swift in Sources */,
 				46B6895E1B526AD200C22C4F /* JSQPhotoMediaItem.m in Sources */,
 				464A7C1D1B52A28900F3CB5E /* UIViewExtension.swift in Sources */,
 				464A7BEC1B52A20A00F3CB5E /* MapViewController.swift in Sources */,
@@ -980,7 +984,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EXECUTABLE_EXTENSION = "";
-				FRAMEWORK_SEARCH_PATHS = "Carthage/Build/iOS/**";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Knit/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = asb.Knit;
@@ -995,7 +999,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EXECUTABLE_EXTENSION = "";
-				FRAMEWORK_SEARCH_PATHS = "Carthage/Build/iOS/**";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Knit/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = asb.Knit;

@@ -8,7 +8,6 @@
 
 import UIKit
 import MapKit
-import Toucan
 
 class AvatarAnnotationView: MKAnnotationView {
     var user: User!
