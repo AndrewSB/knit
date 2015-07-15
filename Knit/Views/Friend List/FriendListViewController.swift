@@ -21,13 +21,13 @@ class FriendListViewController: UITableViewController {
         /* 
             Translate to functional ASAP
         */
-//        headerJSON.map({ header in
-//            let relevantUserJSON = userJSON.filter({ users in
-//                users[header["stage"] as! String] as? String
-//            }).first
-//            
-//            return (header, User(json: relevantUserJSON))
-//        })
+        headerJSON.map({ header in
+            let relevantUserJSON = userJSON.filter({ users in
+                users[header["stage"] as! String] as? String
+            }).first
+            
+            return (header, User(json: relevantUserJSON))
+        })
         
         for header in headerJSON {
             for userBlock in userJSON {

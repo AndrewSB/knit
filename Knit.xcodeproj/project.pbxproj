@@ -58,6 +58,8 @@
 		46869CF31B52AB7500FF99BF /* Mark Simonson - Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C001B52A24700F3CB5E /* Mark Simonson - Proxima Nova Bold.otf */; };
 		46869CF41B52AB7500FF99BF /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C011B52A24700F3CB5E /* ProximaNova-Regular.otf */; };
 		46869CF51B52AB7500FF99BF /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 464A7C021B52A24700F3CB5E /* ProximaNova-Semibold.otf */; };
+		46A47D1D1B533B15005D5FEC /* MessageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46A47D1B1B533B15005D5FEC /* MessageModel.xcdatamodeld */; };
+		46A47D1F1B533B80005D5FEC /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A47D1E1B533B80005D5FEC /* Message+CoreDataProperties.swift */; };
 		46B689461B526AD200C22C4F /* JSQMessagesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46B688EA1B526AD100C22C4F /* JSQMessagesAssets.bundle */; };
 		46B689471B526AD200C22C4F /* JSQSystemSoundPlayer+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B688ED1B526AD100C22C4F /* JSQSystemSoundPlayer+JSQMessages.m */; };
 		46B689481B526AD200C22C4F /* NSBundle+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B688EF1B526AD100C22C4F /* NSBundle+JSQMessages.m */; };
@@ -103,7 +105,6 @@
 		46B689701B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B689451B526AD200C22C4F /* JSQMessagesTypingIndicatorFooterView.xib */; };
 		46B689BA1B526B1400C22C4F /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B689B81B526B1400C22C4F /* JSQSystemSoundPlayer.m */; };
 		46D96DBC1B51F20400701D69 /* MBPullDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D96DBB1B51F20400701D69 /* MBPullDownController.m */; };
-		46D96DD61B520A5200701D69 /* Toucan.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46D96DD31B5209E100701D69 /* Toucan.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46FEE92C1B51CF4F00DA441E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FEE92B1B51CF4F00DA441E /* MapKit.framework */; };
 		46FEE92E1B51CF5300DA441E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FEE92D1B51CF5300DA441E /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -115,7 +116,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				46D96DD61B520A5200701D69 /* Toucan.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +183,8 @@
 		467F4DC11B51CCAD0010BE02 /* Knit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46869CE91B52A76D00FF99BF /* FontBlaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontBlaster.swift; path = Carthage/Checkouts/FontBlaster/FontBlaster/FontBlaster.swift; sourceTree = "<group>"; };
 		46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Knit-Bridging-Header.h"; sourceTree = "<group>"; };
+		46A47D1C1B533B15005D5FEC /* MessageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MessageModel.xcdatamodel; sourceTree = "<group>"; };
+		46A47D1E1B533B80005D5FEC /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		46B688EA1B526AD100C22C4F /* JSQMessagesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSQMessagesAssets.bundle; sourceTree = "<group>"; };
 		46B688EC1B526AD100C22C4F /* JSQSystemSoundPlayer+JSQMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSQSystemSoundPlayer+JSQMessages.h"; sourceTree = "<group>"; };
 		46B688ED1B526AD100C22C4F /* JSQSystemSoundPlayer+JSQMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSQSystemSoundPlayer+JSQMessages.m"; sourceTree = "<group>"; };
@@ -274,7 +276,6 @@
 		46B689B81B526B1400C22C4F /* JSQSystemSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQSystemSoundPlayer.m; sourceTree = "<group>"; };
 		46D96DBA1B51F20400701D69 /* MBPullDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBPullDownController.h; sourceTree = "<group>"; };
 		46D96DBB1B51F20400701D69 /* MBPullDownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBPullDownController.m; sourceTree = "<group>"; };
-		46D96DD31B5209E100701D69 /* Toucan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toucan.framework; path = Carthage/Build/iOS/Toucan.framework; sourceTree = SOURCE_ROOT; };
 		46FEE92B1B51CF4F00DA441E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		46FEE92D1B51CF5300DA441E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -339,6 +340,7 @@
 			children = (
 				46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */,
 				464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */,
+				46A47D1B1B533B15005D5FEC /* MessageModel.xcdatamodeld */,
 				467F4DD81B51CCF30010BE02 /* Views */,
 				46E9AE421B51D7E4007D0820 /* Models */,
 				467F4DD91B51CCF80010BE02 /* Resources */,
@@ -669,6 +671,7 @@
 				464A7BDE1B52A16900F3CB5E /* User.swift */,
 				464A7BE01B52A16E00F3CB5E /* Header.swift */,
 				464A7BE21B52A17200F3CB5E /* Message.swift */,
+				46A47D1E1B533B80005D5FEC /* Message+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -681,7 +684,6 @@
 				4608611B1B52DA9C00CD1174 /* WYPopoverController */,
 				46B689B51B526B1400C22C4F /* JSQSystemSoundPlayer */,
 				46B688E81B526AD100C22C4F /* JSQMessagesViewController */,
-				46D96DD31B5209E100701D69 /* Toucan.framework */,
 				46D96DB91B51F20400701D69 /* MBPullDownController */,
 				46FEE9301B51CF5E00DA441E /* Frameworks */,
 			);
@@ -816,6 +818,7 @@
 				46B689591B526AD200C22C4F /* JSQLocationMediaItem.m in Sources */,
 				46B689541B526AD200C22C4F /* JSQMessagesTimestampFormatter.m in Sources */,
 				46B689681B526AD200C22C4F /* JSQMessagesInputToolbar.m in Sources */,
+				46A47D1D1B533B15005D5FEC /* MessageModel.xcdatamodeld in Sources */,
 				464A7BE81B52A1F300F3CB5E /* MasterViewController.swift in Sources */,
 				46B689621B526AD200C22C4F /* JSQMessagesCollectionViewCell.m in Sources */,
 				46B689571B526AD200C22C4F /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
@@ -826,6 +829,7 @@
 				46B6894B1B526AD200C22C4F /* UIDevice+JSQMessages.m in Sources */,
 				46B689691B526AD200C22C4F /* JSQMessagesLabel.m in Sources */,
 				464A7BDF1B52A16900F3CB5E /* User.swift in Sources */,
+				46A47D1F1B533B80005D5FEC /* Message+CoreDataProperties.swift in Sources */,
 				464A7BE31B52A17200F3CB5E /* Message.swift in Sources */,
 				464A7C121B52A27500F3CB5E /* ImageDefines.swift in Sources */,
 				46B6894F1B526AD200C22C4F /* JSQMessagesViewController.m in Sources */,
@@ -1022,6 +1026,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46A47D1B1B533B15005D5FEC /* MessageModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46A47D1C1B533B15005D5FEC /* MessageModel.xcdatamodel */,
+			);
+			currentVersion = 46A47D1C1B533B15005D5FEC /* MessageModel.xcdatamodel */;
+			path = MessageModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 467F4DB91B51CCAD0010BE02 /* Project object */;
 }
