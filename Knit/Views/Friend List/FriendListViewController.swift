@@ -60,14 +60,14 @@ class FriendListViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         tableHeaderView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("didTap")))
-        LocalMessage.observe(.showGroupMessage, classFunction: "segueToGroup", inClass: self)
+        LocalMessage.observe(.showGroupMessage, classFunction: "segueToGroup:", inClass: self)
+    }
+    func segueToGroup(notification: NSNotification) {
+        self.performSegueWithIdentifier("segueToGroup", sender: notification.userInfo)
     }
     
     func didTap() {
         LocalMessage.post(.KnitHeaderWasTapped)
-    }
-    func segueToGroup() {
-        self.performSegueWithIdentifier("segueToGroup", sender: nil)
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -82,12 +82,12 @@ class FriendListViewController: UITableViewController {
             des.user = [sender as! User]
         }
         
-        if let des = segue.destinationViewController as? MessageViewController {
-            des.otherUser = sender as! User
-            
-//            let cell = 
-            
-//            des.header = tableView
+        if let des = segue.destinationViewController as? GroupMessageWrapperViewController {
+            let stage = ((sender as! NSNotification).userInfo!["stage"] as! String).componentsSeparatedByString("|")
+            let song = ((sender as! NSNotification).userInfo!["songs"] as! String).componentsSeparatedByString("|")
+        
+            des.stage = (stage[0], stage[1])
+            des.song = (song[0], song[1])
         }
     }
     

@@ -308,6 +308,15 @@
 			path = Carthage/Checkouts/WYPopoverController/WYPopoverController;
 			sourceTree = "<group>";
 		};
+		466F46691B562FD800C1131F /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				46A47D1B1B533B15005D5FEC /* MessageModel.xcdatamodeld */,
+				46A47D1E1B533B80005D5FEC /* Message+CoreDataProperties.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 		4676D8BC1B53029800012955 /* MCAssets */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,7 +351,6 @@
 			children = (
 				46869CF11B52AA8700FF99BF /* Knit-Bridging-Header.h */,
 				464A7BDC1B52A15F00F3CB5E /* AppDelegate.swift */,
-				46A47D1B1B533B15005D5FEC /* MessageModel.xcdatamodeld */,
 				467F4DD81B51CCF30010BE02 /* Views */,
 				46E9AE421B51D7E4007D0820 /* Models */,
 				467F4DD91B51CCF80010BE02 /* Resources */,
@@ -673,7 +681,7 @@
 				464A7BDE1B52A16900F3CB5E /* User.swift */,
 				464A7BE01B52A16E00F3CB5E /* Header.swift */,
 				464A7BE21B52A17200F3CB5E /* Message.swift */,
-				46A47D1E1B533B80005D5FEC /* Message+CoreDataProperties.swift */,
+				466F46691B562FD800C1131F /* Core Data */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1038,7 +1046,8 @@
 				46A47D1C1B533B15005D5FEC /* MessageModel.xcdatamodel */,
 			);
 			currentVersion = 46A47D1C1B533B15005D5FEC /* MessageModel.xcdatamodel */;
-			path = MessageModel.xcdatamodeld;
+			name = MessageModel.xcdatamodeld;
+			path = ../MessageModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

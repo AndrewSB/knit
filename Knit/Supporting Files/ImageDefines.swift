@@ -35,6 +35,21 @@ enum Image {
         case Panhandle = "panhandle"
         case Sutro = "sutro"
         case Twinpeaks = "twinpeaks"
+        
+        static func imageFor(stageName stageName: String) -> String? {
+            switch stageName {
+            case "Lands End":
+                return Image.OutsideLands.Landsend.rawValue
+            case "Sutro":
+                return Image.OutsideLands.Panhandle.rawValue
+            case "Twin Peaks":
+                return Image.OutsideLands.Twinpeaks.rawValue
+            case "Panhandle":
+                return Image.OutsideLands.Panhandle.rawValue
+            default:
+                return nil
+            }
+        }
     }
 }
 

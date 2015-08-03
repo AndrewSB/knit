@@ -11,6 +11,8 @@ import UIKit
 class GroupMessageWrapperViewController: UIViewController {
     
     var user: [User]!
+    var song: (String, String)?
+    var stage: (String, String)?
     
     @IBOutlet weak var containerView: UIView!
     
@@ -28,18 +30,18 @@ class GroupMessageWrapperViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        avatarImageView.image = UIImage(named: "landsend")
+        avatarImageView.image = UIImage(named: Image.OutsideLands.imageFor(stageName: stage!.0)!)
         
         avatarImageView.layer.cornerRadius = avatarImageView.frame.width / 2
         avatarImageView.layer.borderWidth = 4
         avatarImageView.layer.borderColor = UIColor(hex: Color.Stage.LandsEnd.Light.rawValue).CGColor
         
-        nameLabel.text = "Land's End"
+        nameLabel.text = song!.0
         
         batteryImageView.hidden = true
         batteryLabel.hidden = true
                 
-        locationLabel.text = "Lands End"
+        locationLabel.text = stage!.0
     }
     
     override func viewDidAppear(animated: Bool) {
